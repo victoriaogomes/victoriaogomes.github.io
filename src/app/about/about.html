@@ -1,0 +1,42 @@
+<section class="about-section" id="about">
+
+  <app-infocard [icon]="faUser" title="{{ 'sections.about.aboutMe.title' | translate }}">
+    <div class="about-card main-card">
+      @for (paragraph of ('sections.about.aboutMe.description' | translate); track $index) {
+        <p [innerHTML]="paragraph"></p>
+      }
+    </div>
+  </app-infocard>
+
+  <app-skills></app-skills>
+
+  <div class="career-overview">
+    <app-infocard [icon]="faGraduationCap" class="education"
+                  title="{{ 'sections.about.careerOverview.education.title' | translate }}">
+      <app-timeline
+        [items]="educationTimelineItems">
+      </app-timeline>
+
+      <div class="details">
+        <button class="details-button">
+          {{ 'generalButtons.viewDetails' | translate }}
+          <fa-icon [icon]="faUpRightAndDownLeftFromCenter"></fa-icon>
+        </button>
+      </div>
+    </app-infocard>
+
+    <app-infocard [icon]="faBriefCase" class="experience"
+                  title="{{ 'sections.about.careerOverview.experience.title' | translate }}">
+      <app-timeline
+        [items]="professionalExperienceTimelineItems">
+      </app-timeline>
+
+      <div class="details">
+        <button class="details-button">
+          {{ 'generalButtons.viewDetails' | translate }}
+          <fa-icon [icon]="faUpRightAndDownLeftFromCenter"></fa-icon>
+        </button>
+      </div>
+    </app-infocard>
+  </div>
+</section>

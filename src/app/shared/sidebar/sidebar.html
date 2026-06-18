@@ -1,22 +1,33 @@
-<div class="sidebar">
+<aside class="sidebar">
   <div class="profile-section">
     <div class="avatar">
       <fa-icon [icon]="faUser" data-toggle="tooltip" data-placement="bottom"/>
     </div>
 
-    <h2 class="name">{{ 'sidebar.name' | translate }}</h2>
-
-    <p class="role">{{ 'sidebar.role' | translate }}</p>
-
-    <div class="location">
-      <fa-icon [icon]="faLocationDot"/>
-      <span>{{ 'sidebar.location' | translate }}</span>
-    </div>
-
-    <div class="bio-card">
-      <p>{{ 'sidebar.shortSummary' | translate }}</p>
+    <div class="personal-data">
+      <h2 class="name">{{ 'sidebar.name' | translate }}</h2>
+      <p class="role">{{ 'sidebar.role' | translate }}</p>
+      <div class="location">
+        <fa-icon [icon]="faLocationDot"/>
+        <span>{{ 'sidebar.location' | translate }}</span>
+      </div>
     </div>
   </div>
+
+  <div class="divider"></div>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <fa-icon [icon]="faCode"/>
+      <span class="value">4 years of industry experience</span>
+    </div>
+    <div class="info-card">
+      <fa-icon [icon]="faGraduationCap"/>
+      <span class="value">2nd year PhD student</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
 
   <div class="social-links">
     <a class="icon-button" href="mailto:{{'sidebar.mail' | translate}}">
@@ -35,4 +46,4 @@
       <fa-icon [icon]="faGoogleScholar"/>
     </a>
   </div>
-</div>
+</aside>

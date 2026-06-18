@@ -1,0 +1,53 @@
+@use 'colors' as *
+
+.about-section
+  display: flex
+  flex-direction: column
+  gap: 15px
+
+.career-overview
+  display: grid
+  margin-bottom: 20px
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr))
+  gap: 10px
+
+.education, .experience
+  flex: 1
+
+.main-card
+  display: flex
+  flex-direction: column
+  gap: 22px
+
+
+.main-card p
+  color: black
+  text-align: justify
+  line-height: 1.9
+  font-size: 17px
+  margin: 0
+
+.details-button
+  background: transparent
+  color: $purple
+  font-weight: 600
+  cursor: pointer
+  padding: 5px 10px
+  border-radius: 20px
+  box-sizing: border-box
+  border: 2px solid rgba($purple, .15)
+
+.details
+  text-align: end
+
+@media(hover: hover)
+  .details-button:hover
+    text-decoration: underline
+
+@media (max-width: 768px)
+  .career-overview
+    display: flex
+    flex-direction: column
+    gap: 10px
+  .main-card p
+    font-size: .75rem

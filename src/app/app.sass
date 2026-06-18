@@ -1,0 +1,42 @@
+.app-container
+  min-height: 100%
+  overflow: hidden
+  align-items: flex-start
+
+app-sidebar
+  align-items: center
+
+app-navbar
+  margin: 20px 0
+
+.content
+  display: flex
+  flex-direction: column
+  flex: 1
+  overflow-y: auto
+
+@media(max-width: 1449px)
+  .app-container
+    display: flex
+    flex-direction: column
+  app-sidebar
+    width: 100%
+  .content
+    margin: 0 30px
+
+@media (min-width: 1450px)
+  app-sidebar
+    position: fixed
+    display: flex
+  .app-container
+    max-width: 1400px
+    display: flex
+    flex-direction: row
+    gap: 35px
+    padding: 40px
+  .content
+    margin-left: 350px
+
+@media (max-width: 768px)
+  .content
+    margin: 0

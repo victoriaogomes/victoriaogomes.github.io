@@ -29,6 +29,7 @@
                 "input": "public"
               }
             ],
+            "externalDependencies": ["assets/fonts/*"],
             "styles": ["src/material-theme.scss", "src/styles.sass"],
             "stylePreprocessorOptions": {
               "includePaths": ["public/assets"]

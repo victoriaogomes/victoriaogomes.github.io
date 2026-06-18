@@ -1,62 +1,50 @@
 @use 'colors' as *
 
-:host
-  display: block
-
 fa-icon
   font-size: 20px
 
 .sidebar
-  position: fixed
-  left: 0
-  top: 0
-  width: 300px
-  height: 100vh
-  background: $background-light
-  border-right: 1px solid $purple-dark
-  padding: 40px 32px
+  border-radius: 20px
+  max-height: max-content
+  background: $white
+  border: 2px solid rgba($purple, .15)
+  padding: 40px 30px
   display: flex
   flex-direction: column
   align-items: center
   overflow-y: auto
-  justify-content: space-between
+  justify-content: space-evenly
   box-sizing: border-box
 
 
 .profile-section
   text-align: center
   display: flex
-  flex-direction: column
   align-items: center
 
 .avatar
   width: 120px
   height: 120px
   border-radius: 50%
-  background: $purple-dark
-  border: 4px solid $purple-dark
+  background: rgba($purple, .15)
+  border: 4px solid rgba($purple, .15)
   display: flex
   align-items: center
   justify-content: center
   box-shadow: 0 0 20px rgba(140, 94, 255, .2), inset 0 0 20px rgba(140, 94, 255, .15)
+
   fa-icon
     font-size: 50px
 
-
-.profile-icon
-  font-size: 90px
-  width: auto
-  height: auto
-
 .name
-  margin-bottom: 10px
+  margin: 10px 0
 
 .role
   color: $light-purple
   margin: 0
 
 .location
-  margin-top: 5px
+  margin-top: 10px
   display: flex
   justify-content: center
   align-items: center
@@ -64,26 +52,15 @@ fa-icon
   font-size: 0.75rem
 
 
-.bio-card
-  margin-top: 20px
-  border: 1px solid $purple-dark
-  border-radius: 20px
-  padding: 14px
-  line-height: 1.8
-  p
-    margin: 0
-
 .social-links
   display: flex
-  width: 100%
   justify-content: space-between
-
 
 .icon-button
   width: 48px
   height: 48px
   background: $white
-  border: 1px solid $purple-dark
+  border: 1px solid rgba($purple, .15)
   border-radius: 15px
   color: $light-purple
   cursor: pointer
@@ -92,10 +69,94 @@ fa-icon
   justify-content: center
   align-items: center
 
+.info-card
+  padding: 16px
+  display: flex
+  flex-direction: row
+  gap: 8px
+  transition: .3s
+  align-items: center
 
-.icon-button:hover
-  transform: translateY(-4px)
+  fa-icon
+    color: $light-purple
 
-  border-color: #7d5aff
 
-  box-shadow: 0 0 20px rgba(125, 90, 255, .3)
+.value
+  font-size: 15px
+
+.personal-data
+  display: flex
+  flex-direction: column
+
+@media(hover: hover)
+  .info-card:hover
+    border-color: rgba(125, 90, 255, .35)
+    transform: translateY(-3px)
+  .icon-button:hover
+    transform: translateY(-4px)
+    border-color: #7d5aff
+    box-shadow: 0 0 20px rgba(125, 90, 255, .3)
+
+@media(max-width: 999px)
+  .sidebar
+    margin: 15px 15px 0 15px
+    flex-direction: column
+  .profile-section
+    flex-direction: row
+    gap: 10px
+  .divider
+    width: 100%
+    height: 1px
+    margin: 20px 0
+    background: linear-gradient(to right, transparent, rgba($purple, .35), transparent)
+  .social-links
+    display: flex
+    gap: 10px
+    justify-content: center
+    align-content: center
+    flex-wrap: wrap
+  .info-card
+    padding: 8px
+
+@media (max-width: 768px)
+  .sidebar
+    margin: 15px 15px 0 15px
+  .info-card
+    padding: 8px
+
+@media(min-width: 1000px)
+  .avatar
+    margin-right: 15px
+  .sidebar
+    margin: 20px 30px 0 30px
+    align-items: stretch
+  .profile-section
+    flex-direction: row
+    gap: 10px
+  .sidebar
+    flex-direction: row
+  .divider
+    margin: 0 30px
+    background: linear-gradient(to bottom, transparent, rgba($purple, .35), transparent)
+    width: 1px
+  .social-links
+    display: flex
+    gap: 10px
+    justify-content: center
+    align-content: center
+    flex-wrap: wrap
+  .info-grid
+    align-content: center
+
+@media(min-width: 1450px)
+  .sidebar
+    width: 300px
+  .profile-section, .sidebar
+    flex-direction: column
+  .divider
+    width: 100%
+    height: 1px
+    margin: 30px 0
+    background: linear-gradient(to right, transparent, rgba($purple, .35), transparent)
+  .social-links
+    width: 100%

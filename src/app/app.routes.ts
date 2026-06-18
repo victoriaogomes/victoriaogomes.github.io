@@ -1,14 +1,19 @@
 import {Routes} from '@angular/router';
-import {Main} from './main/main';
+import {About} from './about/about';
+import {Education} from './education/education';
 
 export const routes: Routes = [
   {
-    path: '**',
-    redirectTo: '',
-    pathMatch: 'full'
+    path: 'about',
+    component: About
   },
   {
-    path: '',
-    component: Main
-  }
+    path: 'education',
+    component: Education
+  },
+  {
+    path: '**',
+    redirectTo: 'about',
+    pathMatch: 'full'
+  },
 ];

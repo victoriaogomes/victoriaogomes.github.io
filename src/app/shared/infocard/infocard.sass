@@ -1,0 +1,29 @@
+@use 'colors' as *
+
+.card-header
+  display: flex
+  gap: 10px
+  align-items: center
+  margin-bottom: 15px
+
+.info-card
+  padding: 15px
+  border: 2px solid rgba($purple, .15)
+  border-radius: 20px
+  backdrop-filter: blur(10px)
+  margin: 0
+  background-color: white
+
+.divider
+  width: 5%
+  height: 5px
+  margin-top: 8px
+  margin-bottom: 20px
+  background: rgba($purple, .35)
+  border-radius: 20px
+
+@media (max-width: 768px)
+  .info-card
+    margin: 0 15px
+  .card-header h1
+    font-size: 1.5rem

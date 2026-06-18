@@ -1,0 +1,44 @@
+<div class="timeline">
+  @for (item of items; track $index) {
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+
+      <div class="content-wide">
+        <div class="content-header">
+          <h3>{{ item.title }}</h3>
+          @if (item.subtitle) {
+            <h4>{{ item.subtitle }} </h4>
+          }
+        </div>
+
+        <h4 class="description">{{ item.description }}</h4>
+
+        <div class="bottom-info">
+          @if (item.location) {
+            <p class="location"> {{ item.location }}</p>
+          }
+          <p class="year">{{ item.startDate }} - {{ item.endDate ?? ('generalText.presentDate' | translate) }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-narrow">
+      <div class="content-header">
+        <h3>{{ item.title }}</h3>
+
+        <h4 class="description">{{ item.description }}</h4>
+
+        @if (item.subtitle) {
+          <h4>{{ item.subtitle }} </h4>
+        }
+      </div>
+
+      <div class="bottom-info">
+        @if (item.location) {
+          <p class="location"> {{ item.location }}</p>
+        }
+        <p class="year">{{ item.startDate }} - {{ item.endDate ?? ('generalText.presentDate' | translate) }}</p>
+      </div>
+    </div>
+  }
+</div>
