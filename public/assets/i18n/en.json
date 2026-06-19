@@ -19,11 +19,11 @@
       },
       "skills": {
         "title": "Technical Skills",
-        "list": [
-          {
+        "list": {
+          "programmingLanguages": {
             "id": "programmingLanguages",
             "title": "Programming Languages",
-            "list": [
+            "technologies": [
               {
                 "title": "Java",
                 "icon": "assets/images/technical-skills/java.svg",
@@ -74,10 +74,10 @@
               }
             ]
           },
-          {
+          "frontEnd": {
             "id": "frontEndDevelopment",
             "title": "Front-end Development",
-            "list": [
+            "technologies": [
               {
                 "title": "Angular",
                 "icon": "assets/images/technical-skills/angular.svg",
@@ -112,10 +112,32 @@
               }
             ]
           },
-          {
+          "cloudAndInfrastructure": {
+            "id": "cloudAndInfrastructure",
+            "title": "Cloud & Infrastructure",
+            "technologies": [
+              {
+                "title": "Amazon Web Services",
+                "icon": "assets/images/technical-skills/aws.svg"
+              },
+              {
+                "title": "Docker",
+                "icon": "assets/images/technical-skills/docker.svg"
+              },
+              {
+                "title": "Jenkins",
+                "icon": "assets/images/technical-skills/jenkins.svg"
+              },
+              {
+                "title": "Kubernetes",
+                "icon": "assets/images/technical-skills/kubernetes.svg"
+              }
+            ]
+          },
+          "backEnd": {
             "id": "backEndDevelopment",
             "title": "Backend Development",
-            "list": [
+            "technologies": [
               {
                 "title": "Spring Boot",
                 "icon": "assets/images/technical-skills/spring-boot.svg",
@@ -150,32 +172,10 @@
               }
             ]
           },
-          {
-            "id": "cloudAndInfrastructure",
-            "title": "Cloud & Infrastructure",
-            "list": [
-              {
-                "title": "Amazon Web Services",
-                "icon": "assets/images/technical-skills/aws.svg"
-              },
-              {
-                "title": "Docker",
-                "icon": "assets/images/technical-skills/docker.svg"
-              },
-              {
-                "title": "Jenkins",
-                "icon": "assets/images/technical-skills/jenkins.svg"
-              },
-              {
-                "title": "Kubernetes",
-                "icon": "assets/images/technical-skills/kubernetes.svg"
-              }
-            ]
-          },
-          {
+          "dataAndSearch": {
             "id": "dataAndSearch",
             "title": "Data & Search",
-            "list": [
+            "technologies": [
               {
                 "title": "Elastic Search",
                 "icon": "assets/images/technical-skills/elasticSearch.svg"
@@ -189,8 +189,38 @@
                 "icon": "assets/images/technical-skills/mysql.svg"
               }
             ]
+          },
+          "engineeringTools": {
+            "id": "engineeringTools",
+            "title": "Engineering Tools",
+            "technologies": [
+              {
+                "title": "Confluence",
+                "icon": "assets/images/technical-skills/confluence.svg"
+              },
+              {
+                "title": "GitHub",
+                "icon": "assets/images/technical-skills/github.svg"
+              },
+              {
+                "title": "Jira",
+                "icon": "assets/images/technical-skills/jira.svg"
+              },
+              {
+                "title": "Postman",
+                "icon": "assets/images/technical-skills/postman.svg"
+              },
+              {
+                "title": "SonarQube",
+                "icon": "assets/images/technical-skills/sonarqube.svg"
+              },
+              {
+                "title": "Swagger/ OpenAPI",
+                "icon": "assets/images/technical-skills/swagger.svg"
+              }
+            ]
           }
-        ],
+        },
         "engineeringTools": {
           "id": "engineeringTools",
           "title": "Engineering Tools",

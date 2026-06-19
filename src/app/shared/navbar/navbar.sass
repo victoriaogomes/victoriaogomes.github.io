@@ -1,22 +1,23 @@
+@use 'colors' as *
+
 .navbar
+  width: 100%
   display: flex
   align-items: center
   justify-content: end
   height: 70px
-  padding: 0 30px
-  border: 2px solid rgba(125, 90, 255, .15)
-  border-radius: 20px
   backdrop-filter: blur(10px)
   background-color: white
   box-shadow: 0 0 20px rgba(125, 90, 255, .08)
-  position: sticky
-  top: 20px
+  position: fixed
   z-index: 100
+  border-bottom: 2px solid rgba($light-gray, 0.5)
 
 .nav-links
   display: flex
   align-items: center
   gap: 35px
+  margin-right: 40px
 
 .nav-links a
   color: black
@@ -34,23 +35,7 @@
   background: #a98eff
   transition: .3s
 
-
-.resume-btn
-  height: 42px
-  padding: 0 20px
-  border-radius: 12px
-  border: none
-  cursor: pointer
-  background: linear-gradient(135deg, #7d5aff, #9f7fff)
-  color: white
-  font-weight: 600
-  transition: .3s
-
 @media(hover: hover)
-  .resume-btn:hover
-    transform: translateY(-2px)
-    box-shadow: 0 0 20px rgba(125, 90, 255, .35)
-
   .nav-links a:hover
     color: #a98eff
 
@@ -59,7 +44,6 @@
 
 @media (max-width: 768px)
   .navbar
-    margin: 0 15px
     justify-content: center
     height: 50px
     padding: 0
