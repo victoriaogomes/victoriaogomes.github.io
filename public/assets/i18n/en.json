@@ -293,6 +293,161 @@
           ]
         }
       }
+    },
+    "educationAndResearch": {
+      "education": {
+        "title": "Education"
+      },
+      "research": {
+        "title": "Research",
+        "publications": {
+          "2021": [
+            {
+              "title": "Cellgine: Um motor de jogo para simulações de células biológicas (Cellgine: An Engine for Simulation of Biological Cells)",
+              "authors": "Matias, B. C., Sarinho, V. T., & Gomes, V. O.",
+              "venue": "Proceedings of the 20th Brazilian Symposium on Games and Digital Entertainment",
+              "proceedingsPage": "961-964",
+              "doi": "https://doi.org/10.5753/sbgames_estendido.2021.19736"
+            },
+            {
+              "title": "QuizTEA: Um quiz gráfico para crianças portadoras do transtorno do espectro autista (QuizTEA: A Graphic Quiz for Children with Autism Spectrum Disorder)",
+              "authors": "Gomes, V. O. & Sarinho, V. T.",
+              "venue": "Proceedings of Scientific Research Seminars of the State University of Feira de Santana",
+              "doi": "https://doi.org/10.13102/semic.v0i23.6381"
+            }
+          ],
+          "2020": [
+            {
+              "title": "Projeto HistoQuiz: Desenvolvendo um jogo voltado para o ensino de histologia (Project HistoQuiz: Developing a Game Focused on Teaching Histology)",
+              "authors": "Bastos, M., Andrade, M., Gomes, V. O., & Sarinho, V. T.",
+              "venue": "Proceedings of the 20th Brazilian Symposium on Computing Applied to Health",
+              "proceedingsPage": "446-451",
+              "doi": "https://doi.org/10.5753/sbcas.2020.11538"
+            },
+            {
+              "title": "TEAPET: Desenvolvendo pets digitais voltados para indivíduos portadores do transtorno do espectro autista (TEAPET: Developing Digital Pets for Individuals with Autism Spectrum Disorder)",
+              "authors": "Gomes, V. O., & Sarinho, V. T.",
+              "venue": "Proceedings of the 20th Brazilian Symposium on Computing Applied to Health",
+              "proceedingsPage": "482-487",
+              "doi": ""
+            },
+            {
+              "title": "Projeto AvaTEA: Desenvolvendo um jogo para a conscientização do transtorno do espectro autista (Project AvaTEA: Developing a Game for Autism Spectrum Disorder Awareness)",
+              "authors": "Gomes, V. O., & Sarinho, V. T.",
+              "venue": "Proceedings of the 20th Brazilian Symposium on Computing Applied to Health",
+              "proceedingsPage": "476-481",
+              "doi": "https://doi.org/10.5753/sbcas.2020.11543"
+            }
+          ],
+          "2019": [
+            {
+              "title": "“Ultimate Food Defense”: A serious game for healthy eating behavior awareness",
+              "authors": "Matias, B. C., Gomes, V. O., & Sarinho, V. T.",
+              "venue": "E. van der Spek, S. Göbel, E. L. Do, E. Clua, & J. Baalsrud Hauge (Eds.), Entertainment computing and serious games: ICEC-JCSG 2019",
+              "proceedingsPage": "533-540",
+              "volume": "11863",
+              "doi": "https://doi.org/10.1007/978-3-030-34644-7_39"
+            },
+            {
+              "title": "UGC generator: An open access web tool to model unified game canvas",
+              "authors": "Matias, B. C., Gomes, V. O., & Sarinho, V. T.",
+              "venue": "E. van der Spek, S. Göbel, E. L. Do, E. Clua, & J. Baalsrud Hauge (Eds.), Entertainment computing and serious games: ICEC-JCSG 2019",
+              "proceedingsPage": "407-411",
+              "doi": "https://doi.org/10.1007/978-3-030-34644-7_39"
+            },
+            {
+              "title": "Ultimate Food Defense: Um jogo sério para conscientização da alimentação saudável no comportamento alimentar (Ultimate Food Defense: A Serious Game for Raising Awareness about Healthy Eating Behavior)",
+              "authors": "Matias, B. C., Gomes, V. O., & Sarinho, V. T.",
+              "venue": "Proceedings of the 18th Brazilian Symposium on Games and Digital Entertainment",
+              "proceedingsPage": "366-369",
+              "doi": "https://www.sbgames.org/sbgames2019/files/papers/ArtesDesignShort/198027.pdf"
+            },
+            {
+              "title": "Desenvolvendo um storytelling mobile para a conscientização do transtorno do espectro do autismo (Developing a Mobile Storytelling App for Autism Spectrum Disorder Awareness)",
+              "authors": "Aguiar, E. C., Gomes, V. O., Sarinho, V. T., & da Silva, I. G. C. C.",
+              "venue": "Proceedings of the 18th Brazilian Symposium on Games and Digital Entertainment",
+              "proceedingsPage": "327-330",
+              "doi": "https://www.sbgames.org/sbgames2019/files/papers/ArtesDesignShort/198031.pdf"
+            },
+            {
+              "title": "QuizGenerator: A mobile configurable platform to generate quiz and storytelling games",
+              "authors": "Gomes, V. O., & Sarinho, V. T.",
+              "venue": "Proceedings of the 18th Brazilian Symposium on Games and Digital Entertainment",
+              "proceedingsPage": "607-610",
+              "doi": "https://www.sbgames.org/sbgames2019/files/papers/ComputacaoShort/197227.pdf"
+            },
+            {
+              "title": "Erquiz: A multiplayer multiplatform instant messaging game for the competitive assessment of requirements engineering knowledge",
+              "authors": "Sarinho, V. T., Gomes, V. O., & Sarinho, W. T.",
+              "venue": "Proceedings of the 18th Brazilian Symposium on Games and Digital Entertainment",
+              "proceedingsPage": "591-594",
+              "doi": "https://www.sbgames.org/sbgames2019/files/papers/ComputacaoShort/198743.pdf"
+            },
+            {
+              "title": "ZikAcerte: Um jogo de mensagens instantâneas para conscientização sobre o Aedes aegypti e suas doenças (ZikAcerte: An Instant Messaging Game for Raising Awareness about Aedes aegypti and Its Diseases)",
+              "authors": "Gomes, V. O., & Sarinho, V. T.",
+              "venue": "Proceedings of the 18th Brazilian Symposium on Games and Digital Entertainment",
+              "proceedingsPage": "1412-1413",
+              "doi": "https://www.sbgames.org/sbgames2019/files/papers/WorkshopJogosSaude/196757.pdf"
+            },
+            {
+              "title": "Tales of health - TEA: Uma proposta de storytelling digital para conscientização do transtorno do espectro do autismo (Tales of Health-TEA: A Proposal for a Digital Storytelling for Autism Spectrum Disorder Awareness)",
+              "authors": "Aguiar, E. C., Gomes, V. O., & Sarinho, V. T.",
+              "venue": "Proceedings of the 19th Brazilian Symposium on Computing Applied to Health",
+              "proceedingsPage": "264-269",
+              "doi": "https://doi.org/10.5753/sbcas.2019.6260"
+            },
+            {
+              "title": "Projeto QuizTEA - Desenvolvendo quiz digitais para indivíduos portadores do transtorno do espectro autista (QuizTEA Project - Developing Digital Quizzes for Individuals with Autism Spectrum Disorder)",
+              "authors": "Gomes, V. O., Aguiar, E. C., & Sarinho, V. T.",
+              "venue": "Proceedings of the 19th Brazilian Symposium on Computing Applied to Health",
+              "proceedingsPage": "276-281",
+              "doi": "https://doi.org/10.5753/sbcas.2019.6262"
+            },
+            {
+              "title": "ZikAcerte: Um jogo de mensagens instantâneas para conscientização em doenças causadas pelo mosquito Aedes aegypti (ZikAcerte: An Instant Messaging Game for Raising Awareness about Diseases Caused by the Aedes aegypti Mosquito)",
+              "authors": "Gomes, V. O. & Sarinho, V. T.",
+              "venue": "Proceedings of the 19th Regional School on Computing of Bahia, Alagoas, and Sergipe",
+              "proceedingsPage": "30-35",
+              "doi": "https://sol.sbc.org.br/index.php/erbase/article/view/8950"
+            },
+            {
+              "title": "Desenvolvendo um questionário para validação de programas voltados para pessoas portadoras do TEA (Developing a Questionnaire for Validating Programs for Individuals with Autism Spectrum Disorder)",
+              "authors": "Gomes, V. O. & Sarinho, V. T.",
+              "venue": "Proceedings of Scientific Research Seminars of the State University of Feira de Santana",
+              "doi": "https://doi.org/10.13102/semic.v0i22.4048"
+            }
+          ],
+          "2018": [
+            {
+              "title": "QuizTEA: Uma proposta de desenvolvimento de quiz digitais para indivíduos portadores do transtorno do espectro autista (QuizTEA: A Proposal for Developing Digital Quizzes for Individuals with Autism Spectrum Disorder)",
+              "authors": "Aguiar, E. C., Gomes, V. O. & Sarinho, V. T.",
+              "venue": "Proceedings of the 17th Brazilian Symposium on Games and Digital Entertainment",
+              "proceedingsPage": "276-281",
+              "doi": "https://sol.sbc.org.br/index.php/erbase/article/view/8947"
+            },
+            {
+              "title": "Projeto tales of health: Uma proposta de jogo digital para conscientização do transtorno do espectro do autismo (Project Tales of Health: A Digital Game Proposal for Autism Spectrum Disorder Awareness)",
+              "authors": "Aguiar, E. C., Gomes, V. O., & Sarinho, V. T.",
+              "venue": "Proceedings of the 18th Brazilian Symposium on Games and Digital Entertainment",
+              "doi": "https://www.sbgames.org/sbgames2018/files/papers/WorkshopJogosSaude/188178.pdf"
+            },
+            {
+              "title": "Um processo simplificado de game design para a computação criativa (A Simplified Game Design Process for Creative Computing)",
+              "authors": "Aguiar, E. C., Gomes, V. O., Sampaio, D. G., & Sarinho, V. T.",
+              "venue": "Proceedings of the 18th Brazilian Symposium on Games and Digital Entertainment",
+              "doi": "https://www.sbgames.org/sbgames2018/files/papers/ArtesDesignShort/188113.pdf"
+            },
+            {
+              "title": "Avaliando jogos digitais educativos para indivíduos portadores do transtorno do espectro autista (Evaluating Educational Digital Games for Individuals with Autism Spectrum Disorder)",
+              "authors": "Aguiar, E., Pedreira, L. O., Gomes, V. O., & Sarinho, V. T.",
+              "venue": "Proceedings of the 29th Brazilian Symposium on Computers in Education",
+              "proceedingsPage": "1830-1834",
+              "doi": "https://doi.org/10.5753/cbie.sbie.2018.1830"
+            }
+          ]
+        }
+      }
     }
   },
   "generalButtons": {
