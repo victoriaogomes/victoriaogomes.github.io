@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {TranslatePipe, TranslateService} from '@ngx-translate/core';
-import {Infocard} from '../shared/infocard/infocard';
-import {TimelineItem} from '../shared/timeline/timeline-item';
-import {Timeline} from '../shared/timeline/timeline';
+import {Infocard} from '../shared/components/infocard/infocard';
+import {TimelineItem} from '../shared/components/timeline/timeline-item';
+import {Timeline} from '../shared/components/timeline/timeline';
 import {
   faGraduationCap,
   faUpRightAndDownLeftFromCenter,

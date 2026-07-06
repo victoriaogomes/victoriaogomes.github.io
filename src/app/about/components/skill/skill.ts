@@ -3,7 +3,7 @@ import {FaIconComponent, IconDefinition} from "@fortawesome/angular-fontawesome"
 import {TranslatePipe, TranslateService} from "@ngx-translate/core";
 import {faWrench} from '@fortawesome/free-solid-svg-icons';
 import {SkillItem} from './skill-item';
-import {ToolChip} from '../../../shared/tool-chip/tool-chip';
+import {ToolChip} from '../../../shared/components/tool-chip/tool-chip';
 
 @Component({
   selector: 'app-skill',

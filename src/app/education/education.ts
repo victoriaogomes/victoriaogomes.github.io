@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {TimelineItem} from '../shared/timeline/timeline-item';
+import {TimelineItem} from '../shared/components/timeline/timeline-item';
 import {faGraduationCap} from '@fortawesome/free-solid-svg-icons';
 import {faSistrix} from '@fortawesome/free-brands-svg-icons';
-import {Infocard} from '../shared/infocard/infocard';
-import {Timeline} from '../shared/timeline/timeline';
+import {Infocard} from '../shared/components/infocard/infocard';
+import {Timeline} from '../shared/components/timeline/timeline';
 import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 import {FaIconComponent} from '@fortawesome/angular-fontawesome';
 

@@ -1,31 +1,40 @@
-@use 'colors' as *
+@use '../../../../../public/assets/colors' as *
 
-.navbar
-  top: 0
+header
   width: 100%
-  display: flex
-  align-items: center
-  justify-content: end
-  height: 70px
-  backdrop-filter: blur(10px)
-  background-color: white
+  backdrop-filter: blur(8px)
   box-shadow: 0 0 20px rgba(125, 90, 255, .08)
+  border-bottom: 2px solid rgba($light-blue, 0.5)
+  background-color: color-mix(in oklab, $white 95%, transparent)
   position: fixed
   z-index: 100
-  border-bottom: 2px solid rgba($light-gray, 0.5)
+
+.navbar
+  height: 60px
+  top: 0
+  max-width: 1024px
+  display: flex
+  align-items: center
+  padding-inline: 24px
+  margin-inline: auto
+  justify-content: space-between
 
 .nav-links
   display: flex
   align-items: center
   gap: 35px
-  margin-right: 40px
 
 .nav-links a
-  color: black
+  font-family: Inter, sans-serif
+  color: $link-gray
   text-decoration: none
-  font-size: 15px
+  font-size: 14px
   transition: .3s
+  font-weight: 500
 
+p
+  font-weight: 700
+  line-height: 1.5
 
 .nav-links a::after
   content: ""
