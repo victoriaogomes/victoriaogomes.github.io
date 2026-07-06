@@ -1,0 +1,67 @@
+@use 'colors' as *
+
+.about
+  background-color: $white-blue
+  padding-block: 96px
+  padding-inline: 24px
+
+.content
+  max-width: 1024px
+  margin-inline: auto
+
+.side-info
+  display: grid
+  grid-template-columns: 2fr 1fr
+  gap: 48px
+
+
+.description
+  display: flex
+  flex-direction: column
+  gap: 2rem
+
+  p
+    font-family: Inter, sans-serif
+    font-size: 16px
+    line-height: 1.8
+    color: $txt-gray
+    text-align: justify
+
+
+.info
+  display: flex
+  flex-direction: column
+
+.info-card
+  padding-bottom: 16px
+  border-bottom: 1px solid $medium-blue
+  margin-block-end: 16px
+
+  div
+    font-size: 14px
+    font-family: Inter, sans-serif
+    line-height: 1.4
+    font-weight: 500
+    color: $dark-grey
+
+
+.label
+  font-size: 12px
+  line-height: 1.3
+  letter-spacing: .1em
+  margin-bottom: 4px
+  text-transform: uppercase
+  color: $txt-gray
+
+@media (max-width: 900px)
+  .about
+    padding: 5rem 1.5rem
+
+  .side-info
+    grid-template-columns: 1fr
+    gap: 3rem
+
+  .description p
+    font-size: 1.15rem
+
+

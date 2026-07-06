@@ -1,0 +1,36 @@
+<section class="about" id="about">
+  <div class="content">
+    <app-section-header
+      number="{{('aboutMe.sectionId' | translate)}}"
+      title="{{('aboutMe.title' | translate)}}">
+    </app-section-header>
+
+    <div class="side-info">
+      <div class="description">
+        <p [innerHTML]="('aboutMe.description' | translate) | safeHtml"></p>
+      </div>
+
+      <aside class="info">
+        <div class="info-card">
+          <span class="label">{{ ('aboutMe.currentPosition.title' | translate) }}</span>
+          <div>{{ ('aboutMe.currentPosition.value' | translate) }}</div>
+        </div>
+
+        <div class="info-card">
+          <span class="label">{{ ('aboutMe.institution.title' | translate) }}</span>
+          <div>{{ ('aboutMe.institution.value' | translate) }}</div>
+        </div>
+
+        <div class="info-card">
+          <span class="label">{{ ('aboutMe.experience.title' | translate) }}</span>
+          <div>{{ ('aboutMe.experience.value' | translate) }}</div>
+        </div>
+
+        <div class="info-card">
+          <span class="label">{{ ('aboutMe.researchFocus.title' | translate) }}</span>
+          <div>{{ ('aboutMe.researchFocus.value' | translate) }}</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
