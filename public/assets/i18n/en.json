@@ -2,10 +2,10 @@
   "navbar": {
     "about": "About",
     "background": "Background",
+    "technical-skills": "Technical Skills",
     "research": "Research",
     "publications": "Publications",
     "projects": "Projects",
-    "skills": "Skills",
     "contact": "Contact"
   },
   "intro": {
@@ -135,6 +135,212 @@
           ]
         }
       ]
+    }
+  },
+  "technical-skills": {
+    "sectionId": "03",
+    "title": "Technical Skills",
+    "list": {
+      "programmingLanguages": {
+        "id": "programmingLanguages",
+        "title": "Programming Languages",
+        "technologies": [
+          {
+            "title": "Java",
+            "icon": "assets/images/technical-skills/java.svg",
+            "experience": {
+              "level": "Advanced",
+              "duration": "5+ years"
+            }
+          },
+          {
+            "title": "Python",
+            "icon": "assets/images/technical-skills/python.svg",
+            "experience": {
+              "level": "Advanced",
+              "duration": "5+ years"
+            }
+          },
+          {
+            "title": "JavaScript",
+            "icon": "assets/images/technical-skills/javascript.svg",
+            "experience": {
+              "level": "Advanced",
+              "duration": "4 years"
+            }
+          },
+          {
+            "title": "TypeScript",
+            "icon": "assets/images/technical-skills/typescript.svg",
+            "experience": {
+              "level": "Advanced",
+              "duration": "4 years"
+            }
+          },
+          {
+            "title": "Dart",
+            "icon": "assets/images/technical-skills/dart.svg",
+            "experience": {
+              "level": "Intermediate",
+              "duration": "2 years"
+            }
+          },
+          {
+            "title": "Kotlin",
+            "icon": "assets/images/technical-skills/kotlin.svg",
+            "experience": {
+              "level": "Beginner",
+              "duration": "1 year"
+            }
+          }
+        ]
+      },
+      "frontEnd": {
+        "id": "frontEndDevelopment",
+        "title": "Front-end Development",
+        "technologies": [
+          {
+            "title": "Angular",
+            "icon": "assets/images/technical-skills/angular.svg",
+            "experience": {
+              "level": "Intermediate",
+              "duration": "4 years"
+            }
+          },
+          {
+            "title": "CSS3",
+            "icon": "assets/images/technical-skills/css3.svg",
+            "experience": {
+              "level": "Intermediate",
+              "duration": "5+ years"
+            }
+          },
+          {
+            "title": "HTML5",
+            "icon": "assets/images/technical-skills/html5.svg",
+            "experience": {
+              "level": "Intermediate",
+              "duration": "5+ years"
+            }
+          },
+          {
+            "title": "Flutter",
+            "icon": "assets/images/technical-skills/flutter.svg",
+            "experience": {
+              "level": "Intermediate",
+              "duration": "3 years"
+            }
+          }
+        ]
+      },
+      "cloudAndInfrastructure": {
+        "id": "cloudAndInfrastructure",
+        "title": "Cloud & Infrastructure",
+        "technologies": [
+          {
+            "title": "Amazon Web Services",
+            "icon": "assets/images/technical-skills/aws.svg"
+          },
+          {
+            "title": "Docker",
+            "icon": "assets/images/technical-skills/docker.svg"
+          },
+          {
+            "title": "Jenkins",
+            "icon": "assets/images/technical-skills/jenkins.svg"
+          },
+          {
+            "title": "Kubernetes",
+            "icon": "assets/images/technical-skills/kubernetes.svg"
+          }
+        ]
+      },
+      "backEnd": {
+        "id": "backEndDevelopment",
+        "title": "Backend Development",
+        "technologies": [
+          {
+            "title": "Spring Boot",
+            "icon": "assets/images/technical-skills/spring-boot.svg",
+            "experience": {
+              "level": "Advanced",
+              "duration": "4 years"
+            }
+          },
+          {
+            "title": "NodeJS",
+            "icon": "assets/images/technical-skills/nodejs.svg",
+            "experience": {
+              "level": "Intermediate",
+              "duration": "5+ years"
+            }
+          },
+          {
+            "title": "NestJS",
+            "icon": "assets/images/technical-skills/nestjs.svg",
+            "experience": {
+              "level": "Beginner",
+              "duration": "1 year"
+            }
+          },
+          {
+            "title": "Quarkus",
+            "icon": "assets/images/technical-skills/quarkus.svg",
+            "experience": {
+              "level": "Beginner",
+              "duration": "1 year"
+            }
+          }
+        ]
+      },
+      "dataAndSearch": {
+        "id": "dataAndSearch",
+        "title": "Data & Search",
+        "technologies": [
+          {
+            "title": "Elastic Search",
+            "icon": "assets/images/technical-skills/elasticSearch.svg"
+          },
+          {
+            "title": "MongoDB",
+            "icon": "assets/images/technical-skills/mongodb.svg"
+          },
+          {
+            "title": "MySQL",
+            "icon": "assets/images/technical-skills/mysql.svg"
+          }
+        ]
+      },
+      "engineeringTools": {
+        "id": "engineeringTools",
+        "title": "Engineering Tools",
+        "technologies": [
+          {
+            "title": "Confluence",
+            "icon": "assets/images/technical-skills/confluence.svg"
+          },
+          {
+            "title": "GitHub",
+            "icon": "assets/images/technical-skills/github.svg"
+          },
+          {
+            "title": "Jira",
+            "icon": "assets/images/technical-skills/jira.svg"
+          },
+          {
+            "title": "Postman",
+            "icon": "assets/images/technical-skills/postman.svg"
+          },
+          {
+            "title": "SonarQube",
+            "icon": "assets/images/technical-skills/sonarqube.svg"
+          },
+          {
+            "title": "Swagger/ OpenAPI",
+            "icon": "assets/images/technical-skills/swagger.svg"
+          }
+        ]
+      }
     }
   }
 }

@@ -1,0 +1,33 @@
+<section class="technical-skills" id="technical-skills">
+  <div class="content">
+    <app-section-header
+      number="{{('technical-skills.sectionId' | translate)}}"
+      title="{{('technical-skills.title' | translate)}}">
+    </app-section-header>
+    <div class="skills">
+      <app-skill [skill]="skills['programmingLanguages']" [icon]="icons[skills['programmingLanguages'].id]"></app-skill>
+      <div class="wide-screen">
+        <div>
+          <app-skill [skill]="skills['frontEnd']" [icon]="icons[skills['frontEnd'].id]"></app-skill>
+          <app-skill [skill]="skills['cloudAndInfrastructure']"
+                     [icon]="icons[skills['cloudAndInfrastructure'].id]"></app-skill>
+        </div>
+        <div>
+          <app-skill [skill]="skills['backEnd']" [icon]="icons[skills['backEnd'].id]"></app-skill>
+          <app-skill [skill]="skills['dataAndSearch']" [icon]="icons[skills['dataAndSearch'].id]"></app-skill>
+        </div>
+      </div>
+      <div class="narrow-screen">
+        <div>
+          <app-skill [skill]="skills['frontEnd']" [icon]="icons[skills['frontEnd'].id]"></app-skill>
+          <app-skill [skill]="skills['backEnd']" [icon]="icons[skills['backEnd'].id]"></app-skill>
+          <app-skill [skill]="skills['cloudAndInfrastructure']"
+                     [icon]="icons[skills['cloudAndInfrastructure'].id]"></app-skill>
+          <app-skill [skill]="skills['dataAndSearch']" [icon]="icons[skills['dataAndSearch'].id]"></app-skill>
+        </div>
+      </div>
+    </div>
+    <app-skill [card]="false" [skill]="skills['engineeringTools']"
+               [icon]="icons[skills['engineeringTools'].id]"></app-skill>
+  </div>
+</section>

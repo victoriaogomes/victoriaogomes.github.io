@@ -4,7 +4,7 @@
     [icon]="icon"
     [style.font-size.rem]="0.75"
   ></fa-icon>
-  <h3 class="skills-subsection-title">{{ skill.title | translate }}</h3>
+  <h3 class="skills-subsection-title">{{ skill.title }}</h3>
 </div>
 <div class="skill-subsection-grid">
   @for (technology of skill.technologies; track $index) {
@@ -24,7 +24,7 @@
         }
       </div>
     } @else {
-      <app-tool-chip [title]="technology.title" [icon]="technology.icon"></app-tool-chip>
+      <app-tool-chip fontSize="12" backgroundColor="#ffffff" [title]="technology.title" [icon]="technology.icon"></app-tool-chip>
     }
   }
 </div>

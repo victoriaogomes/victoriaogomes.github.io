@@ -1,4 +1,5 @@
 @use 'colors' as *
+
 .skill-subsection-grid
   padding-top: 20px
   display: flex
@@ -18,8 +19,9 @@
   color: $medium-gray
 
 .skills-subsection-title
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
   text-transform: uppercase
-  font-size: .875rem
+  font-size: .75rem
   letter-spacing: .1em
   font-weight: 550
 
@@ -44,8 +46,10 @@
     object-fit: contain
 
   .label
-    font-size: 0.95rem
-    color: #4f6480
+    font-weight: 500
+    font-size: 0.75rem
+    color: $txt-gray
+    font-family: Inter, sans-serif
     text-align: center
 
 .skill-card-experience
@@ -82,8 +86,8 @@
 @media(hover: hover)
   .skills-subsection-card
     &:hover
-      border-color: #d9b3ff
-      box-shadow: 0 0 0 1px rgba(217, 179, 255, 0.25), 0 8px 20px rgba(217, 179, 255, 0.2)
+      border-color: $medium-blue
+      box-shadow: 0 0 0 1px rgba($darker-blue, 0.25), 0 8px 20px rgba($darker-blue, 0.2)
       transform: translateY(-2px)
 
 @media (max-width: 768px)
