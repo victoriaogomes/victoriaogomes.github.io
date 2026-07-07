@@ -1,9 +1,11 @@
-<div class="tool-chip">
-  <img
-    [src]="icon"
-    [alt]="title"
-    class="tool-chip-logo"
-  >
+<div [style.background]="backgroundColor" class="tool-chip">
+  @if (icon) {
+    <img
+      [src]="icon"
+      [alt]="title"
+      class="tool-chip-logo"
+    >
+  }
 
-  <span>{{ title }}</span>
+  <span [style.font-size.px]="fontSize" [style.color]="textColor">{{ title }}</span>
 </div>

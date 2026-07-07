@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tool-chip',
@@ -7,6 +7,9 @@ import {Component, Input} from '@angular/core';
   styleUrl: './tool-chip.sass',
 })
 export class ToolChip {
-  @Input() title!: string;
+  @Input({required: true}) title!: string;
+  @Input() textColor!: string;
+  @Input() backgroundColor!: string;
   @Input() icon!: string;
+  @Input() fontSize!: string;
 }

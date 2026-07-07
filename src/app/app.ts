@@ -1,13 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import {Sidebar} from './shared/components/sidebar/sidebar';
 import {Navbar} from './shared/components/navbar/navbar';
 import { AboutMe } from './about-me/about-me';
 import { Intro } from './intro/intro';
+import { Background } from './background/background';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Sidebar, Navbar, AboutMe, Intro],
+  imports: [Navbar, AboutMe, Intro, Background],
   templateUrl: './app.html',
   styleUrl: './app.sass'
 })

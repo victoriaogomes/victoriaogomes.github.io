@@ -11,9 +11,9 @@ import {IconDefinition} from '@fortawesome/angular-fontawesome';
   ]
 })
 export class Infocard {
-  @Input() title!: string;
+  @Input({required: true}) title!: string;
   @Input() subtitle: string | undefined;
   @Input() displayDivider: boolean = true;
 
-  @Input({required: true}) icon!: IconDefinition;
+  @Input() icon!: IconDefinition;
 }

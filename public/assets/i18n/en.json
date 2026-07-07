@@ -1,6 +1,7 @@
 {
   "navbar": {
     "about": "About",
+    "background": "Background",
     "research": "Research",
     "publications": "Publications",
     "projects": "Projects",
@@ -38,9 +39,102 @@
       "title": "Experience",
       "value": "4 years of industry experience"
     },
+    "previousPosition": {
+      "title": "Previous",
+      "value": "Tech Lead @ Banco PAN"
+    },
     "researchFocus": {
       "title": "Research focus",
       "value": "AI · Empirical Software Engineering"
+    }
+  },
+  "background": {
+    "sectionId": "02",
+    "title": "Background",
+    "education": {
+      "title": "Education",
+      "list": [
+        {
+          "title": "PhD in Computer Science",
+          "gpa": "GPA: 4/4",
+          "university": "Virginia Commonwealth University",
+          "startDate": "Aug. 2025",
+          "endDate": "Present",
+          "location": "Richmond, VA, USA"
+        },
+        {
+          "title": "B.S. in Computer Engineering",
+          "gpa": "GPA: 8.9/10",
+          "university": "State University of Feira de Santana",
+          "startDate": "Jul. 2016",
+          "endDate": "Sept. 2022",
+          "location": "Feira de Santana, BA, BR"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Professional experience",
+      "list": [
+        {
+          "company": "Banco PAN",
+          "location": "São Paulo, SP, BR",
+          "roles": [
+            {
+              "title": "Technical Leader",
+              "startDate": "Jan. 2025",
+              "endDate": "Jul. 2025",
+              "responsibilities": [
+                "Led the OpenFinance squad, driving the design and delivery of solutions compliant with regulatory standards, collaborating closely with other teams to ensure scalable and efficient software delivery through CI/CD",
+                "Performed technical analyses to identify opportunities for continuous improvement in systems and processes",
+                "Developed and maintained solutions using Java, Spring Boot, Quarkus, AWS, MongoDB, and Angular, while also providing hands-on support to the development team, fostering best practices"
+              ]
+            },
+            {
+              "title": "Full-stack Mid-level Software Engineer",
+              "startDate": "Aug. 2023",
+              "endDate": "Dec. 2024",
+              "responsibilities": [
+                "Developed cloud-native apps (APIs, event-driven services, libraries and front-end solutions) within a 30+ component architecture, improving client service quality, using Java, Dart, Flutter, Spring Boot and AWS",
+                "Created a branch management system that enforced Git flow, identifying 200+ obsolete branches and 50+ branches without backups, connected with Azure DevOps",
+                "Implemented an event-driven search engine to retrieve customer data from other financial institutions, processing over 1 million messages per execution"
+              ]
+            },
+            {
+              "title": "Full-stack Junior Software Engineer",
+              "startDate": "Feb. 2022",
+              "endDate": "Jul. 2023",
+              "responsibilities": [
+                "Automated report generation using Python and Quart, reducing assembly time from 1 week to 30 seconds",
+                "Migrated a front-end web app from AWS Beanstalk to an AWS S3 static approach, reducing maintenance costs by over 90%"
+              ]
+            },
+            {
+              "title": "Software Engineer Intern",
+              "startDate": "Aug. 2021",
+              "endDate": "Jan. 2022",
+              "responsibilities": [
+                "Selected as 1 of 29 students out of 5,000 candidates to enhance software development and soft skills",
+                "Developed front-end web features using Angular, delivering new functionalities to bank customers",
+                "Implemented a web app that highlights key aspects for code review in Java, Python and JavaScript, increasing early bug detection by 20%"
+              ]
+            }
+          ]
+        },
+        {
+          "company": "Z-reader",
+          "location": "Feira de Santana, BA, BR",
+          "roles": [
+            {
+              "title": "Technical Leader and Full-stack Developer",
+              "startDate": "Dec. 2019",
+              "endDate": "Mar. 2023",
+              "responsibilities": [
+                "Led the development team and managed the feature implementation, as well as designed and executed the migration of a mobile app from Java to Flutter, creating a more intuitive and efficient user experience"
+              ]
+            }
+          ]
+        }
+      ]
     }
   }
 }

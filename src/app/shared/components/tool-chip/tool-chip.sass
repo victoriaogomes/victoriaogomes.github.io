@@ -2,14 +2,16 @@
   display: inline-flex
   align-items: center
   gap: 0.5rem
-  padding: 0.625rem 1rem
+  padding-block: calc(0.25rem * 0.5)
+  padding-inline: calc(0.625rem - 2px)
   border: 1px solid var(--border-color)
-  border-radius: 999px
+  border-radius: calc(0.625rem - 2px)
   background: var(--surface-color)
   transition: all 0.2s ease
   span
+    font-family: Inter, sans-serif
     font-size: 0.95rem
-    font-weight: 500
+    font-weight: 600
     white-space: nowrap
 
 .tool-chip-logo
