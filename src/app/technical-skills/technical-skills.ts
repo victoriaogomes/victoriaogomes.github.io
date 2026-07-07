@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Infocard } from "../shared/components/infocard/infocard";
 import { Skill } from "./components/skill/skill";
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
 import { faCode, faDatabase, faMicrochip, faServer, faTerminal, faWrench } from '@fortawesome/free-solid-svg-icons';
@@ -11,7 +10,6 @@ import { SectionHeader } from '../shared/components/section-header/section-heade
 @Component({
   selector: 'app-technical-skills',
   imports: [
-    Infocard,
     Skill,
     TranslatePipe,
     SectionHeader
