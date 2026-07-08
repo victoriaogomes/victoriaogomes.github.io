@@ -1,9 +1,16 @@
-<div class="info-card">
+<div class="info-card" [class.hover-animation]="hoverAnimation">
   <div class="card-header">
-    @if (icon) {
-      <app-icon-badge [icon]="icon"></app-icon-badge>
+    <div class="title">
+      @if (icon) {
+        <app-icon-badge [icon]="icon"></app-icon-badge>
+      }
+      <p>{{ title }}</p>
+    </div>
+    @if (externalLink) {
+      <a [href]="externalLink">
+        <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+      </a>
     }
-    <p>{{ title }}</p>
   </div>
 
   @if (subtitle) {

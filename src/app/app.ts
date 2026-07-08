@@ -4,10 +4,11 @@ import { AboutMe } from './about-me/about-me';
 import { Intro } from './intro/intro';
 import { Background } from './background/background';
 import { TechnicalSkills } from './technical-skills/technical-skills';
+import { Projects } from './projects/projects';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, AboutMe, Intro, Background, TechnicalSkills],
+  imports: [Navbar, AboutMe, Intro, Background, TechnicalSkills, Projects],
   templateUrl: './app.html',
   styleUrl: './app.sass'
 })

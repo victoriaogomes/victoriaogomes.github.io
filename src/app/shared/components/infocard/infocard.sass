@@ -1,10 +1,17 @@
 @use 'colors' as *
 
-.card-header
+fa-icon
+  font-size: .875rem
+  color: $light-gray
+
+.card-header, .title
   display: flex
   gap: 10px
-  align-items: center
+
+.card-header
   margin-bottom: 10px
+  justify-content: space-between
+  align-items: center
 
 .info-card
   padding: 15px
@@ -18,6 +25,16 @@
   font-size: 0.875rem
   line-height: 1.3
   font-weight: 600
+
+@media(hover: hover)
+  .info-card.hover-animation
+    &:hover
+      border-color: $medium-blue
+      box-shadow: 0 0 0 1px rgba($darker-blue, 0.25), 0 8px 20px rgba($darker-blue, 0.2)
+      transform: translateY(-2px)
+      cursor: pointer
+    &:hover .title, &:hover fa-icon
+      color: $brighter-blue
 
 @media (max-width: 768px)
   .info-card

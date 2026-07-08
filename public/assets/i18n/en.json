@@ -3,9 +3,9 @@
     "about": "About",
     "background": "Background",
     "technical-skills": "Technical Skills",
+    "projects": "Projects",
     "research": "Research",
     "publications": "Publications",
-    "projects": "Projects",
     "contact": "Contact"
   },
   "intro": {
@@ -342,5 +342,32 @@
         ]
       }
     }
+  },
+  "projects": {
+    "sectionId": "04",
+    "title": "Projects",
+    "list": [
+      {
+        "title": "PDF Keyword Search API",
+        "description": "An API that searches keywords in research PDFs, highlights matched terms, and generates structured summaries in JSON or Excel.",
+        "link": "https://github.com/victoriaogomes/pdf-keyword-search-api",
+        "technologies": [
+          "Python",
+          "FastAPI",
+          "PyMuPDF",
+          "OpenPyXL"
+        ]
+      },
+      {
+        "title": "Intro to Machine Learning",
+        "description": "Coursework repository with practical ML assignments covering classification, perceptrons, adversarial examples, and semantic search.",
+        "link": "https://github.com/victoriaogomes/intro-to-machine-learning",
+        "technologies": [
+          "Python",
+          "Jupyter Notebook",
+          "ML"
+        ]
+      }
+    ]
   }
 }
