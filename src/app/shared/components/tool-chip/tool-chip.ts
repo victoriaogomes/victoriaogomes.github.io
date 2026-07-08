@@ -12,4 +12,6 @@ export class ToolChip {
   @Input() backgroundColor!: string;
   @Input() icon!: string;
   @Input() fontSize!: string;
+  @Input() fontWeight: string = "600";
+  @Input() hoverAnimation: boolean = false;
 }
