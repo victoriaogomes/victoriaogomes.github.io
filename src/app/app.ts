@@ -5,10 +5,11 @@ import { Intro } from './intro/intro';
 import { Background } from './background/background';
 import { TechnicalSkills } from './technical-skills/technical-skills';
 import { Projects } from './projects/projects';
+import { Research } from './research/research';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, AboutMe, Intro, Background, TechnicalSkills, Projects],
+  imports: [Navbar, AboutMe, Intro, Background, TechnicalSkills, Projects, Research],
   templateUrl: './app.html',
   styleUrl: './app.sass'
 })

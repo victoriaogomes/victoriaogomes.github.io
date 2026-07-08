@@ -1,0 +1,15 @@
+<section id="research" class="research">
+  <div class="content">
+    <app-section-header
+      number="{{('research.sectionId' | translate)}}"
+      title="{{('research.title' | translate)}}">
+    </app-section-header>
+    <div class="research-list">
+      @for (research of ('research.list' | translate); track $index) {
+        <app-infocard [icon]="icons[research.id]" [title]="research.title">
+          <p class="description">{{ research.description }}</p>
+        </app-infocard>
+      }
+    </div>
+  </div>
+</section>

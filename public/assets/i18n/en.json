@@ -369,5 +369,26 @@
         ]
       }
     ]
+  },
+  "research": {
+    "sectionId": "05",
+    "title": "Research",
+    "list": [
+      {
+        "id": "Ai4SE",
+        "title": "AI for Empirical Software Engineering",
+        "description": "Exploring how AI is changing the way empirical software engineering research is conducted, from data analysis to study design and evaluation."
+      },
+      {
+        "id": "HumAi",
+        "title": "Human-AI Collaboration",
+        "description": "Studying how people and AI can work together to make research and software engineering more effective and reliable."
+      },
+      {
+        "id": "AiVRRehab",
+        "title": "AI & Virtual Reality for Rehabilitation",
+        "description": "Developing intelligent virtual reality solutions that help improve physical rehabilitation and recovery for people after a stroke."
+      }
+    ]
   }
 }

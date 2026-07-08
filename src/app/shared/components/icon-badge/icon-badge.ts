@@ -12,6 +12,6 @@ import {FaIconComponent, IconDefinition} from '@fortawesome/angular-fontawesome'
 export class IconBadge {
   @Input({required: true}) icon!: IconDefinition;
 
-  @Input() backgroundColor = '#f2eaff';
-  @Input() iconColor = '#8b3dff';
+  @Input() backgroundColor = '#eff6ff';
+  @Input() iconColor = '#2b52ae';
 }
