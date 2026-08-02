@@ -18,8 +18,4 @@ export class Contact {
 
   protected readonly faEnvelope = faEnvelope;
   protected readonly faChevronRight = faChevronRight;
-
-  openLink(link: string) {
-    window.open(link, '_blank', 'noopener,noreferrer');
-  }
 }
