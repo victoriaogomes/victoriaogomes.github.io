@@ -1,7 +1,6 @@
 import { Component, computed, OnInit, signal } from '@angular/core';
 import { SectionHeader } from "../shared/components/section-header/section-header";
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
-import { SafeHtmlPipe } from '../shared/pipes/safe-html.pipe';
 import { PublicationList } from './component/publication-list/publication-list';
 
 @Component({
@@ -9,7 +8,6 @@ import { PublicationList } from './component/publication-list/publication-list';
   imports: [
     SectionHeader,
     TranslatePipe,
-    SafeHtmlPipe,
     PublicationList
   ],
   templateUrl: './publications.html',
