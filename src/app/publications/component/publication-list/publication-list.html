@@ -1,0 +1,27 @@
+<div class="publication-list">
+  @for (group of publicationList(); track $index) {
+    <section>
+      <div class="year-divider">
+        <span>{{ group['year'] }}</span>
+        <div class="papers">
+          <div class="line"></div>
+          @for (publication of group['publications']; track $index) {
+            <app-publication-detail
+              [title]="publication.title"
+              [enTitle]="publication.titleEn"
+              [year]="publication.year"
+              [language]="publication.lang"
+              [authors]="publication.authors"
+              [topics]="publication.topics"
+              [link]="publication.url"
+              [venue]="publication.venue">
+            </app-publication-detail>
+            @if ($index != group['publications'].length - 1) {
+              <div class="line"></div>
+            }
+          }
+        </div>
+      </div>
+    </section>
+  }
+</div>

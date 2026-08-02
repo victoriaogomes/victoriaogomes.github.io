@@ -1,21 +1,24 @@
-<div class="info-card" [class.hover-animation]="hoverAnimation">
+<div class="info-card" [class.hover-animation]="hoverAnimation" (click)="openLink()" [class.border]="border">
   <div class="card-header">
-    <div class="title">
-      @if (icon) {
-        <app-icon-badge [icon]="icon"></app-icon-badge>
+    <div class="top-content">
+      <div class="title">
+        @if (icon) {
+          <app-icon-badge [icon]="icon"></app-icon-badge>
+        }
+        @if (title) {
+          <p>{{ title }}</p>
+        }
+      </div>
+      @if (externalLink) {
+        <a>
+          <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+        </a>
       }
-      <p>{{ title }}</p>
     </div>
-    @if (externalLink) {
-      <a [href]="externalLink">
-        <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
-      </a>
+    @if (subtitle) {
+      <span class="subtitle">{{ subtitle }}</span>
     }
   </div>
-
-  @if (subtitle) {
-    <span>{{ subtitle }}</span>
-  }
 
   <ng-content></ng-content>
 

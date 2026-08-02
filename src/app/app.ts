@@ -6,10 +6,11 @@ import { Background } from './background/background';
 import { TechnicalSkills } from './technical-skills/technical-skills';
 import { Projects } from './projects/projects';
 import { Research } from './research/research';
+import { Publications } from './publications/publications';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, AboutMe, Intro, Background, TechnicalSkills, Projects, Research],
+  imports: [Navbar, AboutMe, Intro, Background, TechnicalSkills, Projects, Research, Publications],
   templateUrl: './app.html',
   styleUrl: './app.sass'
 })

@@ -1,0 +1,58 @@
+@use 'colors' as *
+
+.top-info
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+.bottom-info
+  display: flex
+  flex-direction: column
+  gap: 5px
+
+.year
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+  font-size: 0.75rem
+  color: $link-gray
+
+.title
+  font-weight: 600
+  line-height: 1.375
+  font-size: 14px
+
+.en-title
+  font-family: Inter, sans-serif
+  font-size: 11px
+  color: $link-gray
+  margin-top: calc(0.25rem * 1)
+
+.content
+  display: flex
+  flex-direction: column
+  gap: calc(0.25rem * 3.5)
+
+.summary
+  line-height: 1.625
+  color: $txt-gray
+  font-size: 0.75rem
+  font-family: Inter, sans-serif
+
+.authors, .venue
+  font-family: Inter, sans-serif
+  font-size: 11px
+  line-height: 1.375
+
+.venue
+  color: $link-gray
+
+.authors
+  color: $txt-gray
+  font-weight: 500
+  //margin-bottom: 1rem
+  //padding-bottom: 1rem
+  //border-bottom: 1px solid $light-gray
+
+fa-icon
+  font-size: .875rem
+  color: $light-gray

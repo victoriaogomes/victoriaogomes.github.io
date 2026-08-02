@@ -13,12 +13,19 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
   ]
 })
 export class Infocard {
-  @Input({required: true}) title!: string;
+  @Input() title!: string;
   @Input() subtitle: string | undefined;
   @Input() displayDivider: boolean = true;
   @Input() externalLink!: string;
   @Input() icon!: IconDefinition;
   @Input() hoverAnimation: boolean = false;
+  @Input() border: boolean = true;
 
   protected readonly faArrowUpRightFromSquare = faArrowUpRightFromSquare;
+
+  openLink() {
+    if (this.externalLink) {
+      window.open(this.externalLink, '_blank', 'noopener,noreferrer');
+    }
+  }
 }

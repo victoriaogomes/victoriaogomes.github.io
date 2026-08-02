@@ -1,25 +1,47 @@
 @use 'colors' as *
 
+.card-link
+  position: absolute
+  inset: 0
+  z-index: 1
+
+
 fa-icon
   font-size: .875rem
   color: $light-gray
 
-.card-header, .title
+.subtitle
+  font-family: Inter, sans-serif
+  font-size: 11px
+  color: $link-gray
+  margin-top: calc(0.25rem * 1)
+
+.title
   display: flex
   gap: 10px
   align-items: center
 
 .card-header
+  display: flex
+  flex-direction: column
   margin-bottom: 10px
   justify-content: space-between
+  align-content: center
+
+.top-content
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
 
 .info-card
-  padding: 15px
-  border: 1px solid $medium-blue
-  border-radius: 14px
-  backdrop-filter: blur(10px)
   margin: 0
   background-color: white
+  &.border
+    backdrop-filter: blur(10px)
+    padding: 15px
+    border: 1px solid $medium-blue
+    border-radius: 14px
 
 .card-header p
   font-size: 0.875rem
@@ -29,10 +51,13 @@ fa-icon
 @media(hover: hover)
   .info-card.hover-animation
     &:hover
+      cursor: pointer
+
+    &.border:hover
       border-color: $medium-blue
       box-shadow: 0 0 0 1px rgba($darker-blue, 0.25), 0 8px 20px rgba($darker-blue, 0.2)
       transform: translateY(-2px)
-      cursor: pointer
+
     &:hover .title, &:hover fa-icon
       color: $brighter-blue
 
