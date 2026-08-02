@@ -1,0 +1,65 @@
+@use 'colors' as *
+
+.contact
+  background-color: $white-blue
+  padding-block: 96px
+  padding-inline: 24px
+
+.description
+  p
+    color: $txt-gray
+    margin-bottom: 0.25rem * 8
+
+.content
+  max-width: 1024px
+  margin-inline: auto
+
+.info
+  display: flex
+  flex-direction: row
+
+  > *
+    flex: 1
+
+.contact-info
+  display: flex
+  cursor: pointer
+  justify-content: space-between
+  flex-direction: row
+  align-items: center
+  fa-icon
+    color: $light-gray
+    font-size: 12px
+
+.contact-list
+  display: flex
+  flex-direction: column
+  gap: 10px
+
+.line
+  margin-top: 10px
+  margin-bottom: 5px
+  height: 0.5px
+  background-color: $medium-blue
+
+.title
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+  display: block
+  margin-bottom: .5rem
+  font-size: .75rem
+  line-height: 1.2
+  letter-spacing: .1em
+  color: $muted-slate-blue
+  text-transform: uppercase
+
+.email
+  display: inline-flex
+  flex-direction: row
+  align-items: center
+  gap: 10px
+  text-decoration: none
+  background-color: $black
+  font-weight: 500
+  color: white
+  padding: 10px 25px
+  border-radius: 8px

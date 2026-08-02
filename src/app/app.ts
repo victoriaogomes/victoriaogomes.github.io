@@ -7,10 +7,11 @@ import { TechnicalSkills } from './technical-skills/technical-skills';
 import { Projects } from './projects/projects';
 import { Research } from './research/research';
 import { Publications } from './publications/publications';
+import { Contact } from './contact/contact';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, AboutMe, Intro, Background, TechnicalSkills, Projects, Research, Publications],
+  imports: [Navbar, AboutMe, Intro, Background, TechnicalSkills, Projects, Research, Publications, Contact],
   templateUrl: './app.html',
   styleUrl: './app.sass'
 })

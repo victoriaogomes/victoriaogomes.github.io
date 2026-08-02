@@ -20,7 +20,7 @@
     "location": "Richmond, VA, USA",
     "mail": "victoria.oliveiragomes@gmail.com",
     "gitHub": "https://github.com/victoriaogomes",
-    "linkedIn": "https://www.linkedin.com/in/victoriaogomes/",
+    "linkedIn": "https://linkedin.com/in/victoriaogomes/",
     "googleScholar": "https://scholar.google.com/citations?user=wsfTcGoAAAAJ&hl=en"
   },
   "aboutMe": {
@@ -611,5 +611,10 @@
         }
       ]
     }
+  },
+  "contact": {
+    "sectionId": "07",
+    "title": "Contact",
+    "description": "Interested in research collaboration, have an internship opportunity to discuss, or just want to say hello? I’m always happy to connect."
   }
 }

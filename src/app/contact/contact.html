@@ -1,0 +1,47 @@
+<section id="contact" class="contact">
+  <div class="content">
+    <app-section-header
+      number="{{('contact.sectionId' | translate)}}"
+      title="{{('contact.title' | translate)}}">
+    </app-section-header>
+    <div class="info">
+      <div class="description">
+        <p>{{ ('contact.description' | translate) }}</p>
+        @let email = ('intro.mail' | translate);
+        <a class="email" [href]="'mailto:' + email"> <fa-icon [icon]="faEnvelope"/> {{ email }} </a>
+      </div>
+      <div class="contact-list">
+        @let githubUrl = ('intro.gitHub' | translate);
+        <div class="contact-info" (click)="openLink(githubUrl)">
+          <div class="git-data">
+            <p class="title">GITHUB</p>
+            <a> {{ githubUrl.replace('https://', '') }} </a>
+          </div>
+          <fa-icon [icon]="faChevronRight"/>
+        </div>
+
+        <div class="line"></div>
+
+        @let linkedinUrl = ('intro.linkedIn' | translate);
+        <div class="contact-info" (click)="openLink(linkedinUrl)">
+          <div class="git-data">
+            <p class="title">LINKEDIN</p>
+            <a> {{ linkedinUrl.replace('https://', '') }} </a>
+          </div>
+          <fa-icon [icon]="faChevronRight"/>
+        </div>
+
+        <div class="line"></div>
+
+        @let scholarUrl = ('intro.googleScholar' | translate);
+        <div class="contact-info" (click)="openLink(scholarUrl)">
+          <div class="git-data">
+            <p class="title">GOOGLE SCHOLAR</p>
+            <a> View publications & citations </a>
+          </div>
+          <fa-icon [icon]="faChevronRight"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
