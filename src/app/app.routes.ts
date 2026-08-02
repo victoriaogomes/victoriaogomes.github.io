@@ -1,14 +1,3 @@
-import {Routes} from '@angular/router';
-import {Main} from './main/main';
+import { Routes } from '@angular/router';
 
-export const routes: Routes = [
-  {
-    path: '**',
-    redirectTo: '',
-    pathMatch: 'full'
-  },
-  {
-    path: '',
-    component: Main
-  }
-];
+export const routes: Routes = [];

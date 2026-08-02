@@ -1,0 +1,69 @@
+<section id="background" class="background">
+  <div class="content">
+    <app-section-header
+      number="{{('background.sectionId' | translate)}}"
+      title="{{('background.title' | translate)}}">
+    </app-section-header>
+
+
+    <div class="career-overview">
+      <div class="education">
+        <p class="label">{{ ('background.education.title' | translate) }}</p>
+
+        <div class="educationList">
+          @for (educationItem of ('background.education.list' | translate); track $index) {
+            <app-infocard [title]="educationItem.title">
+              <p class="university">{{ educationItem.university }}</p>
+              <p class="location">{{ educationItem.location }}</p>
+              <div class="side-by-side-info">
+                <p class="period">{{ educationItem.startDate }} - {{ educationItem.endDate }}</p>
+                <app-tool-chip
+                  [title]="educationItem.gpa"
+                  textColor="#1447e6"
+                  backgroundColor="#eff6ff"
+                  fontSize="11"
+                >
+                </app-tool-chip>
+              </div>
+            </app-infocard>
+          }
+        </div>
+      </div>
+
+      <div class="professional">
+        <p class="label">{{ ('background.experience.title' | translate) }}</p>
+
+        <div class="experienceList">
+          @for (experienceItem of ('background.experience.list' | translate); track $index) {
+            <div>
+              <div class="experience-header">
+                <span class="company">{{ experienceItem.company }}</span>
+                <span class="separator"></span>
+                <span class="location">{{ experienceItem.location }}</span>
+              </div>
+
+              @for (role of experienceItem.roles; track role.id) {
+                <div class="experience-item">
+                  <div class="experience-timeline"></div>
+
+                  <div class="experience-content">
+                    <div class="side-by-side-info">
+                      <h3 class="role">{{ role.title }}</h3>
+                      <span class="period">{{ role.startDate }} – {{ role.endDate }}</span>
+                    </div>
+
+                    <ul>
+                      @for (item of role.responsibilities; track $index) {
+                        <li>{{ item }}</li>
+                      }
+                    </ul>
+                  </div>
+                </div>
+              }
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

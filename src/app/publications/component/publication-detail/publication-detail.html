@@ -1,0 +1,17 @@
+<app-infocard
+  [title]="title()"
+  [subtitle]="enTitle()" [hoverAnimation]="true" [externalLink]="link()" [border]="false">
+  <div class="content">
+    <div class="bottom-info">
+      <p class="authors">{{ authors() }}</p>
+      <app-tool-chip
+        [title]="venue()"
+        textColor="#51515b"
+        backgroundColor="#eff6ff"
+        fontSize="11"
+        fontWeight="500"
+      >
+      </app-tool-chip>
+    </div>
+  </div>
+</app-infocard>

@@ -1,0 +1,70 @@
+@use 'colors' as *
+
+header
+  width: 100%
+  backdrop-filter: blur(8px)
+  box-shadow: 0 0 20px rgba(125, 90, 255, .08)
+  border-bottom: 2px solid rgba($light-blue, 0.5)
+  background-color: color-mix(in oklab, $white 95%, transparent)
+  position: fixed
+  z-index: 100
+
+.navbar
+  height: 60px
+  top: 0
+  max-width: 1024px
+  display: flex
+  align-items: center
+  padding-inline: 24px
+  margin-inline: auto
+  justify-content: space-between
+
+.nav-links
+  display: flex
+  align-items: center
+  gap: 35px
+
+.nav-links a
+  font-family: Inter, sans-serif
+  color: $link-gray
+  text-decoration: none
+  font-size: 14px
+  transition: .3s
+  font-weight: 500
+
+p
+  font-weight: 700
+  line-height: 1.5
+
+.nav-links a::after
+  content: ""
+  display: block
+  width: 0
+  height: 2px
+  margin-top: 4px
+  background: $medium-blue
+  transition: .3s
+
+@media(hover: hover)
+  .nav-links a:hover
+    color: $darker-blue
+
+  .nav-links a:hover::after
+    width: 100%
+
+@media (max-width: 768px)
+  .navbar
+    justify-content: center
+    height: 50px
+    padding: 0
+
+  .nav-links
+    display: flex
+    justify-content: center
+    gap: 18px
+
+  .nav-links a
+    font-size: .75rem
+    text-align: center
+    justify-self: center
+    white-space: nowrap

@@ -1,0 +1,30 @@
+<div class="skills-subsection-header">
+  <fa-icon
+    class="skills-subsection-icon"
+    [icon]="icon"
+    [style.font-size.rem]="0.75"
+  ></fa-icon>
+  <h3 class="skills-subsection-title">{{ skill.title }}</h3>
+</div>
+<div class="skill-subsection-grid">
+  @for (technology of skill.technologies; track $index) {
+    @if (card) {
+      <div class="skills-subsection-card">
+        <img class="icon" [src]="technology.icon" [alt]="technology.title"/>
+
+        <span class="label">
+          {{ technology.title }}
+        </span>
+        @if (technology.experience) {
+          <div class="skill-card-experience">
+            <span class="skill-level"
+                  [class]="'skill-level skill-level--' + technology.experience.level.toLowerCase()">{{ technology.experience.level }}</span>
+            <span class="skill-duration">{{ technology.experience.duration }}</span>
+          </div>
+        }
+      </div>
+    } @else {
+      <app-tool-chip fontSize="12" backgroundColor="#ffffff" [title]="technology.title" [icon]="technology.icon"></app-tool-chip>
+    }
+  }
+</div>

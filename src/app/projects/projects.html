@@ -1,0 +1,27 @@
+<section id="projects" class="projects">
+  <div class="content">
+    <app-section-header
+      number="{{('projects.sectionId' | translate)}}"
+      title="{{('projects.title' | translate)}}">
+    </app-section-header>
+    <div class="project-list">
+      @for (project of ('projects.list' | translate); track $index) {
+        <app-infocard [hoverAnimation]="true" [title]="project.title" [externalLink]="project.link">
+          <p class="description">{{ project.description }}</p>
+          <div class="side-by-side-info">
+            @for (technology of project.technologies; track $index) {
+              <app-tool-chip
+                [title]="technology"
+                textColor="#51515b"
+                backgroundColor="#dbeafe"
+                fontSize="11"
+                fontWeight="500"
+              >
+              </app-tool-chip>
+            }
+          </div>
+        </app-infocard>
+      }
+    </div>
+  </div>
+</section>
