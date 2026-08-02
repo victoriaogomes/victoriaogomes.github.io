@@ -1,0 +1,621 @@
+{
+  "navbar": {
+    "about": "About",
+    "background": "Background",
+    "technical-skills": "Technical Skills",
+    "projects": "Projects",
+    "research": "Research",
+    "publications": "Publications",
+    "contact": "Contact"
+  },
+  "intro": {
+    "tooltip": "Open to internships",
+    "name": "Victória<br>Gomes",
+    "profilePicture": {
+      "path": "assets/images/me.jpg",
+      "alt": "Victória Gomes' picture"
+    },
+    "subtitle": "Full-Stack Software Engineer · PhD Student in Computer Science",
+    "description": "Software engineer with 4 years of industry experience, currently pursuing a PhD in Computer Science. Passionate about AI, software engineering, and building practical solutions.",
+    "location": "Richmond, VA, USA",
+    "mail": "victoria.oliveiragomes@gmail.com",
+    "gitHub": "https://github.com/victoriaogomes",
+    "linkedIn": "https://linkedin.com/in/victoriaogomes/",
+    "googleScholar": "https://scholar.google.com/citations?user=wsfTcGoAAAAJ&hl=en"
+  },
+  "aboutMe": {
+    "sectionId": "01",
+    "title": "About Me",
+    "description": "I'm a Software Engineer with <strong>4 years of industry experience</strong>, a Bachelor of Science in Computer Engineering, and I'm currently pursuing a PhD in Computer Science. Throughout my career, I've worked across both <strong>back-end</strong> and <strong>front-end</strong> development, with a strong focus on designing scalable, reliable, and maintainable back-end systems.<br><br>My primary technologies include <strong>Java, Spring Boot, Python, AWS, TypeScript, and Angular</strong>. I also have experience with automated testing, continuous integration, cloud-based applications, and software architecture, always aiming to build high-quality solutions that are efficient, maintainable, and user-focused.<br><br>Alongside my professional work, I'm pursuing research in Artificial Intelligence as part of my PhD. Since my undergraduate studies, research has been a significant part of my journey, allowing me to explore emerging technologies, contribute to the scientific community, and bridge the gap between academic research and industry practice.",
+    "currentPosition": {
+      "title": "Current Position",
+      "value": "PhD Student & Researcher"
+    },
+    "institution": {
+      "title": "Institution",
+      "value": "Virginia Commonwealth University (VCU), Richmond, VA, USA"
+    },
+    "experience": {
+      "title": "Experience",
+      "value": "4 years of industry experience"
+    },
+    "previousPosition": {
+      "title": "Previous",
+      "value": "Tech Lead @ Banco PAN"
+    },
+    "researchFocus": {
+      "title": "Research focus",
+      "value": "AI · Empirical Software Engineering"
+    }
+  },
+  "background": {
+    "sectionId": "02",
+    "title": "Background",
+    "education": {
+      "title": "Education",
+      "list": [
+        {
+          "title": "PhD in Computer Science",
+          "gpa": "GPA: 4/4",
+          "university": "Virginia Commonwealth University",
+          "startDate": "Aug. 2025",
+          "endDate": "Present",
+          "location": "Richmond, VA, USA"
+        },
+        {
+          "title": "B.S. in Computer Engineering",
+          "gpa": "GPA: 8.9/10",
+          "university": "State University of Feira de Santana",
+          "startDate": "Jul. 2016",
+          "endDate": "Sept. 2022",
+          "location": "Feira de Santana, BA, BR"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Professional experience",
+      "list": [
+        {
+          "company": "Banco PAN",
+          "location": "São Paulo, SP, BR",
+          "roles": [
+            {
+              "title": "Technical Leader",
+              "startDate": "Jan. 2025",
+              "endDate": "Jul. 2025",
+              "responsibilities": [
+                "Led the OpenFinance squad, driving the design and delivery of solutions compliant with regulatory standards, collaborating closely with other teams to ensure scalable and efficient software delivery through CI/CD",
+                "Performed technical analyses to identify opportunities for continuous improvement in systems and processes",
+                "Developed and maintained solutions using Java, Spring Boot, Quarkus, AWS, MongoDB, and Angular, while also providing hands-on support to the development team, fostering best practices"
+              ]
+            },
+            {
+              "title": "Full-stack Mid-level Software Engineer",
+              "startDate": "Aug. 2023",
+              "endDate": "Dec. 2024",
+              "responsibilities": [
+                "Developed cloud-native apps (APIs, event-driven services, libraries and front-end solutions) within a 30+ component architecture, improving client service quality, using Java, Dart, Flutter, Spring Boot and AWS",
+                "Created a branch management system that enforced Git flow, identifying 200+ obsolete branches and 50+ branches without backups, connected with Azure DevOps",
+                "Implemented an event-driven search engine to retrieve customer data from other financial institutions, processing over 1 million messages per execution"
+              ]
+            },
+            {
+              "title": "Full-stack Junior Software Engineer",
+              "startDate": "Feb. 2022",
+              "endDate": "Jul. 2023",
+              "responsibilities": [
+                "Automated report generation using Python and Quart, reducing assembly time from 1 week to 30 seconds",
+                "Migrated a front-end web app from AWS Beanstalk to an AWS S3 static approach, reducing maintenance costs by over 90%"
+              ]
+            },
+            {
+              "title": "Software Engineer Intern",
+              "startDate": "Aug. 2021",
+              "endDate": "Jan. 2022",
+              "responsibilities": [
+                "Selected as 1 of 29 students out of 5,000 candidates to enhance software development and soft skills",
+                "Developed front-end web features using Angular, delivering new functionalities to bank customers",
+                "Implemented a web app that highlights key aspects for code review in Java, Python and JavaScript, increasing early bug detection by 20%"
+              ]
+            }
+          ]
+        },
+        {
+          "company": "Z-reader",
+          "location": "Feira de Santana, BA, BR",
+          "roles": [
+            {
+              "title": "Technical Leader and Full-stack Developer",
+              "startDate": "Dec. 2019",
+              "endDate": "Mar. 2023",
+              "responsibilities": [
+                "Led the development team and managed the feature implementation, as well as designed and executed the migration of a mobile app from Java to Flutter, creating a more intuitive and efficient user experience"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "technical-skills": {
+    "sectionId": "03",
+    "title": "Technical Skills",
+    "list": {
+      "programmingLanguages": {
+        "id": "programmingLanguages",
+        "title": "Programming languages",
+        "technologies": [
+          {
+            "title": "Java",
+            "icon": "assets/images/technical-skills/java.svg",
+            "experience": {
+              "level": "Advanced",
+              "duration": "5+ years"
+            }
+          },
+          {
+            "title": "Python",
+            "icon": "assets/images/technical-skills/python.svg",
+            "experience": {
+              "level": "Advanced",
+              "duration": "5+ years"
+            }
+          },
+          {
+            "title": "JavaScript",
+            "icon": "assets/images/technical-skills/javascript.svg",
+            "experience": {
+              "level": "Advanced",
+              "duration": "4 years"
+            }
+          },
+          {
+            "title": "TypeScript",
+            "icon": "assets/images/technical-skills/typescript.svg",
+            "experience": {
+              "level": "Advanced",
+              "duration": "4 years"
+            }
+          },
+          {
+            "title": "Dart",
+            "icon": "assets/images/technical-skills/dart.svg",
+            "experience": {
+              "level": "Intermediate",
+              "duration": "2 years"
+            }
+          },
+          {
+            "title": "Kotlin",
+            "icon": "assets/images/technical-skills/kotlin.svg",
+            "experience": {
+              "level": "Beginner",
+              "duration": "1 year"
+            }
+          }
+        ]
+      },
+      "frontEnd": {
+        "id": "frontEndDevelopment",
+        "title": "Front-end Development",
+        "technologies": [
+          {
+            "title": "Angular",
+            "icon": "assets/images/technical-skills/angular.svg",
+            "experience": {
+              "level": "Intermediate",
+              "duration": "4 years"
+            }
+          },
+          {
+            "title": "CSS3",
+            "icon": "assets/images/technical-skills/css3.svg",
+            "experience": {
+              "level": "Intermediate",
+              "duration": "5+ years"
+            }
+          },
+          {
+            "title": "HTML5",
+            "icon": "assets/images/technical-skills/html5.svg",
+            "experience": {
+              "level": "Intermediate",
+              "duration": "5+ years"
+            }
+          },
+          {
+            "title": "Flutter",
+            "icon": "assets/images/technical-skills/flutter.svg",
+            "experience": {
+              "level": "Intermediate",
+              "duration": "3 years"
+            }
+          }
+        ]
+      },
+      "cloudAndInfrastructure": {
+        "id": "cloudAndInfrastructure",
+        "title": "Cloud & Infrastructure",
+        "technologies": [
+          {
+            "title": "Amazon Web Services",
+            "icon": "assets/images/technical-skills/aws.svg"
+          },
+          {
+            "title": "Docker",
+            "icon": "assets/images/technical-skills/docker.svg"
+          },
+          {
+            "title": "Jenkins",
+            "icon": "assets/images/technical-skills/jenkins.svg"
+          },
+          {
+            "title": "Kubernetes",
+            "icon": "assets/images/technical-skills/kubernetes.svg"
+          }
+        ]
+      },
+      "backEnd": {
+        "id": "backEndDevelopment",
+        "title": "Backend Development",
+        "technologies": [
+          {
+            "title": "Spring Boot",
+            "icon": "assets/images/technical-skills/spring-boot.svg",
+            "experience": {
+              "level": "Advanced",
+              "duration": "4 years"
+            }
+          },
+          {
+            "title": "NodeJS",
+            "icon": "assets/images/technical-skills/nodejs.svg",
+            "experience": {
+              "level": "Intermediate",
+              "duration": "5+ years"
+            }
+          },
+          {
+            "title": "NestJS",
+            "icon": "assets/images/technical-skills/nestjs.svg",
+            "experience": {
+              "level": "Beginner",
+              "duration": "1 year"
+            }
+          },
+          {
+            "title": "Quarkus",
+            "icon": "assets/images/technical-skills/quarkus.svg",
+            "experience": {
+              "level": "Beginner",
+              "duration": "1 year"
+            }
+          }
+        ]
+      },
+      "dataAndSearch": {
+        "id": "dataAndSearch",
+        "title": "Data & Search",
+        "technologies": [
+          {
+            "title": "Elastic Search",
+            "icon": "assets/images/technical-skills/elasticSearch.svg"
+          },
+          {
+            "title": "MongoDB",
+            "icon": "assets/images/technical-skills/mongodb.svg"
+          },
+          {
+            "title": "MySQL",
+            "icon": "assets/images/technical-skills/mysql.svg"
+          }
+        ]
+      },
+      "engineeringTools": {
+        "id": "engineeringTools",
+        "title": "Engineering Tools",
+        "technologies": [
+          {
+            "title": "Confluence",
+            "icon": "assets/images/technical-skills/confluence.svg"
+          },
+          {
+            "title": "GitHub",
+            "icon": "assets/images/technical-skills/github.svg"
+          },
+          {
+            "title": "Jira",
+            "icon": "assets/images/technical-skills/jira.svg"
+          },
+          {
+            "title": "Postman",
+            "icon": "assets/images/technical-skills/postman.svg"
+          },
+          {
+            "title": "SonarQube",
+            "icon": "assets/images/technical-skills/sonarqube.svg"
+          },
+          {
+            "title": "Swagger/ OpenAPI",
+            "icon": "assets/images/technical-skills/swagger.svg"
+          }
+        ]
+      }
+    }
+  },
+  "projects": {
+    "sectionId": "04",
+    "title": "Projects",
+    "list": [
+      {
+        "title": "PDF Keyword Search API",
+        "description": "An API that searches keywords in research PDFs, highlights matched terms, and generates structured summaries in JSON or Excel.",
+        "link": "https://github.com/victoriaogomes/pdf-keyword-search-api",
+        "technologies": [
+          "Python",
+          "FastAPI",
+          "PyMuPDF",
+          "OpenPyXL"
+        ]
+      },
+      {
+        "title": "Intro to Machine Learning",
+        "description": "Coursework repository with practical ML assignments covering classification, perceptrons, adversarial examples, and semantic search.",
+        "link": "https://github.com/victoriaogomes/intro-to-machine-learning",
+        "technologies": [
+          "Python",
+          "Jupyter Notebook",
+          "ML"
+        ]
+      }
+    ]
+  },
+  "research": {
+    "sectionId": "05",
+    "title": "Research",
+    "list": [
+      {
+        "id": "Ai4SE",
+        "title": "AI for Empirical Software Engineering",
+        "description": "Exploring how AI is changing the way empirical software engineering research is conducted, from data analysis to study design and evaluation."
+      },
+      {
+        "id": "HumAi",
+        "title": "Human-AI Collaboration",
+        "description": "Studying how people and AI can work together to make research and software engineering more effective and reliable."
+      },
+      {
+        "id": "AiVRRehab",
+        "title": "AI & Virtual Reality for Rehabilitation",
+        "description": "Developing intelligent virtual reality solutions that help improve physical rehabilitation and recovery for people after a stroke."
+      }
+    ]
+  },
+  "publications": {
+    "sectionId": "06",
+    "title": "Publications",
+    "description": "My research trajectory moves from <strong>game development and accessibility</strong> during my undergraduate years at UEFS, Brazil, toward <strong>AI for Empirical Software Engineering</strong> at VCU.",
+    "expandAll": "view all",
+    "undergraduate": {
+      "title": "Undergraduate Research",
+      "subtitle": "BSc • Game Development and Software Engineering",
+      "publicationList": [
+        {
+          "title": "Cellgine: Um Motor de Jogo para Simulações de Células Biológicas",
+          "titleEn": "Cellgine: A Game Engine for Biological Cell Simulations",
+          "lang": "Portuguese",
+          "year": "2021",
+          "authors": "Matias, B. C., Sarinho, V. T., & Gomes, V. O.",
+          "venue": "20th Brazilian Symposium on Games and Digital Entertainment (SBGames)",
+          "publisher": "SBC",
+          "url": "https://doi.org/10.5753/sbgames_estendido.2021.19736"
+        },
+        {
+          "title": "QuizTEA: Um Quiz Gráfico para Crianças Portadoras do Transtorno do Espectro Autista",
+          "titleEn": "QuizTEA: A Graphical Quiz for Children with Autism Spectrum Disorder",
+          "lang": "Portuguese",
+          "year": "2021",
+          "authors": "Gomes, V. O. & Sarinho, V. T.",
+          "venue": "Scientific Research Seminars of the State University of Feira de Santana (SEMIC)",
+          "publisher": "UEFS",
+          "url": "https://doi.org/10.13102/semic.v0i23.6381"
+        },
+        {
+          "title": "Projeto HistoQuiz: Desenvolvendo um Jogo Voltado para o Ensino de Histologia",
+          "titleEn": "Project HistoQuiz: Developing a Game for Histology Education",
+          "lang": "Portuguese",
+          "year": "2020",
+          "authors": "Bastos, M., Andrade, M., Gomes, V. O., & Sarinho, V. T.",
+          "venue": "20th Brazilian Symposium on Computing Applied to Health (SBCAS)",
+          "publisher": "SBC",
+          "url": "https://doi.org/10.5753/sbcas.2020.11538"
+        },
+        {
+          "title": "TEAPET: Desenvolvendo Pets Digitais Voltados para Indivíduos Portadores do Transtorno do Espectro Autista",
+          "titleEn": "TEAPET: Developing Digital Pets for Individuals with Autism Spectrum Disorder",
+          "lang": "Portuguese",
+          "year": "2020",
+          "authors": "Gomes, V. O. & Sarinho, V. T.",
+          "venue": "20th Brazilian Symposium on Computing Applied to Health (SBCAS)",
+          "publisher": "SBC",
+          "url": "https://doi.org/10.5753/sbcas.2020.11544"
+        },
+        {
+          "title": "Projeto AvaTEA: Desenvolvendo um Jogo para a Conscientização do Transtorno do Espectro Autista",
+          "titleEn": "Project AvaTEA: A Game for Autism Spectrum Disorder Awareness",
+          "lang": "Portuguese",
+          "year": "2020",
+          "authors": "Gomes, V. O. & Sarinho, V. T.",
+          "venue": "20th Brazilian Symposium on Computing Applied to Health (SBCAS)",
+          "publisher": "SBC",
+          "url": "https://doi.org/10.5753/sbcas.2020.11543"
+        },
+        {
+          "title": "Ultimate Food Defense: A Serious Game for Healthy Eating Behavior Awareness",
+          "lang": "English",
+          "year": "2019",
+          "authors": "Matias, B. C., Gomes, V. O., & Sarinho, V. T.",
+          "venue": "E. van der Spek, S. Göbel, E. L. Do, E. Clua, & J. Baalsrud Hauge (Eds.), Entertainment computing and serious games (ICEC-JCSG)",
+          "publisher": "Springer",
+          "url": "https://doi.org/10.1007/978-3-030-34644-7_39"
+        },
+        {
+          "title": "UGC Generator: An Open Access Web Tool to Model Unified Game Canvas",
+          "lang": "English",
+          "year": "2019",
+          "authors": "Matias, B. C., Gomes, V. O., & Sarinho, V. T.",
+          "venue": "E. van der Spek, S. Göbel, E. L. Do, E. Clua, & J. Baalsrud Hauge (Eds.), Entertainment computing and serious games (ICEC-JCSG)",
+          "publisher": "Springer",
+          "url": "https://doi.org/10.1007/978-3-030-34644-7_39"
+        },
+        {
+          "title": "Ultimate Food Defense: Um Jogo Sério para Conscientização da Alimentação Saudável",
+          "titleEn": "Ultimate Food Defense: A Serious Game for Healthy Eating Awareness",
+          "lang": "Portuguese",
+          "year": "2019",
+          "authors": "Matias, B. C., Gomes, V. O., & Sarinho, V. T.",
+          "venue": "18th Brazilian Symposium on Games and Digital Entertainment (SBGames)",
+          "publisher": "SBC",
+          "url": "https://www.sbgames.org/sbgames2019/files/papers/ArtesDesignShort/198027.pdf"
+        },
+        {
+          "title": "Desenvolvendo um Storytelling Mobile para a Conscientização do Transtorno do Espectro do Autismo",
+          "titleEn": "Developing a Mobile Storytelling App for Autism Spectrum Disorder Awareness",
+          "lang": "Portuguese",
+          "year": "2019",
+          "authors": "Aguiar, E. C., Gomes, V. O., Sarinho, V. T., & da Silva, I. G. C. C.",
+          "venue": "18th Brazilian Symposium on Games and Digital Entertainment (SBGames)",
+          "publisher": "SBC",
+          "url": "https://www.sbgames.org/sbgames2019/files/papers/ArtesDesignShort/198031.pdf"
+        },
+        {
+          "title": "QuizGenerator: A Mobile Configurable Platform to Generate Quiz and Storytelling Games",
+          "lang": "English",
+          "year": "2019",
+          "authors": "Gomes, V. O. & Sarinho, V. T.",
+          "venue": "18th Brazilian Symposium on Games and Digital Entertainment (SBGames)",
+          "publisher": "SBC",
+          "url": "https://www.sbgames.org/sbgames2019/files/papers/ComputacaoShort/197227.pdf"
+        },
+        {
+          "title": "Erquiz: A Multiplayer Multiplatform Instant Messaging Game for Requirements Engineering Knowledge Assessment",
+          "lang": "English",
+          "year": "2019",
+          "authors": "Sarinho, V. T., Gomes, V. O., & Sarinho, W. T.",
+          "venue": "18th Brazilian Symposium on Games and Digital Entertainment (SBGames)",
+          "publisher": "SBC",
+          "url": "https://www.sbgames.org/sbgames2019/files/papers/ComputacaoShort/198743.pdf"
+        },
+        {
+          "title": "ZikAcerte: Um Jogo de Mensagens Instantâneas para Conscientização sobre o Aedes aegypti e suas Doenças",
+          "titleEn": "ZikAcerte: An Instant Messaging Game for Aedes aegypti Disease Awareness",
+          "lang": "Portuguese",
+          "year": "2019",
+          "authors": "Gomes, V. O. & Sarinho, V. T.",
+          "venue": "18th Brazilian Symposium on Games and Digital Entertainment (SBGames)",
+          "publisher": "SBC",
+          "url": "https://www.sbgames.org/sbgames2019/files/papers/WorkshopJogosSaude/196757.pdf"
+        },
+        {
+          "title": "Tales of Health - TEA: Uma Proposta de Storytelling Digital para Conscientização do Transtorno do Espectro do Autismo",
+          "titleEn": "Tales of Health-TEA: A Digital Storytelling Proposal for Autism Spectrum Disorder Awareness",
+          "lang": "Portuguese",
+          "year": "2019",
+          "authors": "Aguiar, E. C., Gomes, V. O., & Sarinho, V. T.",
+          "venue": "19th Brazilian Symposium on Computing Applied to Health (SBCAS)",
+          "publisher": "SBC",
+          "url": "https://doi.org/10.5753/sbcas.2019.6260"
+        },
+        {
+          "title": "Projeto QuizTEA: Desenvolvendo Quiz Digitais para Indivíduos Portadores do Transtorno do Espectro Autista",
+          "titleEn": "QuizTEA Project: Developing Digital Quizzes for Individuals with Autism Spectrum Disorder",
+          "lang": "Portuguese",
+          "year": "2019",
+          "authors": "Gomes, V. O., Aguiar, E. C., & Sarinho, V. T.",
+          "venue": "19th Brazilian Symposium on Computing Applied to Health (SBCAS)",
+          "publisher": "SBC",
+          "url": "https://doi.org/10.5753/sbcas.2019.6262"
+        },
+        {
+          "title": "ZikAcerte: Um Jogo de Mensagens Instantâneas para Conscientização em Doenças Causadas pelo Mosquito Aedes aegypti",
+          "titleEn": "ZikAcerte: Instant Messaging Game for Aedes aegypti Disease Awareness (Extended)",
+          "lang": "Portuguese",
+          "year": "2019",
+          "authors": "Gomes, V. O. & Sarinho, V. T.",
+          "venue": "19th Regional School on Computing of Bahia, Alagoas, and Sergipe (ERBASE)",
+          "publisher": "SBC",
+          "url": "https://sol.sbc.org.br/index.php/erbase/article/view/8950"
+        },
+        {
+          "title": "Desenvolvendo um Questionário para Validação de Programas Voltados para Pessoas Portadoras do TEA",
+          "titleEn": "Developing a Questionnaire for Validating Software for Individuals with ASD",
+          "lang": "Portuguese",
+          "year": "2019",
+          "authors": "Gomes, V. O. & Sarinho, V. T.",
+          "venue": "Scientific Research Seminars of the State University of Feira de Santana (SEMIC)",
+          "publisher": "UEFS",
+          "url": "https://doi.org/10.13102/semic.v0i22.4048"
+        },
+        {
+          "title": "QuizTEA: Uma Proposta de Desenvolvimento de Quiz Digitais para Indivíduos Portadores do Transtorno do Espectro Autista",
+          "titleEn": "QuizTEA: A Proposal for Developing Digital Quizzes for Individuals with ASD",
+          "lang": "Portuguese",
+          "year": "2018",
+          "authors": "Aguiar, E. C., Gomes, V. O. & Sarinho, V. T.",
+          "venue": "17th Brazilian Symposium on Games and Digital Entertainment (SBGames)",
+          "publisher": "SBC",
+          "url": "https://sol.sbc.org.br/index.php/erbase/article/view/8947"
+        },
+        {
+          "title": "Projeto Tales of Health: Uma Proposta de Jogo Digital para Conscientização do Transtorno do Espectro do Autismo",
+          "titleEn": "Project Tales of Health: A Digital Game Proposal for ASD Awareness",
+          "lang": "Portuguese",
+          "year": "2018",
+          "authors": "Aguiar, E. C., Gomes, V. O., & Sarinho, V. T.",
+          "venue": "18th Brazilian Symposium on Games and Digital Entertainment (SBGames)",
+          "publisher": "SBC",
+          "url": "https://www.sbgames.org/sbgames2018/files/papers/WorkshopJogosSaude/188178.pdf"
+        },
+        {
+          "title": "Um Processo Simplificado de Game Design para a Computação Criativa",
+          "titleEn": "A Simplified Game Design Process for Creative Computing",
+          "lang": "Portuguese",
+          "year": "2018",
+          "authors": "Aguiar, E. C., Gomes, V. O., Sampaio, D. G., & Sarinho, V. T.",
+          "venue": "18th Brazilian Symposium on Games and Digital Entertainment (SBGames)",
+          "publisher": "SBC",
+          "url": "https://www.sbgames.org/sbgames2018/files/papers/ArtesDesignShort/188113.pdf"
+        },
+        {
+          "title": "Avaliando Jogos Digitais Educativos para Indivíduos Portadores do Transtorno do Espectro Autista",
+          "titleEn": "Evaluating Educational Digital Games for Individuals with Autism Spectrum Disorder",
+          "lang": "Portuguese",
+          "year": "2018",
+          "authors": "Aguiar, E., Pedreira, L. O., Gomes, V. O., & Sarinho, V. T.",
+          "venue": "29th Brazilian Symposium on Computers in Education (SBIE)",
+          "publisher": "SBC",
+          "url": "https://doi.org/10.5753/cbie.sbie.2018.1830"
+        }
+      ]
+    },
+    "graduate": {
+      "title": "PhD Research",
+      "subtitle": "PhD • VCU • AI for Empirical Software Engineering",
+      "publicationList": [
+        {
+          "title": "LLM-Assisted Empirical Software Engineering: Systematic Literature Review and Research Agenda",
+          "lang": "English",
+          "year": "2026",
+          "authors": "Gomes, V. O., Selb, D., Palomba, F., Spinola, R. & Lo, D.",
+          "venue": "Under submission",
+          "url": "https://arxiv.org/abs/2604.26192"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "sectionId": "07",
+    "title": "Contact",
+    "description": "Interested in research collaboration, have an internship opportunity to discuss, or just want to say hello? I’m always happy to connect."
+  }
+}
