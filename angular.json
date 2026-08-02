@@ -29,9 +29,16 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.sass"],
+            "styles": [
+              "src/styles.sass"
+            ],
             "stylePreprocessorOptions": {
-              "includePaths": ["public/assets"]
+              "includePaths": [
+                "public/assets"
+              ]
+            },
+            "outputPath": {
+              "base": "dist"
             }
           },
           "configurations": {
@@ -72,6 +79,9 @@
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
