@@ -42,7 +42,7 @@
                 <span class="location">{{ experienceItem.location }}</span>
               </div>
 
-              @for (role of experienceItem.roles; track role.id) {
+              @for (role of experienceItem.roles; track $index) {
                 <div class="experience-item">
                   <div class="experience-timeline"></div>
 
