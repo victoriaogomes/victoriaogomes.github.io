@@ -1,4 +1,3 @@
-
 export interface TimelineItem {
   title: string;
   subtitle?: string;
@@ -6,4 +5,5 @@ export interface TimelineItem {
   endDate?: string;
   description?: string;
   location?: string;
+  details?: string;
 }

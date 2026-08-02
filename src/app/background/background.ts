@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { TimelineItem } from '../shared/components/timeline/timeline-item';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { SectionHeader } from '../shared/components/section-header/section-header';
 import { Infocard } from '../shared/components/infocard/infocard';
 import { ToolChip } from '../shared/components/tool-chip/tool-chip';
+import { TimelineItem } from './timeline-item';
 
 @Component({
   selector: 'app-background',
