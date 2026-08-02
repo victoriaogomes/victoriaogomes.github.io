@@ -17,7 +17,6 @@ export class PublicationDetail {
   title: InputSignal<string> = input.required<string>();
   enTitle: InputSignal<string | undefined> = input<string>();
   language: InputSignal<string> = input.required<string>();
-  // summary: InputSignal<string> = input<string>();
   authors: InputSignal<string> = input.required<string>();
   venue: InputSignal<string> = input.required<string>();
   topics: InputSignal<string[]> = input.required<string[]>();
