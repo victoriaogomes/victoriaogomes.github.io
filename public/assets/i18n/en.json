@@ -395,6 +395,7 @@
     "sectionId": "06",
     "title": "Publications",
     "description": "My research trajectory moves from <strong>game development and accessibility</strong> during my undergraduate years at UEFS, Brazil, toward <strong>AI for Empirical Software Engineering</strong> at VCU.",
+    "expandAll": "view all",
     "undergraduate": {
       "title": "Undergraduate Research",
       "subtitle": "BSc • Game Development and Software Engineering",

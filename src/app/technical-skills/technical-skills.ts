@@ -18,7 +18,7 @@ import { SectionHeader } from '../shared/components/section-header/section-heade
   styleUrl: './technical-skills.sass',
 })
 export class TechnicalSkills implements OnInit {
-  protected skills!: Record<string, SkillItem>;
+  protected skills: Record<string, SkillItem> | null = null;
   protected readonly icons: Record<string, IconDefinition> = {
     "programmingLanguages": faCode,
     "frontEndDevelopment": faMicrochip,
