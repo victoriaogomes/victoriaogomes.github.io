@@ -9,20 +9,23 @@
   max-width: 1024px
   margin-inline: auto
 
-.wide-screen
-  display: flex
-  flex-direction: row
-  gap: 30px
+.skill-list
+  display: grid
 
 
-@media (min-width: 1000px)
-  .narrow-screen
-    display: none
-  .wide-screen
-    display: flex
+@media (min-width: 1050px)
+  .skill-list
+    grid-template-columns: repeat(2, 1fr)
+    gap: 1.5rem
 
-@media (max-width: 768px)
-  .narrow-screen
-    display: flex
-  .wide-screen
-    display: none
+@media (max-width: 1049px)
+  .skill-list
+    grid-template-columns: 1fr
+    app-skill:nth-child(1)
+      order: 1
+    app-skill:nth-child(2)
+      order: 3
+    app-skill:nth-child(3)
+      order: 2
+    app-skill:nth-child(4)
+      order: 4
