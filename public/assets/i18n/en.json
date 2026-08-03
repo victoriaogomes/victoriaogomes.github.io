@@ -149,7 +149,10 @@
             "title": "Java",
             "icon": "assets/images/technical-skills/java.svg",
             "experience": {
-              "level": "Advanced",
+              "level": {
+                "key": "advanced",
+                "label": "Advanced"
+              },
               "duration": "5+ years"
             }
           },
@@ -157,7 +160,10 @@
             "title": "Python",
             "icon": "assets/images/technical-skills/python.svg",
             "experience": {
-              "level": "Advanced",
+              "level": {
+                "key": "advanced",
+                "label": "Advanced"
+              },
               "duration": "5+ years"
             }
           },
@@ -165,7 +171,10 @@
             "title": "JavaScript",
             "icon": "assets/images/technical-skills/javascript.svg",
             "experience": {
-              "level": "Advanced",
+              "level": {
+                "key": "advanced",
+                "label": "Advanced"
+              },
               "duration": "4 years"
             }
           },
@@ -173,7 +182,10 @@
             "title": "TypeScript",
             "icon": "assets/images/technical-skills/typescript.svg",
             "experience": {
-              "level": "Advanced",
+              "level": {
+                "key": "advanced",
+                "label": "Advanced"
+              },
               "duration": "4 years"
             }
           },
@@ -181,7 +193,10 @@
             "title": "Dart",
             "icon": "assets/images/technical-skills/dart.svg",
             "experience": {
-              "level": "Intermediate",
+              "level": {
+                "key": "intermediate",
+                "label": "Intermediate"
+              },
               "duration": "2 years"
             }
           },
@@ -189,7 +204,10 @@
             "title": "Kotlin",
             "icon": "assets/images/technical-skills/kotlin.svg",
             "experience": {
-              "level": "Beginner",
+              "level": {
+                "key": "beginner",
+                "label": "Beginner"
+              },
               "duration": "1 year"
             }
           }
@@ -203,7 +221,10 @@
             "title": "Angular",
             "icon": "assets/images/technical-skills/angular.svg",
             "experience": {
-              "level": "Intermediate",
+              "level": {
+                "key": "intermediate",
+                "label": "Intermediate"
+              },
               "duration": "4 years"
             }
           },
@@ -211,7 +232,10 @@
             "title": "CSS3",
             "icon": "assets/images/technical-skills/css3.svg",
             "experience": {
-              "level": "Intermediate",
+              "level": {
+                "key": "intermediate",
+                "label": "Intermediate"
+              },
               "duration": "5+ years"
             }
           },
@@ -219,7 +243,10 @@
             "title": "HTML5",
             "icon": "assets/images/technical-skills/html5.svg",
             "experience": {
-              "level": "Intermediate",
+              "level": {
+                "key": "intermediate",
+                "label": "Intermediate"
+              },
               "duration": "5+ years"
             }
           },
@@ -227,7 +254,10 @@
             "title": "Flutter",
             "icon": "assets/images/technical-skills/flutter.svg",
             "experience": {
-              "level": "Intermediate",
+              "level": {
+                "key": "intermediate",
+                "label": "Intermediate"
+              },
               "duration": "3 years"
             }
           }
@@ -263,7 +293,10 @@
             "title": "Spring Boot",
             "icon": "assets/images/technical-skills/spring-boot.svg",
             "experience": {
-              "level": "Advanced",
+              "level": {
+                "key": "advanced",
+                "label": "Advanced"
+              },
               "duration": "4 years"
             }
           },
@@ -271,7 +304,10 @@
             "title": "NodeJS",
             "icon": "assets/images/technical-skills/nodejs.svg",
             "experience": {
-              "level": "Intermediate",
+              "level": {
+                "key": "intermediate",
+                "label": "Intermediate"
+              },
               "duration": "5+ years"
             }
           },
@@ -279,7 +315,10 @@
             "title": "NestJS",
             "icon": "assets/images/technical-skills/nestjs.svg",
             "experience": {
-              "level": "Beginner",
+              "level": {
+                "key": "beginner",
+                "label": "Beginner"
+              },
               "duration": "1 year"
             }
           },
@@ -287,7 +326,10 @@
             "title": "Quarkus",
             "icon": "assets/images/technical-skills/quarkus.svg",
             "experience": {
-              "level": "Beginner",
+              "level": {
+                "key": "beginner",
+                "label": "Beginner"
+              },
               "duration": "1 year"
             }
           }
