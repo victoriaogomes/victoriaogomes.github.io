@@ -50,37 +50,23 @@ p
   &:hover
     text-decoration: underline
 
-.modal-overlay
-  position: fixed
-  inset: 0
-  background: rgba(0, 0, 0, 0.45)
+.title
+  color: black
+  margin: 0
+  padding-bottom: 0
+  font-family: Jost, sans-serif
+
+
+.subtitle
+  font-weight: 500
+  color: $link-gray
+  margin: 0
+  padding-top: 0
+  font-family: Inter, sans-serif
+  padding-bottom: 15px
+
+.mat-mdc-dialog-title::before
+  height: 10px
   display: flex
-  justify-content: center
-  align-items: center
-  z-index: 1000
-
-
-.modal-content
-  background: white
-  width: min(900px, 90%)
-  max-height: 85vh
-  overflow-y: auto
-  border-radius: 16px
-  padding: 2rem
-  position: relative
-
-  p
-    padding-bottom: 15px
-    font-size: 12px
-
-
-.close-button
-  position: absolute
-  right: 1rem
-  top: 1rem
-  border: none
-  background: transparent
-  font-size: 1.8rem
-  cursor: pointer
-
-
+  flex-direction: column
+  gap: 5px

@@ -24,7 +24,7 @@
             <div class="view-all-container">
               <button
                 class="view-all-button"
-                (click)="openPublications(section)">
+                (click)="showPublications(section)">
                 {{ ('publications.expandAll' | translate) }}
               </button>
             </div>
@@ -32,31 +32,23 @@
         </div>
       }
 
-
-      @if (selectedPublicationSection) {
-        <div class="modal-overlay" (click)="closePublications()">
-
-          <div class="modal-content" (click)="$event.stopPropagation()">
-
-            <button
-              class="close-button"
-              (click)="closePublications()">
-              ×
-            </button>
-
-            <h2>{{ selectedPublicationSection.title | translate }}</h2>
-
-            <p>{{ selectedPublicationSection.subtitle | translate }}</p>
-
-            <app-publication-list
-              [publicationList]="selectedPublicationSection.publications">
-            </app-publication-list>
-
-          </div>
-
+      <ng-template class="modal" #publicationsDialog>
+        <div class="title" mat-dialog-title>
+          <h3 class="title">{{ selectedPublicationSection.title | translate }}</h3>
+          <h5 class="subtitle">{{ selectedPublicationSection.subtitle | translate }}</h5>
         </div>
-      }
+        <mat-dialog-content>
+          <app-publication-list
+            [publicationList]="selectedPublicationSection.publications">
+          </app-publication-list>
+        </mat-dialog-content>
 
+        <mat-dialog-actions align="end">
+          <button mat-button mat-dialog-close>
+            {{ 'publications.closeButton' | translate }}
+          </button>
+        </mat-dialog-actions>
+      </ng-template>
     </div>
   </div>
 </section>

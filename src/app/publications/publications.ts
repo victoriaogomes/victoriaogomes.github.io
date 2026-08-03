@@ -1,14 +1,27 @@
-import { Component, computed, OnInit, signal } from '@angular/core';
+import { Component, computed, inject, OnInit, signal, TemplateRef, ViewChild } from '@angular/core';
 import { SectionHeader } from "../shared/components/section-header/section-header";
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
 import { PublicationList } from './component/publication-list/publication-list';
+import {
+  MatDialog,
+  MatDialogActions,
+  MatDialogClose,
+  MatDialogContent,
+  MatDialogTitle
+} from '@angular/material/dialog';
+import { MatButton } from '@angular/material/button';
 
 @Component({
   selector: 'app-publications',
   imports: [
     SectionHeader,
     TranslatePipe,
-    PublicationList
+    PublicationList,
+    MatDialogTitle,
+    MatDialogContent,
+    MatDialogActions,
+    MatButton,
+    MatDialogClose
   ],
   templateUrl: './publications.html',
   styleUrl: './publications.sass',
@@ -16,6 +29,9 @@ import { PublicationList } from './component/publication-list/publication-list';
 export class Publications implements OnInit {
   protected readonly graduatePublicationListKey: string = "publications.graduate.publicationList";
   protected readonly undergraduatePublicationListKey: string = "publications.undergraduate.publicationList";
+  private readonly dialog = inject(MatDialog);
+  @ViewChild('publicationsDialog')
+  private publicationsDialog!: TemplateRef<unknown>;
 
   protected graduatePublicationList = signal<Record<string, any>[]>([]);
   protected undergraduatePublicationList = signal<Record<string, any>[]>([]);
@@ -84,12 +100,13 @@ export class Publications implements OnInit {
       }));
   }
 
-  openPublications(section: any) {
+  showPublications(section: any): void {
     this.selectedPublicationSection = section;
-  }
 
-  closePublications() {
-    this.selectedPublicationSection = null;
+    this.dialog.open(this.publicationsDialog, {
+      width: '900px',
+      maxWidth: '95vw',
+    });
   }
 
   getPublicationListSize(publicationList: any) {
