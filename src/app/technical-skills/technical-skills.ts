@@ -27,11 +27,10 @@ export class TechnicalSkills {
     "engineeringTools": faTerminal
   }
 
-  private readonly translate = inject(TranslateService);
-
+  private readonly translateService = inject(TranslateService);
 
   protected readonly skills = toSignal(
-    this.translate.stream('technical-skills.list'),
+    this.translateService.stream('technical-skills.list'),
     {initialValue: null}
   );
 }

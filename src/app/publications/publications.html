@@ -8,19 +8,19 @@
 
     <div class="publicationList">
 
-      @for (section of publicationSections(); track section.title) {
+      @for (section of publicationSections; track section.title) {
         <div>
           <div class="header">
             <h3>{{ (section.title | translate) }}</h3>
             <h5>{{ (section.subtitle | translate) }}</h5>
           </div>
-          @let preview = getPublicationPreview(section.publications);
+          @let preview = getPublicationPreview(section.publications());
 
           <app-publication-list
             [publicationList]="preview">
           </app-publication-list>
 
-          @if (getPublicationListSize(section.publications) > 2) {
+          @if (getPublicationListSize(section.publications()) > 2) {
             <div class="view-all-container">
               <button
                 class="view-all-button"
@@ -39,7 +39,7 @@
         </div>
         <mat-dialog-content>
           <app-publication-list
-            [publicationList]="selectedPublicationSection.publications">
+            [publicationList]="selectedPublicationSection.publications()">
           </app-publication-list>
         </mat-dialog-content>
 

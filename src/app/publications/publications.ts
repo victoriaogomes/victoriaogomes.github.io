@@ -1,4 +1,4 @@
-import { Component, computed, inject, OnInit, signal, TemplateRef, ViewChild } from '@angular/core';
+import { Component, inject, TemplateRef, ViewChild } from '@angular/core';
 import { SectionHeader } from "../shared/components/section-header/section-header";
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
 import { PublicationList } from './component/publication-list/publication-list';
@@ -10,6 +10,8 @@ import {
   MatDialogTitle
 } from '@angular/material/dialog';
 import { MatButton } from '@angular/material/button';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-publications',
@@ -26,42 +28,38 @@ import { MatButton } from '@angular/material/button';
   templateUrl: './publications.html',
   styleUrl: './publications.sass',
 })
-export class Publications implements OnInit {
+export class Publications {
+  private readonly translateService = inject(TranslateService);
   protected readonly graduatePublicationListKey: string = "publications.graduate.publicationList";
   protected readonly undergraduatePublicationListKey: string = "publications.undergraduate.publicationList";
   private readonly dialog = inject(MatDialog);
   @ViewChild('publicationsDialog')
   private publicationsDialog!: TemplateRef<unknown>;
 
-  protected graduatePublicationList = signal<Record<string, any>[]>([]);
-  protected undergraduatePublicationList = signal<Record<string, any>[]>([]);
-
-  publicationSections = computed(() => [
+  publicationSections = [
     {
       title: 'publications.graduate.title',
       subtitle: 'publications.graduate.subtitle',
-      publications: this.graduatePublicationList(),
+      publications: toSignal(
+        this.translateService.stream(this.graduatePublicationListKey).pipe(
+          map(publications => this.groupByYear(publications))
+        ),
+        {initialValue: null}
+      )
     },
     {
       title: 'publications.undergraduate.title',
       subtitle: 'publications.undergraduate.subtitle',
-      publications: this.undergraduatePublicationList(),
+      publications: toSignal(
+        this.translateService.stream(this.undergraduatePublicationListKey).pipe(
+          map(publications => this.groupByYear(publications))
+        ),
+        {initialValue: null}
+      )
     }
-  ]);
+  ];
 
   selectedPublicationSection: any = null;
-
-  constructor(private translateService: TranslateService) {
-  }
-
-  ngOnInit(): void {
-    this.translateService
-      .get([this.graduatePublicationListKey, this.undergraduatePublicationListKey])
-      .subscribe(publicationList => {
-        this.graduatePublicationList.set(this.groupByYear(publicationList[this.graduatePublicationListKey]));
-        this.undergraduatePublicationList.set(this.groupByYear(publicationList[this.undergraduatePublicationListKey]));
-      });
-  }
 
   getPublicationPreview(publicationList: any) {
     let remaining = 2;
