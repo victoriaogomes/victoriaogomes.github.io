@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, InputSignal } from '@angular/core';
 
 @Component({
   selector: 'app-section-header',
@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './section-header.sass',
 })
 export class SectionHeader {
-  @Input() number!: string;
-  @Input() title!: string;
+  title: InputSignal<string> = input.required<string>();
+  number: InputSignal<string> = input.required<string>();
 }

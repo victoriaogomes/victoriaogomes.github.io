@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import { Component, input, InputSignal } from '@angular/core';
 import {FaIconComponent, IconDefinition} from '@fortawesome/angular-fontawesome';
 
 @Component({
@@ -10,8 +10,7 @@ import {FaIconComponent, IconDefinition} from '@fortawesome/angular-fontawesome'
   styleUrl: './icon-badge.sass',
 })
 export class IconBadge {
-  @Input({required: true}) icon!: IconDefinition;
-
-  @Input() backgroundColor = '#eff6ff';
-  @Input() iconColor = '#2b52ae';
+  icon: InputSignal<IconDefinition> = input.required<IconDefinition>();
+  backgroundColor: InputSignal<string> = input<string>('#eff6ff');
+  iconColor: InputSignal<string> = input<string>('#2b52ae');
 }

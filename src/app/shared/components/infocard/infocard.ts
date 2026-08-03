@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, InputSignal } from '@angular/core';
 import { IconBadge } from '../icon-badge/icon-badge';
 import { FaIconComponent, IconDefinition } from '@fortawesome/angular-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
@@ -13,19 +13,19 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
   ]
 })
 export class Infocard {
-  @Input() title!: string;
-  @Input() subtitle: string | undefined;
-  @Input() displayDivider: boolean = true;
-  @Input() externalLink!: string;
-  @Input() icon!: IconDefinition;
-  @Input() hoverAnimation: boolean = false;
-  @Input() border: boolean = true;
+  title: InputSignal<string> = input.required<string>();
+  subtitle: InputSignal<string | undefined> = input<string>();
+  displayDivider: InputSignal<boolean> = input<boolean>(true);
+  externalLink: InputSignal<string | undefined> = input<string>();
+  icon: InputSignal<IconDefinition | undefined> = input<IconDefinition>();
+  hoverAnimation: InputSignal<boolean> = input<boolean>(false);
+  border: InputSignal<boolean> = input<boolean>(true);
 
   protected readonly faArrowUpRightFromSquare = faArrowUpRightFromSquare;
 
   openLink() {
-    if (this.externalLink) {
-      window.open(this.externalLink, '_blank', 'noopener,noreferrer');
+    if (this.externalLink()) {
+      window.open(this.externalLink(), '_blank', 'noopener,noreferrer');
     }
   }
 }

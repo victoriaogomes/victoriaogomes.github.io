@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, InputSignal } from '@angular/core';
 
 @Component({
   selector: 'app-tool-chip',
@@ -7,11 +7,11 @@ import { Component, Input } from '@angular/core';
   styleUrl: './tool-chip.sass',
 })
 export class ToolChip {
-  @Input({required: true}) title!: string;
-  @Input() textColor!: string;
-  @Input() backgroundColor!: string;
-  @Input() icon!: string;
-  @Input() fontSize!: string;
-  @Input() fontWeight: string = "600";
-  @Input() hoverAnimation: boolean = false;
+  title: InputSignal<string> = input.required<string>();
+  textColor: InputSignal<string | undefined> = input<string>();
+  backgroundColor: InputSignal<string | undefined> = input<string>();
+  icon: InputSignal<string | undefined> = input<string>();
+  fontSize: InputSignal<string | undefined> = input<string>();
+  fontWeight: InputSignal<string> = input<string>("600");
+  hoverAnimation: InputSignal<boolean> = input<boolean>(false);
 }
