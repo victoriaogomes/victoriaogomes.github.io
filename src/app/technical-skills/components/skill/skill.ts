@@ -13,7 +13,7 @@ import { ToolChip } from '../../../shared/components/tool-chip/tool-chip';
   styleUrl: './skill.sass',
 })
 export class Skill {
-  icon: InputSignal<IconDefinition | undefined> = input<IconDefinition>();
-  skill: InputSignal<SkillItem> = input.required<SkillItem>();
-  card: InputSignal<boolean> = input<boolean>(true);
+  readonly icon: InputSignal<IconDefinition | undefined> = input<IconDefinition>();
+  readonly skill: InputSignal<SkillItem> = input.required<SkillItem>();
+  readonly card: InputSignal<boolean> = input<boolean>(true);
 }

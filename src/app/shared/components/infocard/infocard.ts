@@ -13,17 +13,17 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
   ]
 })
 export class Infocard {
-  title: InputSignal<string> = input.required<string>();
-  subtitle: InputSignal<string | undefined> = input<string>();
-  displayDivider: InputSignal<boolean> = input<boolean>(true);
-  externalLink: InputSignal<string | undefined> = input<string>();
-  icon: InputSignal<IconDefinition | undefined> = input<IconDefinition>();
-  hoverAnimation: InputSignal<boolean> = input<boolean>(false);
-  border: InputSignal<boolean> = input<boolean>(true);
+  readonly title: InputSignal<string> = input.required<string>();
+  readonly subtitle: InputSignal<string | undefined> = input<string>();
+  readonly displayDivider: InputSignal<boolean> = input<boolean>(true);
+  readonly externalLink: InputSignal<string | undefined> = input<string>();
+  readonly icon: InputSignal<IconDefinition | undefined> = input<IconDefinition>();
+  readonly hoverAnimation: InputSignal<boolean> = input<boolean>(false);
+  readonly border: InputSignal<boolean> = input<boolean>(true);
 
   protected readonly faArrowUpRightFromSquare = faArrowUpRightFromSquare;
 
-  openLink() {
+  protected openLink() {
     if (this.externalLink()) {
       window.open(this.externalLink(), '_blank', 'noopener,noreferrer');
     }

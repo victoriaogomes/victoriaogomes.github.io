@@ -15,7 +15,6 @@ import { faEnvelope, faChevronRight } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './contact.sass',
 })
 export class Contact {
-
   protected readonly faEnvelope = faEnvelope;
   protected readonly faChevronRight = faChevronRight;
 }

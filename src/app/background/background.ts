@@ -16,5 +16,4 @@ import { ToolChip } from '../shared/components/tool-chip/tool-chip';
   styleUrl: './background.sass',
 })
 export class Background {
-
 }

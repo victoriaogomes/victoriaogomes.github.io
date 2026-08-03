@@ -12,10 +12,10 @@ import { ToolChip } from '../../../shared/components/tool-chip/tool-chip';
   styleUrl: './publication-detail.sass',
 })
 export class PublicationDetail {
-  title: InputSignal<string> = input.required<string>();
-  enTitle: InputSignal<string | undefined> = input<string>();
-  language: InputSignal<string> = input.required<string>();
-  authors: InputSignal<string> = input.required<string>();
-  venue: InputSignal<string> = input.required<string>();
-  link: InputSignal<string> = input.required<string>();
+  readonly title: InputSignal<string> = input.required<string>();
+  readonly enTitle: InputSignal<string | undefined> = input<string>();
+  readonly language: InputSignal<string> = input.required<string>();
+  readonly authors: InputSignal<string> = input.required<string>();
+  readonly venue: InputSignal<string> = input.required<string>();
+  readonly link: InputSignal<string> = input.required<string>();
 }

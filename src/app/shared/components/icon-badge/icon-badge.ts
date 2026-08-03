@@ -10,7 +10,7 @@ import {FaIconComponent, IconDefinition} from '@fortawesome/angular-fontawesome'
   styleUrl: './icon-badge.sass',
 })
 export class IconBadge {
-  icon: InputSignal<IconDefinition> = input.required<IconDefinition>();
-  backgroundColor: InputSignal<string> = input<string>('#eff6ff');
-  iconColor: InputSignal<string> = input<string>('#2b52ae');
+  readonly icon: InputSignal<IconDefinition> = input.required<IconDefinition>();
+  readonly backgroundColor: InputSignal<string> = input<string>('#eff6ff');
+  readonly iconColor: InputSignal<string> = input<string>('#2b52ae');
 }

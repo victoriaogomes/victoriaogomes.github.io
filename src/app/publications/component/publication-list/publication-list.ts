@@ -10,5 +10,5 @@ import { PublicationDetail } from '../publication-detail/publication-detail';
   styleUrl: './publication-list.sass',
 })
 export class PublicationList {
-  publicationList: InputSignal<Record<string, any>[]> = input.required<Record<string, any>[]>();
+  readonly publicationList: InputSignal<Record<string, any>[]> = input.required<Record<string, any>[]>();
 }

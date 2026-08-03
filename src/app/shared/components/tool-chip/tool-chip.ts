@@ -7,11 +7,11 @@ import { Component, input, InputSignal } from '@angular/core';
   styleUrl: './tool-chip.sass',
 })
 export class ToolChip {
-  title: InputSignal<string> = input.required<string>();
-  textColor: InputSignal<string | undefined> = input<string>();
-  backgroundColor: InputSignal<string | undefined> = input<string>();
-  icon: InputSignal<string | undefined> = input<string>();
-  fontSize: InputSignal<string | undefined> = input<string>();
-  fontWeight: InputSignal<string> = input<string>("600");
-  hoverAnimation: InputSignal<boolean> = input<boolean>(false);
+  readonly title: InputSignal<string> = input.required<string>();
+  readonly textColor: InputSignal<string | undefined> = input<string>();
+  readonly backgroundColor: InputSignal<string | undefined> = input<string>();
+  readonly icon: InputSignal<string | undefined> = input<string>();
+  readonly fontSize: InputSignal<string | undefined> = input<string>();
+  readonly fontWeight: InputSignal<string> = input<string>("600");
+  readonly hoverAnimation: InputSignal<boolean> = input<boolean>(false);
 }

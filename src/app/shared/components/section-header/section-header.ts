@@ -7,6 +7,6 @@ import { Component, input, InputSignal } from '@angular/core';
   styleUrl: './section-header.sass',
 })
 export class SectionHeader {
-  title: InputSignal<string> = input.required<string>();
-  number: InputSignal<string> = input.required<string>();
+  readonly title: InputSignal<string> = input.required<string>();
+  readonly number: InputSignal<string> = input.required<string>();
 }

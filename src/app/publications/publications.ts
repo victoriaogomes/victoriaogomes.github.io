@@ -30,13 +30,14 @@ import { map } from 'rxjs';
 })
 export class Publications {
   private readonly translateService = inject(TranslateService);
-  protected readonly graduatePublicationListKey: string = "publications.graduate.publicationList";
-  protected readonly undergraduatePublicationListKey: string = "publications.undergraduate.publicationList";
+  private readonly graduatePublicationListKey: string = "publications.graduate.publicationList";
+  private readonly undergraduatePublicationListKey: string = "publications.undergraduate.publicationList";
   private readonly dialog = inject(MatDialog);
+
   @ViewChild('publicationsDialog')
   private publicationsDialog!: TemplateRef<unknown>;
 
-  publicationSections = [
+  protected publicationSections = [
     {
       title: 'publications.graduate.title',
       subtitle: 'publications.graduate.subtitle',
@@ -59,9 +60,9 @@ export class Publications {
     }
   ];
 
-  selectedPublicationSection: any = null;
+  protected selectedPublicationSection: any = null;
 
-  getPublicationPreview(publicationList: any) {
+  protected getPublicationPreview(publicationList: any) {
     let remaining = 2;
 
     return publicationList
@@ -77,7 +78,7 @@ export class Publications {
       .filter((group: { publications: string | any[]; }) => group.publications.length > 0);
   }
 
-  groupByYear(publications: any[]) {
+  private groupByYear(publications: any[]) {
     const groups = publications.reduce((groups, publication) => {
       const year = publication.year;
 
@@ -98,7 +99,7 @@ export class Publications {
       }));
   }
 
-  showPublications(section: any): void {
+  protected showPublications(section: any): void {
     this.selectedPublicationSection = section;
 
     this.dialog.open(this.publicationsDialog, {
@@ -107,7 +108,7 @@ export class Publications {
     });
   }
 
-  getPublicationListSize(publicationList: any) {
+  protected getPublicationListSize(publicationList: any) {
     return publicationList.reduce((publicationCount: number, publicationGroup: any) => {
       publicationCount += publicationGroup.publications.length;
 

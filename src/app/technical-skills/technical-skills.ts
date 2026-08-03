@@ -18,6 +18,8 @@ import { toSignal } from '@angular/core/rxjs-interop';
   styleUrl: './technical-skills.sass',
 })
 export class TechnicalSkills {
+  private readonly translateService = inject(TranslateService);
+
   protected readonly icons: Record<string, IconDefinition> = {
     "programmingLanguages": faCode,
     "frontEndDevelopment": faMicrochip,
@@ -26,8 +28,6 @@ export class TechnicalSkills {
     "dataAndSearch": faDatabase,
     "engineeringTools": faTerminal
   }
-
-  private readonly translateService = inject(TranslateService);
 
   protected readonly skills = toSignal(
     this.translateService.stream('technical-skills.list'),
