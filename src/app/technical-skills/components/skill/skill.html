@@ -10,7 +10,7 @@
   @for (technology of skill().technologies; track $index) {
     @if (card()) {
       <div class="skills-subsection-card">
-        <img class="icon" [src]="technology.icon" [alt]="technology.title"/>
+        <img class="icon" [src]="technology.icon" alt="" aria-hidden="true"/>
 
         <span class="label">
           {{ technology.title }}
