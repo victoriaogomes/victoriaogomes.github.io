@@ -1,10 +1,10 @@
 <section id="publications" class="portfolio-section default-background">
   <div class="content">
     <app-section-header
-      number="{{('publications.sectionId' | translate)}}"
-      title="{{('publications.title' | translate)}}">
+      [number]="'publications.sectionId' | translate"
+      [title]="'publications.title' | translate">
     </app-section-header>
-    <p class="description" [innerHTML]="('publications.description' | translate)"></p>
+    <p class="description" [innerHTML]="'publications.description' | translate"></p>
 
     <div class="publicationList">
 
@@ -25,7 +25,7 @@
               <button
                 class="view-all-button"
                 (click)="showPublications(section)">
-                {{ ('publications.expandAll' | translate) }}
+                {{ 'publications.expandAll' | translate }}
               </button>
             </div>
           }

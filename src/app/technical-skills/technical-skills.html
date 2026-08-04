@@ -1,8 +1,8 @@
 <section class="portfolio-section alternate-background" id="technical-skills">
   <div class="content">
     <app-section-header
-      number="{{('technical-skills.sectionId' | translate)}}"
-      title="{{('technical-skills.title' | translate)}}">
+      [number]="'technical-skills.sectionId' | translate"
+      [title]="'technical-skills.title' | translate ">
     </app-section-header>
     <div class="skills">
       <app-skill [skill]="skills()['programmingLanguages']"

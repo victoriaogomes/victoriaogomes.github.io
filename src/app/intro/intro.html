@@ -2,13 +2,13 @@
   <div class="content">
     <div class="badge">
       <span class="dot"></span>
-      {{ ('intro.tooltip' | translate) }}
+      {{ 'intro.tooltip' | translate }}
     </div>
 
-    <h1 class="title" [innerHTML]="('intro.name' | translate)"></h1>
+    <h1 class="title" [innerHTML]="'intro.name' | translate"></h1>
 
     <p class="subtitle">
-      {{ ('intro.subtitle' | translate) }}
+      {{ 'intro.subtitle' | translate }}
     </p>
 
     <p class="description">{{ 'intro.description' | translate }}</p>
@@ -19,19 +19,19 @@
     </div>
 
     <div class="social-links">
-      <a class="icon-button" href="mailto:{{'intro.mail' | translate}}">
+      <a class="icon-button" [href]="'mailto:' + 'intro.mail' | translate">
         <fa-icon [icon]="faEnvelope"/>
       </a>
 
-      <a class="icon-button" href="{{ 'intro.gitHub' | translate}}">
+      <a class="icon-button" [href]=" 'intro.gitHub' | translate">
         <fa-icon [icon]="faGithub"/>
       </a>
 
-      <a class="icon-button" href="{{ 'intro.linkedIn' | translate}}">
+      <a class="icon-button" [href]=" 'intro.linkedIn' | translate">
         <fa-icon [icon]="faLinkedin"/>
       </a>
 
-      <a class="icon-button" href="{{ 'intro.googleScholar' | translate}}">
+      <a class="icon-button" [href]=" 'intro.googleScholar' | translate">
         <fa-icon [icon]="faGoogleScholar"/>
       </a>
     </div>
@@ -40,8 +40,8 @@
 
   <div class="image">
     <img
-      [src]="('intro.profilePicture.path' | translate)"
-      [alt]="('intro.profilePicture.alt' | translate)"
+      [src]="'intro.profilePicture.path' | translate"
+      [alt]="'intro.profilePicture.alt' | translate"
     >
   </div>
 

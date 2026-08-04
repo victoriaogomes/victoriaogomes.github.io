@@ -1,14 +1,14 @@
 <section id="background" class="portfolio-section default-background">
   <div class="content">
     <app-section-header
-      number="{{('background.sectionId' | translate)}}"
-      title="{{('background.title' | translate)}}">
+      [number]="'background.sectionId' | translate"
+      [title]="'background.title' | translate">
     </app-section-header>
 
 
     <div class="career-overview">
       <div class="education">
-        <p class="label">{{ ('background.education.title' | translate) }}</p>
+        <p class="label">{{ 'background.education.title' | translate }}</p>
 
         <div class="educationList">
           @for (educationItem of ('background.education.list' | translate); track $index) {
@@ -31,7 +31,7 @@
       </div>
 
       <div class="professional">
-        <p class="label">{{ ('background.experience.title' | translate) }}</p>
+        <p class="label">{{ 'background.experience.title' | translate }}</p>
 
         <div class="experienceList">
           @for (experienceItem of ('background.experience.list' | translate); track $index) {

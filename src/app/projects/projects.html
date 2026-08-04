@@ -1,8 +1,8 @@
 <section id="projects" class="portfolio-section default-background">
   <div class="content">
     <app-section-header
-      number="{{('projects.sectionId' | translate)}}"
-      title="{{('projects.title' | translate)}}">
+      [number]="'projects.sectionId' | translate"
+      [title]="'projects.title' | translate">
     </app-section-header>
     <div class="project-list">
       @for (project of ('projects.list' | translate); track $index) {
