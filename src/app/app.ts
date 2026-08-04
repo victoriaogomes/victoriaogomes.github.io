@@ -1,5 +1,5 @@
-import { Component, signal } from '@angular/core';
-import {Navbar} from './shared/components/navbar/navbar';
+import { Component } from '@angular/core';
+import { Navbar } from './shared/components/navbar/navbar';
 import { AboutMe } from './about-me/about-me';
 import { Intro } from './intro/intro';
 import { Background } from './background/background';
@@ -16,5 +16,4 @@ import { Contact } from './contact/contact';
   styleUrl: './app.sass'
 })
 export class App {
-  protected readonly title = signal('victoriaogomes.github.io');
 }

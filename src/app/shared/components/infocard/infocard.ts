@@ -15,7 +15,6 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 export class Infocard {
   readonly title: InputSignal<string> = input.required<string>();
   readonly subtitle: InputSignal<string | undefined> = input<string>();
-  readonly displayDivider: InputSignal<boolean> = input<boolean>(true);
   readonly externalLink: InputSignal<string | undefined> = input<string>();
   readonly icon: InputSignal<IconDefinition | undefined> = input<IconDefinition>();
   readonly hoverAnimation: InputSignal<boolean> = input<boolean>(false);
