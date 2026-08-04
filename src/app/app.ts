@@ -16,4 +16,5 @@ import { Contact } from './contact/contact';
   styleUrl: './app.sass'
 })
 export class App {
+  protected readonly currentYear = new Date().getFullYear();
 }
