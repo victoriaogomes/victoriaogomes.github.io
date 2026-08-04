@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Navbar } from './shared/components/navbar/navbar';
+import { Navbar } from './shared/ui/navbar/navbar';
 import { AboutMe } from './about-me/about-me';
 import { Intro } from './intro/intro';
 import { Background } from './background/background';

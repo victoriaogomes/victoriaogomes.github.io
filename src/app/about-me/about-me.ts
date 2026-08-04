@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SectionHeader } from '../shared/components/section-header/section-header';
+import { SectionHeader } from '../shared/ui/section-header/section-header';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({

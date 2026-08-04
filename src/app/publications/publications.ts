@@ -1,7 +1,7 @@
 import { Component, inject, TemplateRef, ViewChild } from '@angular/core';
-import { SectionHeader } from "../shared/components/section-header/section-header";
+import { SectionHeader } from "../shared/ui/section-header/section-header";
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
-import { PublicationList } from './component/publication-list/publication-list';
+import { PublicationList } from './publication-list/publication-list';
 import {
   MatDialog,
   MatDialogActions,

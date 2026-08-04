@@ -1,10 +1,10 @@
 import { Component, inject } from '@angular/core';
-import { Skill } from "./components/skill/skill";
+import { Skill } from "./skill/skill";
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
 import { faCode, faDatabase, faMicrochip, faServer, faTerminal } from '@fortawesome/free-solid-svg-icons';
 import { IconDefinition } from '@fortawesome/angular-fontawesome';
 import { faCloud } from '@fortawesome/free-regular-svg-icons';
-import { SectionHeader } from '../shared/components/section-header/section-header';
+import { SectionHeader } from '../shared/ui/section-header/section-header';
 import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({

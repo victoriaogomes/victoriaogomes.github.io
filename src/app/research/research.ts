@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Infocard } from "../shared/components/infocard/infocard";
-import { SectionHeader } from "../shared/components/section-header/section-header";
+import { Infocard } from "../shared/ui/infocard/infocard";
+import { SectionHeader } from "../shared/ui/section-header/section-header";
 import { TranslatePipe } from "@ngx-translate/core";
 import { faBrain, faUsers, faVrCardboard } from '@fortawesome/free-solid-svg-icons';
 import { IconDefinition } from '@fortawesome/angular-fontawesome';

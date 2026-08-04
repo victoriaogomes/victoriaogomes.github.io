@@ -1,6 +1,6 @@
 import { Component, input, InputSignal } from '@angular/core';
-import { Infocard } from '../../../shared/components/infocard/infocard';
-import { ToolChip } from '../../../shared/components/tool-chip/tool-chip';
+import { Infocard } from '../../shared/ui/infocard/infocard';
+import { ToolChip } from '../../shared/ui/tool-chip/tool-chip';
 
 @Component({
   selector: 'app-publication-detail',
