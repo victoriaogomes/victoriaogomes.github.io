@@ -2,6 +2,7 @@
 
 .educationList
   display: flex
+  flex-direction: column
   gap: 10px
 
   app-infocard
@@ -117,10 +118,6 @@ li::marker
 @media (min-width: 650px)
   .educationList
     flex-direction: row
-
-@media (max-width: 649px)
-  .educationList
-    flex-direction: column
 
 @media (min-width: 450px)
   .experience-content
