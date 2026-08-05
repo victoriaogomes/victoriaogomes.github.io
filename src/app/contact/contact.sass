@@ -1,9 +1,10 @@
 @use 'colors' as *
 
-.description
-  p
-    color: $primary-text-color
-    text-align: justify
+.description p
+  color: $primary-text-color
+  text-align: justify
+  margin-bottom: 0.25rem * 8
+  font-size: 1rem
 
 .content
   max-width: 1024px
@@ -12,6 +13,8 @@
 .info
   display: flex
   flex-wrap: wrap
+  flex-direction: row
+  gap: 20px
 
   > *
     flex: 1
@@ -52,6 +55,7 @@
 
 .email
   display: inline-flex
+  font-size: 1rem
   flex-direction: row
   align-items: center
   gap: 10px
@@ -62,16 +66,16 @@
   padding: 10px 25px
   border-radius: 8px
 
-@media (min-width: 650px)
-  .info
-    flex-direction: row
-    gap: 20px
-  .description p
-    margin-bottom: 0.25rem * 8
-
-@media (max-width: 649px)
+@media (max-width: 650px)
+  .email
+    font-size: 0.85rem
   .info
     flex-direction: column
     gap: 50px
   .description p
     margin-bottom: 0.25rem * 4
+    font-size: 0.9rem
+  .title
+    font-size: 0.7rem
+  .data
+    font-size: 0.85rem
