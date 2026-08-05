@@ -1,18 +1,22 @@
 @use 'colors' as *
 
 .bottom-info
+  min-width: 0
   display: flex
   flex-direction: column
+  align-items: flex-start
   gap: 5px
 
 .content
+  min-width: 0
   display: flex
   flex-direction: column
-  gap: calc(0.25rem * 3.5)
+  gap: .875rem
 
 .authors
   font-family: Inter, sans-serif
-  font-size: 11px
-  line-height: 1.375
+  font-size: clamp(.75rem, 1.35vw, .8125rem)
+  line-height: 1.5
   color: $secondary-text-color
   font-weight: 500
+  overflow-wrap: anywhere

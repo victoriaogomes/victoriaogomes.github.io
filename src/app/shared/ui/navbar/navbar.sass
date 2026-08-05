@@ -4,7 +4,6 @@
 .selectedLanguage
   @include mat.button-overrides((text-label-text-color: $primary-text-color))
 
-
 header
   width: 100%
   backdrop-filter: blur(8px)
@@ -25,26 +24,38 @@ fa-icon
   font-size: 13px
 
 .navbar
+  width: 100%
   height: 60px
   top: 0
   max-width: 1024px
   display: flex
   align-items: center
-  padding-inline: 24px
+  padding-inline: clamp(1rem, 4vw, 1.5rem)
   margin-inline: auto
   justify-content: space-between
+  gap: 1rem
+
+  > p
+    flex: 0 1 auto
+    min-width: 0
+    font-size: clamp(.95rem, 2vw, 1rem)
+    line-height: 1.2
 
 .nav-links
+  min-width: 0
   display: flex
   align-items: center
-  gap: 30px
+  justify-content: flex-end
+  gap: clamp(.85rem, 2vw, 1.875rem)
 
 .nav-links a
   position: relative
   font-family: Inter, sans-serif
   color: $primary-text-color
   text-decoration: none
-  font-size: 14px
+  font-size: clamp(.75rem, 1.35vw, .875rem)
+  line-height: 1.3
+  text-align: center
   transition: .3s
   font-weight: 500
 
@@ -74,28 +85,8 @@ p
 @media (max-width: 999px)
   .hamburger
     display: flex
+    flex: 0 0 auto
     z-index: 1001
-
-  .hamburger.active span:nth-child(1)
-    transform: rotate(45deg) translate(6px, 6px)
-
-  .hamburger.active span:nth-child(2)
-    opacity: 0
-
-  .hamburger.active span:nth-child(3)
-    transform: rotate(-45deg) translate(6px, -6px)
 
   .nav-links
     display: none
-    flex-direction: column
-    position: absolute
-    top: 60px
-    right: 0
-    background-color: #fff
-    padding: 2rem
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1)
-    z-index: 1000
-
-  .nav-links.active
-    display: flex
-

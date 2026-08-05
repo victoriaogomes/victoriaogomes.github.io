@@ -4,18 +4,38 @@
 :root
   @include mat.menu-overrides((container-color: $background-default-color))
 
+*, *::before, *::after
+  box-sizing: border-box
+
+html
+  scroll-behavior: smooth
+  -webkit-text-size-adjust: 100%
+  text-size-adjust: 100%
+
 body
   font-family: Jost, sans-serif
   margin: 0
   padding: 0
+  min-width: 320px
+  overflow-x: clip
+  line-height: 1.5
 
 h1, h2, h3, h4, h5, p
   margin: 0
   padding: 0
 
+h1, h2, h3, h4, h5, p, li, a, span
+  overflow-wrap: break-word
+
+img, svg
+  max-width: 100%
+
 .portfolio-section
-  padding-block: 96px
-  padding-inline: 24px
+  padding-block: clamp(4rem, 8vw, 6rem)
+  padding-inline: clamp(1rem, 4vw, 1.5rem)
+
+.portfolio-section[id]
+  scroll-margin-top: 5rem
 
 .default-background
   background-color: $background-default-color
@@ -34,4 +54,3 @@ h1, h2, h3, h4, h5, p
   src: url('/fonts/VAGRounded-Light Regular.ttf') format('truetype')
   font-weight: normal
   font-style: normal
-
