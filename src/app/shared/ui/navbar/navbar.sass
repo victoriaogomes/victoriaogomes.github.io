@@ -1,4 +1,9 @@
 @use 'colors' as *
+@use '@angular/material' as mat
+
+.selectedLanguage
+  @include mat.button-overrides((text-label-text-color: $primary-text-color))
+
 
 header
   width: 100%
@@ -15,8 +20,9 @@ header
 .mat-mdc-button
   padding: 0
 
-.mat-mdc-menu-content
-  background: $background-default-color
+fa-icon
+  color: $primary-text-color
+  font-size: 13px
 
 .navbar
   height: 60px
@@ -31,9 +37,10 @@ header
 .nav-links
   display: flex
   align-items: center
-  gap: 35px
+  gap: 30px
 
 .nav-links a
+  position: relative
   font-family: Inter, sans-serif
   color: $primary-text-color
   text-decoration: none
@@ -43,14 +50,13 @@ header
 
 p
   font-weight: 700
-  line-height: 1.5
 
 .nav-links a::after
   content: ""
-  display: block
+  position: absolute
   width: 0
+  bottom: -10px
   height: 2px
-  margin-top: 4px
   background: $navbar-link-hover-underline-color
   transition: .3s
 
@@ -61,11 +67,11 @@ p
   .nav-links a:hover::after
     width: 100%
 
-@media (min-width: 900px)
+@media (min-width: 1000px)
   .hamburger
     display: none
 
-@media (max-width: 899px)
+@media (max-width: 999px)
   .hamburger
     display: flex
     z-index: 1001

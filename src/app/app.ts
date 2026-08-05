@@ -8,6 +8,7 @@ import { Projects } from './projects/projects';
 import { Research } from './research/research';
 import { Publications } from './publications/publications';
 import { Contact } from './contact/contact';
+import { LanguageService } from './services/language-service';
 
 @Component({
   selector: 'app-root',
@@ -17,4 +18,8 @@ import { Contact } from './contact/contact';
 })
 export class App {
   protected readonly currentYear = new Date().getFullYear();
+
+  constructor(private languageService: LanguageService) {
+    this.languageService.init();
+  }
 }
