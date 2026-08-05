@@ -2,7 +2,6 @@
 
 .educationList
   display: flex
-  flex-direction: row
   gap: 10px
 
   app-infocard
@@ -10,6 +9,13 @@
 
   .location
     margin-bottom: calc(0.25rem * 3)
+
+  .side-by-side-info
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
 
 .content
   max-width: 1024px
@@ -44,12 +50,6 @@
   font-size: 0.75rem
   line-height: 1.2
 
-.side-by-side-info
-  display: flex
-  flex-direction: row
-  align-items: center
-  justify-content: space-between
-
 .experience-header
   display: flex
   align-items: center
@@ -82,6 +82,9 @@
   padding-bottom: 1.5rem
 
   .side-by-side-info
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
     padding-bottom: 10px
 
 .role
@@ -111,3 +114,21 @@ li::marker
   gap: 25px
 
 
+@media (min-width: 650px)
+  .educationList
+    flex-direction: row
+
+@media (max-width: 649px)
+  .educationList
+    flex-direction: column
+
+@media (min-width: 450px)
+  .experience-content
+    .side-by-side-info
+      flex-direction: row
+      align-items: center
+
+@media (max-width: 449px)
+  .experience-content
+    .side-by-side-info
+      flex-direction: column

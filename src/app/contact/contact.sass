@@ -3,7 +3,7 @@
 .description
   p
     color: $primary-text-color
-    margin-bottom: 0.25rem * 8
+    text-align: justify
 
 .content
   max-width: 1024px
@@ -11,7 +11,7 @@
 
 .info
   display: flex
-  flex-direction: row
+  flex-wrap: wrap
 
   > *
     flex: 1
@@ -61,3 +61,17 @@
   color: $contact-email-text-color
   padding: 10px 25px
   border-radius: 8px
+
+@media (min-width: 650px)
+  .info
+    flex-direction: row
+    gap: 20px
+  .description p
+    margin-bottom: 0.25rem * 8
+
+@media (max-width: 649px)
+  .info
+    flex-direction: column
+    gap: 50px
+  .description p
+    margin-bottom: 0.25rem * 4

@@ -1,4 +1,4 @@
-@use '../../../../../public/assets/colors' as *
+@use 'colors' as *
 
 header
   width: 100%
@@ -8,6 +8,15 @@ header
   background-color: color-mix(in oklab, $background-default-color 95%, transparent)
   position: fixed
   z-index: 100
+
+.mdc-button
+  min-width: 0
+
+.mat-mdc-button
+  padding: 0
+
+.mat-mdc-menu-content
+  background: $background-default-color
 
 .navbar
   height: 60px
@@ -52,19 +61,35 @@ p
   .nav-links a:hover::after
     width: 100%
 
-@media (max-width: 768px)
-  .navbar
-    justify-content: center
-    height: 50px
-    padding: 0
+@media (min-width: 900px)
+  .hamburger
+    display: none
+
+@media (max-width: 899px)
+  .hamburger
+    display: flex
+    z-index: 1001
+
+  .hamburger.active span:nth-child(1)
+    transform: rotate(45deg) translate(6px, 6px)
+
+  .hamburger.active span:nth-child(2)
+    opacity: 0
+
+  .hamburger.active span:nth-child(3)
+    transform: rotate(-45deg) translate(6px, -6px)
 
   .nav-links
-    display: flex
-    justify-content: center
-    gap: 18px
+    display: none
+    flex-direction: column
+    position: absolute
+    top: 60px
+    right: 0
+    background-color: #fff
+    padding: 2rem
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1)
+    z-index: 1000
 
-  .nav-links a
-    font-size: .75rem
-    text-align: center
-    justify-self: center
-    white-space: nowrap
+  .nav-links.active
+    display: flex
+
