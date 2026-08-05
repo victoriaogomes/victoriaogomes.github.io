@@ -7,16 +7,34 @@
       <fa-icon [icon]="faBars"></fa-icon>
     </button>
 
-    <mat-menu #menu="matMenu">
+    <mat-menu class="expandableMenu" #menu="matMenu">
       @for (item of navItems; track item.href) {
         <a [href]="item.href" mat-menu-item>{{ item.key | translate }}</a>
       }
+      <button class="selectedLanguage" mat-menu-item [matMenuTriggerFor]="language" aria-label="Select language">
+        <fa-icon [icon]="faGlobe"></fa-icon>
+        {{ languageService.currentLanguage.toUpperCase() }}
+      </button>
+      <mat-menu #language="matMenu">
+        @for (language of languageService.supportedLanguages; track language.value) {
+          <p (click)="languageService.setLanguage(language.value)" mat-menu-item>{{language.name}}</p>
+        }
+      </mat-menu>
     </mat-menu>
 
     <nav class="nav-links" [class.active]="isMenuOpen">
       @for (item of navItems; track item.href) {
         <a [href]="item.href">{{ item.key | translate }}</a>
       }
+      <button class="selectedLanguage" matButton [matMenuTriggerFor]="language" aria-label="Select language">
+        <fa-icon [icon]="faGlobe"></fa-icon>
+        {{ languageService.currentLanguage.toUpperCase() }}
+      </button>
+      <mat-menu #language="matMenu">
+        @for (language of languageService.supportedLanguages; track language.value) {
+          <p (click)="languageService.setLanguage(language.value)" mat-menu-item>{{language.name}}</p>
+        }
+      </mat-menu>
     </nav>
   </div>
 </header>
