@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { SectionHeader } from "../shared/components/section-header/section-header";
+import { SectionHeader } from "../shared/ui/section-header/section-header";
 import { TranslatePipe } from "@ngx-translate/core";
-import { Infocard } from '../shared/components/infocard/infocard';
-import { ToolChip } from '../shared/components/tool-chip/tool-chip';
+import { Infocard } from '../shared/ui/infocard/infocard';
+import { ToolChip } from '../shared/ui/tool-chip/tool-chip';
 
 @Component({
   selector: 'app-projects',

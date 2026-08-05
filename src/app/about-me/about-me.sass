@@ -1,10 +1,5 @@
 @use 'colors' as *
 
-.about
-  background-color: $white-blue
-  padding-block: 96px
-  padding-inline: 24px
-
 .content
   max-width: 1024px
   margin-inline: auto
@@ -24,7 +19,7 @@
     font-family: Inter, sans-serif
     font-size: 16px
     line-height: 1.8
-    color: $txt-gray
+    color: $primary-text-color
     text-align: justify
 
 
@@ -34,7 +29,7 @@
 
 .info-card
   padding-bottom: 16px
-  border-bottom: 1px solid $medium-blue
+  border-bottom: 1px solid $about-me-card-border
   margin-block-end: 16px
 
   div
@@ -42,7 +37,7 @@
     font-family: Inter, sans-serif
     line-height: 1.4
     font-weight: 500
-    color: $dark-grey
+    color: $darker-text-color
 
 
 .label
@@ -51,12 +46,9 @@
   letter-spacing: .1em
   margin-bottom: 4px
   text-transform: uppercase
-  color: $medium-gray
+  color: $primary-text-color
 
 @media (max-width: 900px)
-  .about
-    padding: 5rem 1.5rem
-
   .side-info
     grid-template-columns: 1fr
     gap: 3rem

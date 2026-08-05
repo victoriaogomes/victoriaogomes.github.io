@@ -1,0 +1,62 @@
+@use '../../../../../public/assets/colors' as *
+
+fa-icon
+  font-size: .875rem
+  color: $secondary-text-color
+
+.subtitle
+  font-family: Inter, sans-serif
+  font-size: 11px
+  color: $primary-text-color
+  margin-top: calc(0.25rem * 1)
+  line-height: 1.3
+
+.title
+  display: flex
+  gap: 10px
+  align-items: center
+  color: $info-card-text-color
+  line-height: 1.3
+
+.card-header
+  display: flex
+  flex-direction: column
+  margin-bottom: 10px
+  justify-content: space-between
+  align-content: center
+
+.top-content
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+.info-card
+  margin: 0
+  background-color: white
+  &.border
+    backdrop-filter: blur(10px)
+    padding: 15px
+    border: 1px solid $info-card-border
+    border-radius: 14px
+
+.card-header p
+  font-size: 0.875rem
+  font-weight: 600
+
+@media(hover: hover)
+  .info-card.hover-animation
+    &:hover
+      cursor: pointer
+
+    &.border:hover
+      border-color: $info-card-border
+      box-shadow: 0 0 0 1px rgba($info-card-hover-border, 0.25), 0 8px 20px rgba($info-card-hover-border, 0.2)
+      transform: translateY(-2px)
+
+    &:hover .title, &:hover fa-icon
+      color: $info-card-hover-text
+
+@media (max-width: 768px)
+  .info-card
+    margin: 0 15px

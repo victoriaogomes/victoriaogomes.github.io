@@ -1,13 +1,8 @@
 @use 'colors' as *
 
-.contact
-  background-color: $white-blue
-  padding-block: 96px
-  padding-inline: 24px
-
 .description
   p
-    color: $txt-gray
+    color: $primary-text-color
     margin-bottom: 0.25rem * 8
 
 .content
@@ -23,13 +18,16 @@
 
 .contact-info
   display: flex
-  cursor: pointer
+  text-decoration: none
   justify-content: space-between
   flex-direction: row
   align-items: center
   fa-icon
-    color: $light-gray
+    color: $primary-text-color
     font-size: 12px
+
+.data
+  color: $primary-text-color
 
 .contact-list
   display: flex
@@ -40,7 +38,7 @@
   margin-top: 10px
   margin-bottom: 5px
   height: 0.5px
-  background-color: $medium-blue
+  background-color: $contact-card-border
 
 .title
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
@@ -49,7 +47,7 @@
   font-size: .75rem
   line-height: 1.2
   letter-spacing: .1em
-  color: $muted-slate-blue
+  color: $secondary-text-color
   text-transform: uppercase
 
 .email
@@ -58,8 +56,8 @@
   align-items: center
   gap: 10px
   text-decoration: none
-  background-color: $black
+  background-color: $contact-email-background-color
   font-weight: 500
-  color: white
+  color: $contact-email-text-color
   padding: 10px 25px
   border-radius: 8px

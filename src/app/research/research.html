@@ -1,8 +1,8 @@
-<section id="research" class="research">
+<section id="research" class="portfolio-section alternate-background">
   <div class="content">
     <app-section-header
-      number="{{('research.sectionId' | translate)}}"
-      title="{{('research.title' | translate)}}">
+      [number]="'research.sectionId' | translate"
+      [title]="'research.title' | translate">
     </app-section-header>
     <div class="research-list">
       @for (research of ('research.list' | translate); track $index) {

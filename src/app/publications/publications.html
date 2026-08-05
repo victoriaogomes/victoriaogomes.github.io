@@ -1,62 +1,54 @@
-<section id="publications" class="publications">
+<section id="publications" class="portfolio-section default-background">
   <div class="content">
     <app-section-header
-      number="{{('publications.sectionId' | translate)}}"
-      title="{{('publications.title' | translate)}}">
+      [number]="'publications.sectionId' | translate"
+      [title]="'publications.title' | translate">
     </app-section-header>
-    <p class="description" [innerHTML]="('publications.description' | translate) | safeHtml"></p>
+    <p class="description" [innerHTML]="'publications.description' | translate"></p>
 
     <div class="publicationList">
 
-      @for (section of publicationSections(); track section.title) {
+      @for (section of publicationSections; track section.title) {
         <div>
           <div class="header">
             <h3>{{ (section.title | translate) }}</h3>
             <h5>{{ (section.subtitle | translate) }}</h5>
           </div>
-          @let preview = getPublicationPreview(section.publications);
+          @let preview = getPublicationPreview(section.publications());
 
           <app-publication-list
             [publicationList]="preview">
           </app-publication-list>
 
-          @if (getPublicationListSize(section.publications) > 2) {
+          @if (getPublicationListSize(section.publications()) > 2) {
             <div class="view-all-container">
               <button
                 class="view-all-button"
-                (click)="openPublications(section)">
-                {{ ('publications.expandAll' | translate) }}
+                (click)="showPublications(section)">
+                {{ 'publications.expandAll' | translate }}
               </button>
             </div>
           }
         </div>
       }
 
-
-      @if (selectedPublicationSection) {
-        <div class="modal-overlay" (click)="closePublications()">
-
-          <div class="modal-content" (click)="$event.stopPropagation()">
-
-            <button
-              class="close-button"
-              (click)="closePublications()">
-              ×
-            </button>
-
-            <h2>{{ selectedPublicationSection.title | translate }}</h2>
-
-            <p>{{ selectedPublicationSection.subtitle | translate }}</p>
-
-            <app-publication-list
-              [publicationList]="selectedPublicationSection.publications">
-            </app-publication-list>
-
-          </div>
-
+      <ng-template class="modal" #publicationsDialog>
+        <div class="title" mat-dialog-title>
+          <h3 class="title">{{ selectedPublicationSection.title | translate }}</h3>
+          <h5 class="subtitle">{{ selectedPublicationSection.subtitle | translate }}</h5>
         </div>
-      }
+        <mat-dialog-content>
+          <app-publication-list
+            [publicationList]="selectedPublicationSection.publications()">
+          </app-publication-list>
+        </mat-dialog-content>
 
+        <mat-dialog-actions align="end">
+          <button mat-button mat-dialog-close>
+            {{ 'publications.closeButton' | translate }}
+          </button>
+        </mat-dialog-actions>
+      </ng-template>
     </div>
   </div>
 </section>

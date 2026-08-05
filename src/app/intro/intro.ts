@@ -3,14 +3,12 @@ import { FaIconComponent } from "@fortawesome/angular-fontawesome";
 import { TranslatePipe } from "@ngx-translate/core";
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faGoogleScholar, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { SafeHtmlPipe } from '../shared/pipes/safe-html.pipe';
 
 @Component({
   selector: 'app-intro',
   imports: [
     FaIconComponent,
-    TranslatePipe,
-    SafeHtmlPipe
+    TranslatePipe
   ],
   templateUrl: './intro.html',
   styleUrl: './intro.sass',

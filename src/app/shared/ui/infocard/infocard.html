@@ -1,0 +1,23 @@
+<div class="info-card" [class.hover-animation]="hoverAnimation()" (click)="openLink()" [class.border]="border()">
+  <div class="card-header">
+    <div class="top-content">
+      <div class="title">
+        @if (icon(); as iconValue) {
+          <app-icon-badge [icon]="iconValue"></app-icon-badge>
+        }
+        @if (title()) {
+          <p>{{ title() }}</p>
+        }
+      </div>
+      @if (externalLink()) {
+        <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+      }
+    </div>
+    @if (subtitle()) {
+      <span class="subtitle">{{ subtitle() }}</span>
+    }
+  </div>
+
+  <ng-content></ng-content>
+
+</div>

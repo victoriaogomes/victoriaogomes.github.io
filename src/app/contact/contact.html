@@ -1,46 +1,48 @@
-<section id="contact" class="contact">
+<section id="contact" class="portfolio-section alternate-background">
   <div class="content">
     <app-section-header
-      number="{{('contact.sectionId' | translate)}}"
-      title="{{('contact.title' | translate)}}">
+      [number]="'contact.sectionId' | translate"
+      [title]="'contact.title' | translate">
     </app-section-header>
     <div class="info">
       <div class="description">
-        <p>{{ ('contact.description' | translate) }}</p>
-        @let email = ('intro.mail' | translate);
-        <a class="email" [href]="'mailto:' + email"> <fa-icon [icon]="faEnvelope"/> {{ email }} </a>
+        <p>{{ 'contact.description' | translate }}</p>
+        @let email = 'intro.mail' | translate;
+        <a class="email" [href]="'mailto:' + email">
+          <fa-icon [icon]="faEnvelope"/>
+          {{ email }} </a>
       </div>
       <div class="contact-list">
-        @let githubUrl = ('intro.gitHub' | translate);
-        <div class="contact-info" (click)="openLink(githubUrl)">
-          <div class="git-data">
+        @let githubUrl = 'intro.gitHub' | translate;
+        <a class="contact-info" [href]="githubUrl" target="_blank" rel="noopener noreferrer">
+          <div>
             <p class="title">GITHUB</p>
-            <a> {{ githubUrl.replace('https://', '') }} </a>
+            <p class="data"> {{ githubUrl.replace('https://', '') }} </p>
           </div>
           <fa-icon [icon]="faChevronRight"/>
-        </div>
+        </a>
 
         <div class="line"></div>
 
-        @let linkedinUrl = ('intro.linkedIn' | translate);
-        <div class="contact-info" (click)="openLink(linkedinUrl)">
-          <div class="git-data">
+        @let linkedinUrl = 'intro.linkedIn' | translate;
+        <a class="contact-info" [href]="linkedinUrl">
+          <div>
             <p class="title">LINKEDIN</p>
-            <a> {{ linkedinUrl.replace('https://', '') }} </a>
+            <p class="data"> {{ linkedinUrl.replace('https://', '') }} </p>
           </div>
           <fa-icon [icon]="faChevronRight"/>
-        </div>
+        </a>
 
         <div class="line"></div>
 
-        @let scholarUrl = ('intro.googleScholar' | translate);
-        <div class="contact-info" (click)="openLink(scholarUrl)">
-          <div class="git-data">
+        @let scholarUrl = 'intro.googleScholar' | translate;
+        <a class="contact-info" [href]="scholarUrl">
+          <div>
             <p class="title">GOOGLE SCHOLAR</p>
-            <a> View publications & citations </a>
+            <p class="data"> View publications & citations </p>
           </div>
           <fa-icon [icon]="faChevronRight"/>
-        </div>
+        </a>
       </div>
     </div>
   </div>

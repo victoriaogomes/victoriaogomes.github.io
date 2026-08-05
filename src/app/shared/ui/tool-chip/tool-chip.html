@@ -1,0 +1,16 @@
+<div [style.background]="backgroundColor()" class="tool-chip" [class.hover-animation]="hoverAnimation()">
+  @if (icon()) {
+    <img
+      [src]="icon()"
+      [alt]="title()"
+      class="tool-chip-logo"
+    >
+  }
+
+  <span
+    [style.font-size.px]="fontSize()"
+    [style.color]="textColor()"
+    [style.font-weight]="fontWeight()">
+    {{ title() }}
+  </span>
+</div>

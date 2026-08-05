@@ -1,0 +1,101 @@
+@use '../../../../public/assets/colors' as *
+
+.skill-subsection-grid
+  padding-top: 20px
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  gap: 10px
+
+.skills-subsection-header
+  display: flex
+  flex-direction: row
+  padding-top: 20px
+  align-items: center
+  gap: 5px
+
+.skills-subsection-icon, .skills-subsection-header
+  color: $primary-text-color
+
+.skills-subsection-title
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+  text-transform: uppercase
+  font-size: .75rem
+  letter-spacing: .1em
+  font-weight: 550
+
+.skills-subsection-card
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  gap: calc(.25rem * 3)
+  background: white
+  border: 1px solid $technical-skill-border
+  border-radius: 18px
+  padding: 1rem
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease
+  height: 110px
+  width: 80px
+
+  .icon
+    width: 35px
+    height: 35px
+    object-fit: contain
+
+  .label
+    font-weight: 500
+    font-size: 0.75rem
+    color: $primary-text-color
+    font-family: Inter, sans-serif
+    text-align: center
+
+.skill-card-experience
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 0.35rem
+  font-size: 0.75rem
+  line-height: 1
+
+.skill-level
+  padding: 0.2rem 0.5rem
+  border-radius: 999px
+  font-weight: 600
+
+.skill-level--advanced
+  color: $technical-skill-advanced-text-color
+  background: $technical-skill-advanced-background-color
+
+.skill-level--intermediate
+  color: $technical-skill-intermediate-text-color
+  background: $technical-skill-intermediate-background-color
+
+.skill-level--beginner
+  color: $technical-skill-beginner-text-color
+  background: $technical-skill-beginner-background-color
+
+.skill-duration
+  color: $secondary-text-color
+  font-weight: 500
+
+@media(hover: hover)
+  .skills-subsection-card
+    &:hover
+      border-color: $technical-skill-border
+      box-shadow: 0 0 0 1px $technical-skill-card-shadow, 0 8px 20px $technical-skill-card-shadow
+      transform: translateY(-2px)
+
+@media (max-width: 768px)
+  .skills-subsection-title
+    font-size: .75rem
+  .skill-level, .skill-duration
+    font-size: .7rem
+  .skills-subsection-card
+    height: 100px
+    width: 70px
+    .label
+      font-size: 0.75rem
+    .icon
+      width: 30px
+      height: 30px
