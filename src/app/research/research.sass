@@ -6,7 +6,6 @@
 
 .research-list
   display: flex
-  flex-direction: row
   gap: 10px
 
 .description
@@ -15,3 +14,11 @@
   font-family: Inter, sans-serif
   color: $primary-text-color
   text-align: justify
+
+@media (min-width: 1050px)
+  .research-list
+    flex-direction: row
+
+@media (max-width: 1049px)
+  .research-list
+    flex-direction: column

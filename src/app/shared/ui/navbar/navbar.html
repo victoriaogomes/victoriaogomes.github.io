@@ -2,20 +2,21 @@
   <div class="navbar">
     <p>Victória Gomes</p>
 
-    <nav class="nav-links">
-      <a href="#about">{{ 'navbar.about' | translate }}</a>
+    <button matButton class="hamburger" [matMenuTriggerFor]="menu" [class.active]="isMenuOpen"
+            aria-label="Toggle navigation">
+      <fa-icon [icon]="faBars"></fa-icon>
+    </button>
 
-      <a href="#background">{{ 'navbar.background' | translate }}</a>
+    <mat-menu #menu="matMenu">
+      @for (item of navItems; track item.href) {
+        <a [href]="item.href" mat-menu-item>{{ item.key | translate }}</a>
+      }
+    </mat-menu>
 
-      <a href="#technical-skills">{{ 'navbar.technical-skills' | translate }}</a>
-
-      <a href="#projects">{{ 'navbar.projects' | translate }}</a>
-
-      <a href="#research">{{ 'navbar.research' | translate }}</a>
-
-      <a href="#publications">{{ 'navbar.publications' | translate }}</a>
-
-      <a href="#contact">{{ 'navbar.contact' | translate }}</a>
+    <nav class="nav-links" [class.active]="isMenuOpen">
+      @for (item of navItems; track item.href) {
+        <a [href]="item.href">{{ item.key | translate }}</a>
+      }
     </nav>
   </div>
 </header>
