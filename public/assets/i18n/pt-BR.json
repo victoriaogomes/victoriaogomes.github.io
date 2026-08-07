@@ -16,7 +16,7 @@
       "alt": "Foto de Victória Gomes"
     },
     "subtitle": "Engenheira de Software Full Stack · Doutoranda em Ciência da Computação",
-    "description": "Engenheira de software com 4 anos de experiência na indústria, atualmente cursando doutorado em Ciência da Computação. Apaixonada por IA, engenharia de software e pelo desenvolvimento de soluções práticas.",
+    "description": "Engenheira de software full-stack com quatro anos de experiência na indústria, desenvolvendo produtos de tecnologia financeira, automações de fluxos de trabalho e ferramentas com Java, Spring Boot, Python, AWS, TypeScript e Angular. <br><br>\n\nBusco um estágio em Engenharia de Software no qual eu possa contribuir com minha experiência prévia na indústria, trabalhar em sistemas de produção e continuar me desenvolvendo em contato com práticas modernas de engenharia enquanto realizo meu doutorado.",
     "location": "Richmond, VA, USA",
     "mail": "victoria.oliveiragomes@gmail.com",
     "gitHub": "https://github.com/victoriaogomes",
@@ -85,6 +85,7 @@
         {
           "company": "Banco PAN",
           "location": "São Paulo, SP, BR",
+          "awards": "\uD83C\uDFC5 Mérito por Alta Performance · 2023 & 2024 · Reconhecimento recebido por trabalho em equipe, inovação, dedicação, senso de responsabilidade e iniciativa",
           "roles": [
             {
               "title": "Tech Lead",
@@ -126,6 +127,18 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    "volunteer": {
+      "title": "Experiência voluntária",
+      "list": [
+        {
+          "program": "Programa de Experts em Produtos Google",
+          "title": "Google Product Expert nível Diamante • Google Drive",
+          "experience": "Apoio usuários respondendo a dúvidas, solucionando problemas técnicos e compartilhando feedback sobre as ferramentas.",
+          "startDate": "Jul. 2023",
+          "endDate": "Presente"
         }
       ]
     }

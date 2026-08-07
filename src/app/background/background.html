@@ -41,7 +41,7 @@
                 <span class="separator"></span>
                 <span class="location">{{ experienceItem.location }}</span>
               </div>
-
+              <p class="awards">{{ experienceItem.awards }}</p>
               @for (role of experienceItem.roles; track $index) {
                 <div class="experience-item">
                   <div class="experience-timeline"></div>
@@ -60,6 +60,35 @@
                   </div>
                 </div>
               }
+            </div>
+          }
+        </div>
+      </div>
+
+      <div class="volunteer">
+        <p class="label">{{ 'background.volunteer.title' | translate }}</p>
+
+        <div class="experienceList">
+          @for (experienceItem of ('background.volunteer.list' | translate); track $index) {
+            <div>
+              <div class="experience-header">
+                <span class="company">{{ experienceItem.program }}</span>
+              </div>
+              <p class="awards">{{ experienceItem.awards }}</p>
+              <div class="experience-item">
+                <div class="experience-timeline"></div>
+
+                <div class="experience-content">
+                  <div class="side-by-side-info">
+                    <h3 class="role">{{ experienceItem.title }}</h3>
+                    <span class="period">{{ experienceItem.startDate }} – {{ experienceItem.endDate }}</span>
+                  </div>
+
+                  <ul>
+                    <li>{{ experienceItem.experience }}</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           }
         </div>
