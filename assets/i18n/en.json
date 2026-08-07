@@ -21,7 +21,13 @@
     "mail": "victoria.oliveiragomes@gmail.com",
     "gitHub": "https://github.com/victoriaogomes",
     "linkedIn": "https://linkedin.com/in/victoriaogomes/",
-    "googleScholar": "https://scholar.google.com/citations?user=wsfTcGoAAAAJ&hl=en"
+    "googleScholar": "https://scholar.google.com/citations?user=wsfTcGoAAAAJ&hl=en",
+    "cv": {
+      "label": "Download CV",
+      "path": "assets/documents/Victoria_Gomes_Software_Engineer_Resume.pdf",
+      "fileName": "Victoria_Gomes_Software_Engineer_Resume.pdf",
+      "ariaLabel": "Download Victória Gomes' CV"
+    }
   },
   "aboutMe": {
     "sectionId": "01",
@@ -84,28 +90,30 @@
               "startDate": "Jan. 2025",
               "endDate": "Jul. 2025",
               "responsibilities": [
-                "Led the OpenFinance squad, driving the design and delivery of solutions compliant with regulatory standards, collaborating closely with other teams to ensure scalable and efficient software delivery through CI/CD",
-                "Performed technical analyses to identify opportunities for continuous improvement in systems and processes",
-                "Developed and maintained solutions using Java, Spring Boot, Quarkus, AWS, MongoDB, and Angular, while also providing hands-on support to the development team, fostering best practices"
+                "Led a cross-functional Open Finance squad of seven engineers, owning architecture and delivery across 30+ microservices and coordinating dependencies with five teams to meet regulatory deadlines",
+                "Translated business requirements and system designs into implementation plans through backlog refinement and architecture reviews; communicated technical decisions, risks, dependencies, and release readiness to management and partner teams",
+                "Reinforced code review, CI/CD, testing, and SonarQube quality standards across Java, Python, and Angular codebases, sustaining 90%+ unit test coverage",
+                "Remained hands-on with Java, Spring Boot, Quarkus, Python, and Angular, including JUnit/LocalStack integration tests and Selenium end-to-end tests"
               ]
             },
             {
-              "title": "Full-stack Mid-level Software Engineer",
+              "title": "Mid-level Full-stack Software Engineer",
               "startDate": "Aug. 2023",
               "endDate": "Dec. 2024",
               "responsibilities": [
-                "Developed cloud-native apps (APIs, event-driven services, libraries and front-end solutions) within a 30+ component architecture, improving client service quality, using Java, Dart, Flutter, Spring Boot and AWS",
-                "Created a branch management system that enforced Git flow, identifying 200+ obsolete branches and 50+ branches without backups, connected with Azure DevOps",
-                "Implemented an event-driven search engine to retrieve customer data from other financial institutions, processing over 1 million messages per execution"
+                "Developed APIs, event-driven services, shared libraries, and frontend features across an ecosystem of 30+ services and applications using Java, Spring Boot, AWS, Dart, and Flutter",
+                "Built JUnit/LocalStack integration tests and Selenium end-to-end tests and instrumented services with Dynatrace, Elasticsearch, and Amazon CloudWatch",
+                "Built an Azure DevOps-integrated branch governance tool that enforced Gitflow policies and identified 200+ obsolete branches and 50+ branches lacking backup coverage",
+                "Implemented an event-driven customer data retrieval service that processed 1M+ messages per daily run"
               ]
             },
             {
-              "title": "Full-stack Junior Software Engineer",
+              "title": "Junior Full-stack Software Engineer",
               "startDate": "Feb. 2022",
               "endDate": "Jul. 2023",
               "responsibilities": [
-                "Automated report generation using Python and Quart, reducing assembly time from 1 week to 30 seconds",
-                "Migrated a front-end web app from AWS Beanstalk to an AWS S3 static approach, reducing maintenance costs by over 90%"
+                "Automated weekly report generation using Python and Quart, reducing processing time from five business days to 30 seconds",
+                "Migrated a web application from AWS Elastic Beanstalk to Amazon S3 static hosting, reducing annual infrastructure and maintenance costs by more than 90%"
               ]
             },
             {
@@ -113,23 +121,8 @@
               "startDate": "Aug. 2021",
               "endDate": "Jan. 2022",
               "responsibilities": [
-                "Selected as 1 of 29 students out of 5,000 candidates to enhance software development and soft skills",
-                "Developed front-end web features using Angular, delivering new functionalities to bank customers",
-                "Implemented a web app that highlights key aspects for code review in Java, Python and JavaScript, increasing early bug detection by 20%"
-              ]
-            }
-          ]
-        },
-        {
-          "company": "Z-reader",
-          "location": "Feira de Santana, BA, BR",
-          "roles": [
-            {
-              "title": "Technical Leader and Full-stack Developer",
-              "startDate": "Dec. 2019",
-              "endDate": "Mar. 2023",
-              "responsibilities": [
-                "Led the development team and managed the feature implementation, as well as designed and executed the migration of a mobile app from Java to Flutter, creating a more intuitive and efficient user experience"
+                "Selected as one of 29 participants from 5,000+ applicants for Banco PAN’s software engineering program",
+                "Built an internal code-review assistant for Java, Python, and JavaScript repositories, increasing pre-merge bug detection by 20% across two development teams"
               ]
             }
           ]
@@ -418,7 +411,7 @@
     "list": [
       {
         "id": "Ai4SE",
-        "title": "AI for Empirical Software Engineering",
+        "title": "AI for Empirical Soft. Engineering",
         "description": "Exploring how AI is changing the way empirical software engineering research is conducted, from data analysis to study design and evaluation."
       },
       {
