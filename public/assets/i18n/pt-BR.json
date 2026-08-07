@@ -87,13 +87,13 @@
           "location": "São Paulo, SP, BR",
           "roles": [
             {
-              "title": "Technical Leader",
+              "title": "Tech Lead",
               "startDate": "Jan. 2025",
               "endDate": "Jul. 2025",
               "responsibilities": [
-                "Liderei a squad de Open Finance, conduzindo o projeto e a entrega de soluções em conformidade com as normas regulatórias, colaborando de perto com outras equipes para garantir entregas de software escaláveis e eficientes por meio de CI/CD",
-                "Realizei análises técnicas para identificar oportunidades de melhoria contínua em sistemas e processos",
-                "Desenvolvi e auxiliei na manutenção de soluções desenvolvidas com Java, Spring Boot, Quarkus, AWS, MongoDB e Angular, além de oferecer suporte prático à equipe de desenvolvimento e incentivar a adoção de boas práticas"
+                "Liderei uma squad multidisciplinar de Open Finance com sete engenheiros, responsável pela arquitetura e pelas entregas de um ecossistema com mais de 30 microsserviços, coordenando dependências com cinco equipes para cumprir prazos regulatórios",
+                "Transformei requisitos de negócio e desenhos de solução em planos de implementação, conduzindo refinamentos de backlog e revisões de arquitetura e alinhando decisões, riscos, dependências e releases com gestores e times parceiros",
+                "Fortaleci práticas de code review, CI/CD, testes e qualidade com SonarQube em aplicações Java, Python e Angular, mantendo cobertura de testes unitários acima de 90%"
               ]
             },
             {
@@ -101,9 +101,10 @@
               "startDate": "Ago. 2023",
               "endDate": "Dec. 2024",
               "responsibilities": [
-                "Desenvolvi aplicações nativas em nuvem — APIs, serviços orientados a eventos, bibliotecas e soluções front-end — em uma arquitetura com mais de 30 componentes, melhorando a qualidade do atendimento ao cliente, utilizando Java, Dart, Flutter, Spring Boot e serviços da AWS",
-                "Criei um sistema de gerenciamento de branches que aplicava o Git Flow, identificando mais de 200 branches obsoletas e mais de 50 branches sem backup, integrado ao Azure DevOps",
-                "Implementou um mecanismo de busca orientado a eventos para recuperar dados de clientes de outras instituições financeiras, processando mais de 1 milhão de mensagens por execução"
+                "Desenvolvi APIs, serviços orientados a eventos, bibliotecas compartilhadas e funcionalidades de frontend em um ecossistema com mais de 30 serviços e aplicações, usando Java, Spring Boot, AWS, Dart e Flutter",
+                "Implementei testes de integração em JUnit/LocalStack, testes E2E em Selenium e monitoramento com Dynatrace, Elasticsearch e Amazon CloudWatch",
+                "Criei uma ferramenta de governança de branches integrada ao Azure DevOps, aplicando políticas de Gitflow e identificando mais de 200 branches obsoletas e 50 sem cobertura de backup",
+                "Implementei um serviço orientado a eventos para consulta de dados de clientes, com processamento de mais de 1 milhão de mensagens por execução diária"
               ]
             },
             {
@@ -111,8 +112,8 @@
               "startDate": "Fev. 2022",
               "endDate": "Jul. 2023",
               "responsibilities": [
-                "Automatizei a geração de relatórios com Python e Quart, reduzindo o tempo de elaboração de 1 semana para 30 segundos",
-                "Migrei uma aplicação web front-end do AWS Beanstalk para uma abordagem estática no AWS S3, reduzindo os custos de manutenção em mais de 90%"
+                "Automatizei a geração de um relatório semanal usando Python e Quart, reduzindo o tempo de produção do mesmo de cinco dias úteis para 30 segundos",
+                "Migrei uma aplicação web do AWS Elastic Beanstalk para uma abordagem estática usando o Amazon S3, reduzindo os custos anuais de manutenção e infraestrutura em mais de 90%"
               ]
             },
             {
@@ -120,23 +121,8 @@
               "startDate": "Ago. 2021",
               "endDate": "Jan. 2022",
               "responsibilities": [
-                "Fui selecionada como uma das 29 estudantes entre 5.000 candidaturas para aprimorar conhecimentos em desenvolvimento de software e habilidades interpessoais",
-                "Desenvolvi funcionalidades web front-end com Angular, entregando novos recursos aos clientes do banco",
-                "Implementei uma aplicação web que destaca aspectos importantes para a revisão de código em Java, Python e JavaScript, aumentando em 20% a detecção antecipada de bugs"
-              ]
-            }
-          ]
-        },
-        {
-          "company": "Z-reader",
-          "location": "Feira de Santana, BA, BR",
-          "roles": [
-            {
-              "title": "Technical Leader e desenvolvedora Full Stack",
-              "startDate": "Dez. 2019",
-              "endDate": "Mar. 2023",
-              "responsibilities": [
-                "Liderei a equipe de desenvolvimento e gerenciei a implementação de funcionalidades, além de projetar e executar a migração de uma aplicação móvel de Java para Flutter, criando uma experiência de usuário mais intuitiva e eficiente"
+                "Fui selecionada como uma dos 29 estudantes, em um processo com mais de 5.000 candidaturas, para o programa de engenharia de software do Banco PAN",
+                "Desenvolvi um assistente interno de revisão de código para repositórios Java, Python e JavaScript, elevando em 20% a detecção de bugs antes do merge em duas equipes de desenvolvimento"
               ]
             }
           ]
