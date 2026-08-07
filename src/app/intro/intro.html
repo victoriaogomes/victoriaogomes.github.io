@@ -12,7 +12,7 @@
         {{ 'intro.subtitle' | translate }}
       </p>
 
-      <p class="description">{{ 'intro.description' | translate }}</p>
+      <p class="description" [innerHTML]="'intro.description' | translate"></p>
 
       <div class="location">
         <fa-icon [icon]="faLocationDot"/>
