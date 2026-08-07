@@ -125,7 +125,8 @@ The file contains the data used by all main sections. Update the values while ke
 ### 2. Replace images and icons
 
 - Replace the profile image in `public/assets/images/`
-- Add, replace or remove technical-skill icons in `public/assets/images/technical-skills/`
+- Add the CV PDF to `public/assets/documents/` and configure its path under `intro.cv` in each language file
+- Add or replace technical-skill icons in `public/assets/images/technical-skills/`
 - Update image paths and alternative text in the corresponding i18n file
 - Replace `public/favicon.png` when using a different visual identity
 

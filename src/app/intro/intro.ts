@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FaIconComponent } from "@fortawesome/angular-fontawesome";
 import { TranslatePipe } from "@ngx-translate/core";
-import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faDownload, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faGoogleScholar, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -19,4 +19,5 @@ export class Intro {
   protected readonly faGithub = faGithub;
   protected readonly faLinkedin = faLinkedin;
   protected readonly faGoogleScholar = faGoogleScholar;
+  protected readonly faDownload = faDownload;
 }

@@ -21,7 +21,14 @@
     "mail": "victoria.oliveiragomes@gmail.com",
     "gitHub": "https://github.com/victoriaogomes",
     "linkedIn": "https://linkedin.com/in/victoriaogomes/",
-    "googleScholar": "https://scholar.google.com/citations?user=wsfTcGoAAAAJ&hl=en"
+    "googleScholar": "https://scholar.google.com/citations?user=wsfTcGoAAAAJ&hl=en",
+    "cv": {
+      "label": "Baixar CV",
+      "path": "assets/documents/Victoria_Gomes_Engenheira_de_Software_CV.pdf",
+      "fileName": "Victoria_Gomes_Engenheira_de_Software_CV.pdf",
+      "ariaLabel": "Download Victória Gomes' CV"
+    },
+    "downloadCv": "Baixar CV"
   },
   "aboutMe": {
     "sectionId": "01",
