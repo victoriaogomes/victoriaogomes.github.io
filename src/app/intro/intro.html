@@ -1,48 +1,60 @@
 <section class="about-me default-background">
   <div class="content">
-    <div class="badge">
-      <span class="dot"></span>
-      {{ 'intro.tooltip' | translate }}
+    <div class="resume-main-info">
+      <div class="badge">
+        <span class="dot"></span>
+        {{ 'intro.tooltip' | translate }}
+      </div>
+
+      <h1 class="title" [innerHTML]="'intro.name' | translate"></h1>
+
+      <p class="subtitle">
+        {{ 'intro.subtitle' | translate }}
+      </p>
+
+      <p class="description">{{ 'intro.description' | translate }}</p>
+
+      <div class="location">
+        <fa-icon [icon]="faLocationDot"/>
+        <span>{{ 'intro.location' | translate }}</span>
+      </div>
+
+      <a
+        class="cv-button"
+        [href]="'intro.cv.path' | translate"
+        [attr.download]="'intro.cv.fileName' | translate"
+        [attr.aria-label]="'intro.cv.ariaLabel' | translate"
+      >
+        <fa-icon [icon]="faDownload"/>
+        <span>{{ 'intro.cv.label' | translate }}</span>
+      </a>
+
+      <div class="social-links">
+        <a class="icon-button" [href]="'mailto:' + 'intro.mail' | translate">
+          <fa-icon aria-label="Email link" [icon]="faEnvelope"/>
+        </a>
+
+        <a class="icon-button" [href]=" 'intro.gitHub' | translate">
+          <fa-icon aria-label="GitHub link" [icon]="faGithub"/>
+        </a>
+
+        <a class="icon-button" [href]=" 'intro.linkedIn' | translate">
+          <fa-icon aria-label="LinkedIn link" [icon]="faLinkedin"/>
+        </a>
+
+        <a class="icon-button" [href]=" 'intro.googleScholar' | translate">
+          <fa-icon aria-label="Google Scholar link" [icon]="faGoogleScholar"/>
+        </a>
+      </div>
+
     </div>
 
-    <h1 class="title" [innerHTML]="'intro.name' | translate"></h1>
-
-    <p class="subtitle">
-      {{ 'intro.subtitle' | translate }}
-    </p>
-
-    <p class="description">{{ 'intro.description' | translate }}</p>
-
-    <div class="location">
-      <fa-icon [icon]="faLocationDot"/>
-      <span>{{ 'intro.location' | translate }}</span>
+    <div class="image">
+      <img
+        [src]="'intro.profilePicture.path' | translate"
+        [alt]="'intro.profilePicture.alt' | translate"
+      >
     </div>
-
-    <div class="social-links">
-      <a class="icon-button" [href]="'mailto:' + 'intro.mail' | translate">
-        <fa-icon aria-label="Email link" [icon]="faEnvelope"/>
-      </a>
-
-      <a class="icon-button" [href]=" 'intro.gitHub' | translate">
-        <fa-icon aria-label="GitHub link" [icon]="faGithub"/>
-      </a>
-
-      <a class="icon-button" [href]=" 'intro.linkedIn' | translate">
-        <fa-icon aria-label="LinkedIn link" [icon]="faLinkedin"/>
-      </a>
-
-      <a class="icon-button" [href]=" 'intro.googleScholar' | translate">
-        <fa-icon aria-label="Google Scholar link" [icon]="faGoogleScholar"/>
-      </a>
-    </div>
-
-  </div>
-
-  <div class="image">
-    <img
-      [src]="'intro.profilePicture.path' | translate"
-      [alt]="'intro.profilePicture.alt' | translate"
-    >
   </div>
 
 </section>

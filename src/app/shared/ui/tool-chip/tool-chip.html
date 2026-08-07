@@ -8,7 +8,7 @@
   }
 
   <span
-    [style.font-size.px]="fontSize()"
+    [style.--chip-font-size]="fontSize() ? fontSize() + 'px' : null"
     [style.color]="textColor()"
     [style.font-weight]="fontWeight()">
     {{ title() }}

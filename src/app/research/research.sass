@@ -1,24 +1,30 @@
 @use 'colors' as *
 
 .content
-  max-width: 1024px
+  max-width: 1110px
   margin-inline: auto
 
 .research-list
-  display: flex
-  gap: 10px
+  display: grid
+  grid-template-columns: repeat(3, minmax(0, 1fr))
+  align-items: stretch
+  gap: 12px
+
+  app-infocard
+    min-width: 0
 
 .description
-  font-size: .75rem
-  margin-block: calc(0.25rem * 4)
+  font-size: clamp(.9rem, 1.45vw, .95rem)
+  line-height: 1.65
+  margin-block: 1rem
   font-family: Inter, sans-serif
   color: $primary-text-color
-  text-align: justify
+  text-align: left
 
 @media (min-width: 1050px)
   .research-list
-    flex-direction: row
+    grid-template-columns: repeat(3, minmax(0, 1fr))
 
 @media (max-width: 1049px)
   .research-list
-    flex-direction: column
+    grid-template-columns: 1fr

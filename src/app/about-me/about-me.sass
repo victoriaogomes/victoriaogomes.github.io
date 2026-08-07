@@ -1,14 +1,16 @@
 @use 'colors' as *
 
 .content
-  max-width: 1024px
+  max-width: 1110px
   margin-inline: auto
 
 .side-info
   display: grid
-  grid-template-columns: 2fr 1fr
-  gap: 48px
+  grid-template-columns: minmax(0, 2fr) minmax(14rem, 1fr)
+  gap: clamp(2rem, 5vw, 3rem)
 
+  > *
+    min-width: 0
 
 .description
   display: flex
@@ -17,6 +19,7 @@
 
   p
     font-family: Inter, sans-serif
+    font-size: clamp(.95rem, 1.4vw, 1rem)
     line-height: 1.8
     color: $primary-text-color
     text-align: justify
@@ -25,44 +28,36 @@
 .info
   display: flex
   flex-direction: column
+  min-width: 0
 
 .info-card
+  min-width: 0
   padding-bottom: 16px
   border-bottom: 1px solid $about-me-card-border
   margin-block-end: 16px
 
   div
     font-family: Inter, sans-serif
-    line-height: 1.4
+    font-size: clamp(.9rem, 1.4vw, 1rem)
+    line-height: 1.5
     font-weight: 500
     color: $darker-text-color
-
+    overflow-wrap: anywhere
 
 .label
+  display: block
+  font-size: .75rem
+  line-height: 1.4
   letter-spacing: .1em
   margin-bottom: 4px
   text-transform: uppercase
   color: $primary-text-color
 
-@media (min-width: 900px)
-  .description p
-    font-size: 1rem
-  .label
-    font-size: 12px
-
-
 @media (max-width: 899px)
   .side-info
-    grid-template-columns: 1fr
+    grid-template-columns: minmax(0, 1fr)
     gap: 3rem
-  .info-card div
-    font-size: 14px
 
+@media (max-width: 650px)
   .description p
-    font-size: 0.85rem
-  .label
-    font-size: 11px
-  .info-card div
-    font-size: 13px
-
-
+    text-align: left

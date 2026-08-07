@@ -1,12 +1,13 @@
 @use 'colors' as *
 
 .content
-  max-width: 1024px
+  max-width: 1110px
   margin-inline: auto
 
 .description
   margin-bottom: 30px
   font-family: Inter, sans-serif
+  font-size: clamp(.95rem, 1.4vw, 1rem)
   line-height: 1.8
   color: $primary-text-color
   text-align: justify
@@ -17,14 +18,21 @@
   gap: 30px
 
 .header
+  min-width: 0
   display: flex
   flex-direction: column
   gap: 4px
   margin-bottom: 15px
 
+  h3
+    line-height: 1.3
+    overflow-wrap: anywhere
+
   h5
     font-weight: 500
+    line-height: 1.45
     color: $primary-text-color
+    overflow-wrap: anywhere
 
 .view-all-container
   display: flex
@@ -37,7 +45,7 @@
   background: transparent
   color: $publications-view-all-text-color
   cursor: pointer
-  font-size: 1rem
+  font-size: clamp(.9rem, 1.5vw, 1rem)
   font-weight: 600
 
   &:hover
@@ -48,6 +56,7 @@
   margin: 0
   padding-bottom: 0
   font-family: Jost, sans-serif
+  overflow-wrap: anywhere
 
 .subtitle
   font-weight: 500
@@ -55,7 +64,9 @@
   margin: 0
   padding-top: 0
   font-family: Inter, sans-serif
+  line-height: 1.45
   padding-bottom: 15px
+  overflow-wrap: anywhere
 
 .mat-mdc-dialog-title::before
   height: 10px
@@ -63,11 +74,6 @@
   flex-direction: column
   gap: 5px
 
-@media (min-width: 900px)
+@media (max-width: 650px)
   .description
-    font-size: 1rem
-
-
-@media (max-width: 899px)
-  .description
-    font-size: 0.85rem
+    text-align: left

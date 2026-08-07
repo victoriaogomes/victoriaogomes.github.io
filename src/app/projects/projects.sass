@@ -1,12 +1,16 @@
 @use 'colors' as *
 
 .content
-  max-width: 1024px
+  max-width: 1110px
   margin-inline: auto
 
 .project-list
   display: flex
   gap: 10px
+
+  app-infocard
+    min-width: 0
+    flex: 1
 
 .side-by-side-info
   display: flex
@@ -16,12 +20,12 @@
   gap: 10px
 
 .description
-  font-size: .75rem
-  margin-block: calc(0.25rem * 4)
+  font-size: clamp(.9rem, 1.45vw, .95rem)
+  line-height: 1.65
+  margin-block: 1rem
   font-family: Inter, sans-serif
   color: $primary-text-color
-  text-align: justify
-
+  text-align: left
 
 @media (min-width: 750px)
   .project-list
