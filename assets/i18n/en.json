@@ -15,8 +15,8 @@
       "path": "assets/images/me.jpg",
       "alt": "Victória Gomes' picture"
     },
-    "subtitle": "Full-Stack Software Engineer · PhD Student in Computer Science",
-    "description": "Software engineer with 4 years of industry experience, currently pursuing a PhD in Computer Science. Passionate about AI, software engineering, and building practical solutions.",
+    "subtitle": "Full-Stack Software Engineer · Computer Science PhD Student",
+    "description": "Full-stack engineer with four years of industry experience building financial-technology products, workflow automation, and tools using Java, Spring Boot, Python, AWS, TypeScript, and Angular. <br> <br> I am seeking a software engineering internship where I can contribute my prior industry experience, work on production systems, and continue developing alongside current engineering practices while completing my PhD.",
     "location": "Richmond, VA, USA",
     "mail": "victoria.oliveiragomes@gmail.com",
     "gitHub": "https://github.com/victoriaogomes",
@@ -84,6 +84,7 @@
         {
           "company": "Banco PAN",
           "location": "São Paulo, SP, BR",
+          "awards": "\uD83C\uDFC5 High-Performance Merit Recognition · 2023 & 2024 · Recognized for teamwork, innovation, dedication, ownership, and initiative",
           "roles": [
             {
               "title": "Technical Leader",
@@ -126,6 +127,18 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    "volunteer": {
+      "title": "Volunteer Experience",
+      "list": [
+        {
+          "program": "Google Product Experts Program",
+          "title": "Diamond Google Product Expert • Google Drive",
+          "experience": "I support users by answering product questions, troubleshooting technical issues, and sharing product feedback",
+          "startDate": "Jul. 2023",
+          "endDate": "Present"
         }
       ]
     }
