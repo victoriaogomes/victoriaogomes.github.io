@@ -622,6 +622,21 @@
           "authors": "Gomes, V. O., Selb, D., Palomba, F., Spinola, R. & Lo, D.",
           "venue": "Em processo de submissão",
           "url": "https://arxiv.org/abs/2604.26192"
+        },
+        {
+          "title": "The Hidden Methodological Layer: Uncovering Threats to Validity in LLM-Assisted Empirical Software Engineering",
+          "lang": "Inglês",
+          "year": "2026",
+          "authors": "Gomes, V. O., Palomba, F., Feldt, R., Zimmermann, T., Lo, D. & Spinola, R.",
+          "venue": "Em processo de submissão"
+        },
+        {
+          "title": "Antipatterns in AI-assisted Qualitative Data Analysis: A Catalog of Temptations and Pitfalls for Software Engineering Researchers",
+          "lang": "Inglês",
+          "year": "2026",
+          "authors": "Hoda, R., Seaman, Carolyn, Gomes, V. O. & Spinola, R.",
+          "venue": "Em processo de submissão",
+          "url": "https://arxiv.org/abs/2608.27927"
         }
       ]
     }
