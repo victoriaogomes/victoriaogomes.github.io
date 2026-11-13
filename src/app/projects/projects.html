@@ -6,21 +6,28 @@
     </app-section-header>
     <div class="project-list">
       @for (project of ('projects.list' | translate); track $index) {
-        <app-infocard [hoverAnimation]="true" [title]="project.title" [externalLink]="project.link">
-          <p class="description">{{ project.description }}</p>
-          <div class="side-by-side-info">
-            @for (technology of project.technologies; track $index) {
-              <app-tool-chip
-                [title]="technology"
-                textColor="#51515b"
-                backgroundColor="#dbeafe"
-                fontSize="11"
-                fontWeight="500"
-              >
-              </app-tool-chip>
-            }
-          </div>
-        </app-infocard>
+        <a
+          class="project-link"
+          [href]="project.link"
+          target="_blank"
+          rel="noopener noreferrer"
+          [attr.aria-label]="project.title + ' (opens in a new tab)'">
+          <app-infocard [hoverAnimation]="true" [title]="project.title">
+            <p class="description">{{ project.description }}</p>
+            <div class="side-by-side-info">
+              @for (technology of project.technologies; track $index) {
+                <app-tool-chip
+                  [title]="technology"
+                  textColor="#51515b"
+                  backgroundColor="#dbeafe"
+                  fontSize="11"
+                  fontWeight="500"
+                >
+                </app-tool-chip>
+              }
+            </div>
+          </app-infocard>
+        </a>
       }
     </div>
   </div>
