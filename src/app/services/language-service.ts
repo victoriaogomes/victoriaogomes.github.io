@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { DOCUMENT, inject, Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
@@ -6,6 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class LanguageService {
   private readonly storageKey = 'language';
+  private readonly document = inject(DOCUMENT);
 
   readonly supportedLanguages = [
     {
@@ -19,6 +20,15 @@ export class LanguageService {
   ];
 
   constructor(private translate: TranslateService) {
+    const currentLang = this.translate.getCurrentLang();
+
+    if (currentLang) {
+      this.document.documentElement.lang = currentLang;
+    }
+
+    this.translate.onLangChange.subscribe(({ lang }) => {
+      this.document.documentElement.lang = lang;
+    });
   }
 
   init() {
