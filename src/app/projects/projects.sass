@@ -27,6 +27,21 @@
   color: $primary-text-color
   text-align: left
 
+.project-link
+  display: block
+  text-decoration: none
+  color: inherit
+  cursor: pointer
+
+  &:visited
+    color: inherit
+
+  &:focus-visible
+    outline: 2px solid #2563eb
+    outline-offset: 4px
+    border-radius: 8px
+
+
 @media (min-width: 750px)
   .project-list
     flex-direction: row

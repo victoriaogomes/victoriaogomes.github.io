@@ -30,20 +30,25 @@
       </a>
 
       <div class="social-links">
-        <a class="icon-button" [href]="'mailto:' + 'intro.mail' | translate">
-          <fa-icon aria-label="Email link" [icon]="faEnvelope"/>
+        <a aria-label="Email link" class="icon-button" [href]="'mailto:' + ('intro.mail' | translate)"
+           target="_blank" rel="noopener noreferrer">
+          <fa-icon [icon]="faEnvelope"/>
         </a>
 
-        <a class="icon-button" [href]=" 'intro.gitHub' | translate">
-          <fa-icon aria-label="GitHub link" [icon]="faGithub"/>
+        <a aria-label="GitHub link" class="icon-button" [href]=" 'intro.gitHub' | translate" target="_blank"
+           rel="noopener noreferrer">
+          <fa-icon [icon]="faGithub"/>
         </a>
 
-        <a class="icon-button" [href]=" 'intro.linkedIn' | translate">
-          <fa-icon aria-label="LinkedIn link" [icon]="faLinkedin"/>
+        <a aria-label="LinkedIn link" class="icon-button" [href]=" 'intro.linkedIn' | translate" target="_blank"
+           rel="noopener noreferrer">
+          <fa-icon [icon]="faLinkedin"/>
         </a>
 
-        <a class="icon-button" [href]=" 'intro.googleScholar' | translate">
-          <fa-icon aria-label="Google Scholar link" [icon]="faGoogleScholar"/>
+        <a aria-label="Google Scholar link" class="icon-button" [href]=" 'intro.googleScholar' | translate"
+           target="_blank"
+           rel="noopener noreferrer">
+          <fa-icon [icon]="faGoogleScholar"/>
         </a>
       </div>
 
