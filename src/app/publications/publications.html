@@ -7,29 +7,30 @@
     <p class="description" [innerHTML]="'publications.description' | translate"></p>
 
     <div class="publicationList">
-
       @for (section of publicationSections; track section.title) {
-        <div>
-          <div class="header">
-            <h3>{{ (section.title | translate) }}</h3>
-            <h5>{{ (section.subtitle | translate) }}</h5>
-          </div>
-          @let preview = getPublicationPreview(section.publications());
-
-          <app-publication-list
-            [publicationList]="preview">
-          </app-publication-list>
-
-          @if (getPublicationListSize(section.publications()) > 2) {
-            <div class="view-all-container">
-              <button
-                class="view-all-button"
-                (click)="showPublications(section)">
-                {{ 'publications.expandAll' | translate }}
-              </button>
+        @if (section.publications()) {
+          <div>
+            <div class="header">
+              <h3>{{ (section.title | translate) }}</h3>
+              <h5>{{ (section.subtitle | translate) }}</h5>
             </div>
-          }
-        </div>
+            @let preview = getPublicationPreview(section.publications());
+
+            <app-publication-list
+              [publicationList]="preview">
+            </app-publication-list>
+
+            @if (getPublicationListSize(section.publications()) > 2) {
+              <div class="view-all-container">
+                <button
+                  class="view-all-button"
+                  (click)="showPublications(section)">
+                  {{ 'publications.expandAll' | translate }}
+                </button>
+              </div>
+            }
+          </div>
+        }
       }
 
       <ng-template class="modal" #publicationsDialog>
